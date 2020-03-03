@@ -6,6 +6,7 @@ class StartPage extends Base {
         <div class="col-12">
           <h1>Start page</h1>
           <p>This is the start page.</p>
+          <h2> Detta är ny test.</p>
         </div>
       </div>
     `;
