@@ -1,1 +1,0 @@
-typeof App === 'function' && (window.app = new App());
