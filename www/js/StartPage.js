@@ -8,7 +8,7 @@ class StartPage extends Base {
             <p class="text-center  mb-5"><strong>VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON 
             </strong></p> 
           </div>
-          <img src="/images/idasbild.png" alt="..." class="img-thumbnail">
+           <img src="/images/idasbild.png" alt="..." class="img-thumbnail">
         </div>
       </div>
     `;
