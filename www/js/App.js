@@ -6,7 +6,7 @@ class App extends Base {
       { label: 'Till salu', route: '/Till-salu' },
       { label: 'Kontakta oss', route: '/kontaktaoss' },
       { label: 'Sälj', route: '/salj' },
-      { label: 'Kundomdömen', route: '/kundomdomen' },
+      { label: 'Kundomdomen', route: '/kundomdomen' },
     ];
     this.navBar = new NavBar({ links: this.navBarLinks });
     this.footer = new Footer();
@@ -15,7 +15,7 @@ class App extends Base {
     this.missingPage = new MissingPage();
     this.kontaktaoss = new Kontaktaoss();
     this.salj = new Salj();
-    this.kundomdomen = new Kundomdömen();
+    this.kundomdomen = new Kundomdomen();
   }
 
   render() {
@@ -30,6 +30,7 @@ class App extends Base {
           ${this.missingPage}
           ${this.kontaktaoss}
           ${this.salj}
+          ${this.kundomdomen}
         </main>
         ${this.footer}
         ${this.shoppingCart}
