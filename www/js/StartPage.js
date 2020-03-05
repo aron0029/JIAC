@@ -4,6 +4,7 @@ class StartPage extends Base {
     return /*html*/`
       <div class="row" route="/" page-title="Start">
         <div class="col-12">
+      
           <h1></h1>
           <center> <p><strong>VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON 
            </strong></p> </center>
