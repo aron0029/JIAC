@@ -10,13 +10,12 @@ class StartPage extends Base {
           <h3> vi ska lägga in fina bilder </h3>
           <p3> nu vil jag pröva om detta hittas <br> Vi borde bete oss som Harvey Specter<p3>
            <img src="/images/MED0.png" alt="..." class="img-thumbnail">
-          </div>
+          </div> 
           
-          
-          <div class="list-group">
-            </a>
+           
+          <div class="list-group"> 
             <a href="#" class="list-group-item ">Södermaln</a>
-            <a href="#" class="list-group-item">vasa Stan</a>
+            <a href="#" class="list-group-item">Vasastan</a>
             <a href="#" class="list-group-item ">Östermaln</a>
         
 </div>
