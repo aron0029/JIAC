@@ -11,7 +11,7 @@ class App extends Base {
     this.startPage = new StartPage();
     this.aboutUsPage = new AboutUsPage();
     this.missingPage = new MissingPage();
-    this.Kontaktaoss = new Kontaktaoss();
+    this.kontaktaoss = new Kontaktaoss();
   }
 
   render() {
@@ -24,7 +24,7 @@ class App extends Base {
           ${this.startPage}
           ${this.aboutUsPage}
           ${this.missingPage}
-          ${this.Kontaktaoss}
+          ${this.kontaktaoss}
         </main>
         ${this.footer}
         ${this.shoppingCart}
