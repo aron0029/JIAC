@@ -4,7 +4,7 @@ class Kontaktaoss extends Base {
     return /*html*/`
       <div class="row" route="/kontaktaoss" page-title="kontakt">
         <div class="col-12">
-          <h1>kontakta oss</h1>
+          <h1>Kontakta oss</h1>
           <p>T1.</p>
           <h2> This is DHYR & RUMSON.</p>
           <h3> Here we insert images</h3>
