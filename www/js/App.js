@@ -6,7 +6,7 @@ class App extends Base {
       { label: 'Till salu', route: '/Till-salu' },
       { label: 'Kontakta oss', route: '/kontaktaoss' },
       { label: 'Sälj', route: '/salj' },
-      { label: 'Kundomdomen', route: '/kundomdomen' },
+      { label: 'Kundomdömen', route: '/kundomdomen' },
     ];
     this.navBar = new NavBar({ links: this.navBarLinks });
     this.footer = new Footer();
