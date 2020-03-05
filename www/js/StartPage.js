@@ -8,8 +8,7 @@ class StartPage extends Base {
           <p><strong>This is the start page.</strong></p>
           <h2> Detta är ny test.</p>
           <h3> vi ska lägga in fina bilder </h3>
-          <p3> nu vil jag pröva om detta hittas <br> och vi vet inte vad man gör och hur vi gör det<p3>
-          <img src="/images/MED0.png" alt="..." class="img-thumbnail">
+          <p3> nu vil jag pröva om detta hittas <br> Vi borde bete oss som Harvey Specter<p3>
           </div>
       </div>
     `;
