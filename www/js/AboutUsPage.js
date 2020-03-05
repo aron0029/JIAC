@@ -1,11 +1,11 @@
-class AboutUsPage extends Base {
+class Tillsalu extends Base {
 
   render() {
     return /*html*/`
-      <div class="row" route="/about-us" page-title="About us">
+      <div class="row" route="/Till-salu" page-title="Till salu">
         <div class="col-12">
-          <h1>About us</h1>
-          <p>This is a page about us.</p>
+          <h1>Till salu</h1>
+          <p>Här finner du alla våra bostäder som är till salu.</p>
         </div>
       </div>
     `;
