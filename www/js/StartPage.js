@@ -3,7 +3,7 @@ class StartPage extends Base {
   render() {
     return /*html*/`
       <div class="row" route="/" page-title="Start">
-        <div class="col-12">
+        <div class="col-9">
       
           <h1></h1>
           <center> <p><strong>VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON 
@@ -16,7 +16,7 @@ class StartPage extends Base {
           
           <div class="card" style="width: 18rem;">
           
-  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+  <img class="card-img-top" src="/images/balkong-800x682.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
