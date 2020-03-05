@@ -7,8 +7,15 @@ class Footer extends Base {
           <div class="col text-center text-light">
             © Dhyr & Rumson   
            
-            <a id="facebook-button" class="btn btn-block btn-social btn-facebook">
-                <i class="fa fa-facebook"></i> följ oss på Facebook
+  
+      <button type="button" class="btn btn-lg btn-so">
+        <i class="fab fa-stack-overflow pr-1"></i>
+       <a href="http://facebook.com" class ="text-dark">FaceBook</a>
+      </button>
+        <span class="counter counter-lg"></span>
+      
+          
+                          
 </a>
  </div>
         </div>
