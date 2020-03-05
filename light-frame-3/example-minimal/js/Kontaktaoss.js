@@ -2,7 +2,7 @@ class Kontaktaoss extends Base {
 
   render() {
     return /*html*/`
-      <div class="row" route="/" page-title="kontakt">
+      <div class="row" route="Kontakta-oss" page-title="kontakt">
         <div class="col-12">
           <h1>kontakta oss</h1>
           <p>T1.</p>
