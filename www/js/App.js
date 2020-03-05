@@ -3,13 +3,13 @@ class App extends Base {
   mount() {
     this.navBarLinks = [
       { label: 'Välkommen', route: '/' },
-      { label: 'About us', route: '/About-Us' },
+      { label: 'Till salu', route: '/Till-salu' },
       { label: 'Kontakta oss', route: '/kontaktaoss' },
     ];
     this.navBar = new NavBar({ links: this.navBarLinks });
     this.footer = new Footer();
     this.startPage = new StartPage();
-    this.aboutUsPage = new AboutUsPage();
+    this.aboutUsPage = new Tillsalu();
     this.missingPage = new MissingPage();
     this.kontaktaoss = new Kontaktaoss();
   }
