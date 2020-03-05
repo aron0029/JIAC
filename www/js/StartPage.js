@@ -2,6 +2,7 @@ class StartPage extends Base {
 
   render() {
     return /*html*/`
+  Jasmin 
       <div class="row" route="/" page-title="Start">
         <div class="col-12">
           <div class="start-page-text-on-image">
@@ -15,5 +16,3 @@ class StartPage extends Base {
   }
 
 }
-
-
