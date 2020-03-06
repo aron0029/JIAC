@@ -3,7 +3,7 @@ class App extends Base {
   mount() {
     this.navBarLinks = [
       { label: 'Välkommen', route: '/' },
-      { label: 'Till salu', route: '/Till-salu' },
+      { label: 'Till salu', route: '/till-salu' },
       { label: 'Kontakta oss', route: '/kontaktaoss' },
       { label: 'Sälj', route: '/salj' },
       { label: 'Kundomdömen', route: '/kundomdomen' },
@@ -11,7 +11,7 @@ class App extends Base {
     this.navBar = new NavBar({ links: this.navBarLinks });
     this.footer = new Footer();
     this.startPage = new StartPage();
-    this.aboutUsPage = new Tillsalu();
+    this.tillSalu = new Tillsalu();
     this.missingPage = new MissingPage();
     this.kontaktaoss = new Kontaktaoss();
     this.salj = new Salj();
@@ -26,7 +26,7 @@ class App extends Base {
         </header>
         <main class="container my-4">
           ${this.startPage}
-          ${this.aboutUsPage}
+          ${this.tillSalu}
           ${this.missingPage}
           ${this.kontaktaoss}
           ${this.salj}

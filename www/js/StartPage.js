@@ -55,6 +55,5 @@ class StartPage extends Base {
 
   }
 
-
-
 }
+
