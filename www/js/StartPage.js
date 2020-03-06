@@ -4,6 +4,7 @@ class StartPage extends Base {
     return /*html*/`
   Jasmin 
       <div class="row" route="/" page-title="Start">
+     
         <div class="col-12">
           <div class="start-page-text-on-image">
             <p class="text-center  mb-5"><strong>VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON 
@@ -14,9 +15,9 @@ class StartPage extends Base {
         
 
 
-
+<div class="card-group">
        
-          <div class="card" style="width:35rem; height: 10rem;">
+          <div class="card" style="width:35rem;">
           <div class="card-body">
   <img class="img-fluid" src="/images/vara-bostader.jpg" alt="Responsive image">
   <div class="card-img-overlay">
@@ -27,13 +28,14 @@ class StartPage extends Base {
 
 
        <div class="card" style="width:35rem; ">
-       
           <div class="card-body">
   <img class="img-fluid" src="/images/boka-vardering.jpg" alt="Responsive image">
   <div class="card-img-overlay">
     <p class="card-text">I'm text that has a background image!</p>
   </div>
 </div>
+</div>
+
 </div>
 
          
