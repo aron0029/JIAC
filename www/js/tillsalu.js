@@ -9,8 +9,9 @@ class Tillsalu extends Base {
             <h1>Till salu</h1>
               <p>Här finner du alla våra bostäder som är till salu.</p>
         </div>
+      
+      <img class="img-fluid" src="/images/Södermalm/bild1.1.png" alt="..."> 
       </div>
-      <div>  <img class="img-fluid" src="/images/Södermalm/bild1.1.png" alt="Responsive image"> </div>
     `;
   }
 
