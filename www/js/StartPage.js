@@ -39,7 +39,7 @@ class StartPage extends Base {
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<a href="/kontaktaoss">
+<a href="/salj">
         <button class="btn btn-default">
      <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
      <a href="#">
