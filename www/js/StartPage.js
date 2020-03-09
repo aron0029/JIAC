@@ -4,36 +4,36 @@ class StartPage extends Base {
     return /*html*/`
   Jasmin 
       <div class="row"  route="/" page-title="Start">
-     
-<div class="card bg-white text-black; col-12">
-<div class="card-body">
-  <img class="img-fluid" src="/images/idasbild.png" alt="Responsive image">
-  <div class="card-img-overlay">
-    <h5 class="card-title">VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON</h5>
-    
+     <div class= "col-12">
+
+  <div class="card-body;card bg-white text-black; col-12; card mb-3">
+  <img class="card-img-top" src="/images/idasbild.png" alt="Card image cap">
+    <h1 class="display-3">Mäklarfirma Dhyr & Rumson </h1>
   </div>
-</div>
 
-</div>
 
-<br></br>
-<br></br>
+
 
         
 
 <div class="card-group">
-
+ <br></br>
+  <br></br>
 <div class="row">
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-      <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" style="width: 800px; height: 300px">
-        <h5 class="card-title">Våra hem</h5>
-        <p class="card-text">Här listar vi våra bostäder som vill har till salu.
+
+      <button class="btn btn-default">
+     <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" style="width: 800px; height: 300px">
+     <a href="/till-salu"></a>
+      </button>
+        <h5 class="display-4">Våra hem</h5>
+        <p class="lead">Här listar vi våra bostäder som vill har till salu.
         <br></br>
         </p>
         
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        
       </div>
     </div>
   </div>
@@ -41,8 +41,8 @@ class StartPage extends Base {
     <div class="card">
       <div class="card-body">
       <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
-        <h5 class="card-title">Boka värdering</h5>
-        <p class="card-text">För en professionell utvärdering från våra mäklare av hem som du vill sälja.</p>
+        <h5 class="display-4">Boka värdering</h5>
+        <p class="lead">För en professionell utvärdering från våra mäklare av hem som du vill sälja.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
@@ -67,6 +67,7 @@ class StartPage extends Base {
             
 </div>
 
+</div>
           
     `;
 
