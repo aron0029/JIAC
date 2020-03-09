@@ -3,9 +3,9 @@ class StartPage extends Base {
   render() {
     return /*html*/`
   Jasmin 
-      <div class="row" route="/" page-title="Start">
+      <div class="row"  route="/" page-title="Start">
      
-        <div class="col-12">
+        <div class="col-12" class = "pb-3">
           <div class="start-page-text-on-image">
             
           <p class="text-center startsidacolor  mb-5"><strong>VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON 
@@ -15,35 +15,39 @@ class StartPage extends Base {
         </div>
         
 
-
 <div class="card-group">
-       
-          <div class="card" style="width:35rem;">
-          <div class="card-body">
-  <img class="img-fluid" src="/images/vara-bostader.jpg" alt="Responsive image">
-  <div class="card-img-overlay">
-    <p class="card-text">I'm text that has a background image!</p>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
   </div>
 </div>
-</div>
 
 
-       <div class="card" style="width:35rem; ">
-          <div class="card-body">
-  <img class="img-fluid" src="/images/boka-vardering.jpg" alt="Responsive image">
-  <div class="card-img-overlay">
-    <p class="card-text">I'm text that has a background image!</p>
-  </div>
-</div>
-</div>
 
-</div>
+
 
          
-      
+     
   
+      </div>
 
-      <div class="list-group" class="mx-auto" style="width: 200;">
+      <div class="list-group" class="mx-auto" style= "width=400;">
    
 
             <a href="#" class="list-group-item ">Södermaln</a>
