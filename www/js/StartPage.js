@@ -29,11 +29,11 @@ class StartPage extends Base {
       <div class="card-body">
       <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" style="width: 800px; height: 300px">
         <h5 class="card-title">Våra hem</h5>
-        <p class="card-text">Här listar vi våra bostäder som vill har till salu.
+        <p class="card-text">Här listar vi våra bostäder till salu.
         <br></br>
         </p>
         
-        <a href="#" class="btn btn-primary">Boka Värdering</a>
+        <a href="#" class="btn btn-primary">Bostäder Till Salu</a>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@ class StartPage extends Base {
       <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
         <h5 class="card-title">Boka värdering</h5>
         <p class="card-text">För en professionell utvärdering från våra mäklare av hem som du vill sälja.</p>
-        <a href="#" class="btn btn-primary">Bostäder Till Salu</a>
+        <a href="#" class="btn btn-primary">Boka Värdering</a>
       </div>
     </div>
   </div>
