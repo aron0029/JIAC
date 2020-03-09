@@ -20,12 +20,12 @@ class StartPage extends Base {
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-
+<a href="/till-salu">
       <button class="btn btn-default">
      <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" 
      style="width: 800px; height: 300px">
-     
       </button>
+</a>
       
         <h5 class="display-4">Våra hem</h5>
         <p class="lead">Här listar vi våra bostäder som vill har till salu.
@@ -39,12 +39,12 @@ class StartPage extends Base {
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-
+<a href="/kontaktaoss">
         <button class="btn btn-default">
      <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
-     <a href="#"></a>
+     <a href="#">
       </button>
-      
+      </a>
         <h5 class="display-4">Boka värdering</h5>
         <p class="lead">För en professionell utvärdering från våra mäklare av hem som du vill sälja.</p>
         
