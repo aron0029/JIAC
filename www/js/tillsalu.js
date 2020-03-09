@@ -12,15 +12,8 @@ class tillsalu extends Base {
               <p>Här finner du alla våra bostäder som är till salu.</p>
         </div>
       </div>
+        <img class="img-fluid" src="/images/Södermalm/bild1.1.png" alt="Responsive image"> 
     `;
   }
 
 }
-
-mount
-await sql(/*sql*/`
-  USE databas
-`);
-let databas = await sql(/*sql*/`
-  SELECT streetName FROM address
-`);
