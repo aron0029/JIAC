@@ -1,10 +1,10 @@
-class tillsalu extends Base {
+class Tillsalu extends Base {
   async mount() {
     sql(/*sql*/`USE databas`);
   }
-  
-   async search(){
-   this.result = await sql(/*sql*/`
+
+  async search() {
+    this.result = await sql(/*sql*/`
 
     SELECT * FROM Residence
     JOIN Pics
@@ -19,9 +19,9 @@ class tillsalu extends Base {
       minPrice: 200000,
       maxPrice: 20000000
 
-  });
-   }
-  
+    });
+  }
+
   render() {
     return /*html*/`
         <div class="row" route="/till-salu" page-title="Till salu">
