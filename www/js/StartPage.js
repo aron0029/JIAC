@@ -4,63 +4,61 @@ class StartPage extends Base {
     return /*html*/`
   Jasmin 
       <div class="row"  route="/" page-title="Start">
-     
-        <div class="col-12" class = "pb-3">
-          <div class="start-page-text-on-image">
-            
-          <p class="text-center startsidacolor"><strong>VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON 
-            </strong></p> 
-          </div>
-           <img src="/images/idasbild.png" alt="..." class="img-thumbnail">
-        </div>
-        
+     <div class= "col-12">
+
+  <div class="card-body;card bg-white text-black; col-12; card mb-3">
+  <img class="card-img-top" src="/images/idasbild.png" alt="Card image cap">
+    <h1 class="display-3">Mäklarfirma Dhyr & Rumson </h1>
+  </div>
+
+
 
 <div class="card-group">
-
+ <br></br>
+  
 <div class="row">
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-      <img class="img-fluid" src="/images/vara-bostader.jpg"  style="width: 900px; height: 250px">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+      <button class="btn btn-default">
+     <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" 
+     style="width: 800px; height: 300px">
+     
+      </button>
+      
+        <h5 class="display-4">Våra hem</h5>
+        <p class="lead">Här listar vi våra bostäder som vill har till salu.
+        <br></br>
+        </p>
+        
+        
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-      <img class="img-fluid" src="/images/boka-vardering.jpg"style="width: 900px; height: 250px">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+        <button class="btn btn-default">
+     <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
+     <a href="#"></a>
+      </button>
+      
+        <h5 class="display-4">Boka värdering</h5>
+        <p class="lead">För en professionell utvärdering från våra mäklare av hem som du vill sälja.</p>
+        
       </div>
     </div>
   </div>
 </div>
 
-
-
-
-
-         
-     
   
       </div>
 
-      <div class="list-group" class="row" class="mx-auto" style= "width=400;">
-   
-
-            <a href="#" class="list-group-item ">Södermaln</a>
-            <a href="#" class="list-group-item">Vasastan</a>
-            <a href="#" class="list-group-item ">Östermaln</a>
-            
 </div>
-
           
     `;
-
 
   }
 
