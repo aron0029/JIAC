@@ -33,7 +33,7 @@ class StartPage extends Base {
         <br></br>
         </p>
         
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-primary">Boka Värdering</a>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@ class StartPage extends Base {
       <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
         <h5 class="card-title">Boka värdering</h5>
         <p class="card-text">För en professionell utvärdering från våra mäklare av hem som du vill sälja.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-primary">Bostäder Till Salu</a>
       </div>
     </div>
   </div>
