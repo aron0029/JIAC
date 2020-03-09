@@ -1,7 +1,7 @@
 class Salj extends Base {
 
-    render() {
-      return /*html*/`
+  render() {
+    return /*html*/`
         <div class="row" route="/salj" page-title="Sälj">
           <div class="col-12">
             <h1>Sälj din bostad</h1>
@@ -9,5 +9,5 @@ class Salj extends Base {
           </div>
         </div>
       `;
-    }
+  }
 }
