@@ -1,4 +1,4 @@
-class Tillsalu extends Base {
+class AboutUsPage extends Base {
 
   render() {
     return /*html*/`
