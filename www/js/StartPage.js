@@ -8,7 +8,7 @@ class StartPage extends Base {
         <div class="col-12" class = "pb-3">
           <div class="start-page-text-on-image">
             
-          <p class="text-center startsidacolor  mb-5"><strong>VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON 
+          <p class="text-center startsidacolor"><strong>VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON 
             </strong></p> 
           </div>
            <img src="/images/idasbild.png" alt="..." class="img-thumbnail">
@@ -21,6 +21,7 @@ class StartPage extends Base {
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
+      <img class="img-fluid" src="/images/vara-bostader.jpg"  style="width: 900px; height: 250px">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -30,6 +31,7 @@ class StartPage extends Base {
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
+      <img class="img-fluid" src="/images/boka-vardering.jpg"style="width: 900px; height: 250px">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -47,7 +49,7 @@ class StartPage extends Base {
   
       </div>
 
-      <div class="list-group" class="mx-auto" style= "width=400;">
+      <div class="list-group" class="row" class="mx-auto" style= "width=400;">
    
 
             <a href="#" class="list-group-item ">Södermaln</a>
