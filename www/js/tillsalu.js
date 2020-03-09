@@ -1,4 +1,4 @@
-class Tillsalu extends Base {
+class tillsalu extends Base {
   async mount() {
     sql(/*sql*/`USE databas`);
   }
