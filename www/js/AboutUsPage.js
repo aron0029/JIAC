@@ -4,8 +4,8 @@ class Tillsalu extends Base {
     return /*html*/`
       <div class="row" route="/Till-salu" page-title="Till salu">
         <div class="col-12">
-          <h1>Till salu</h1>
-          <p>Här finner du alla våra bostäder som är till salu.</p>
+          <h1>Till Salu</h1>
+          <p>Våra bostäder som är till salu.</p>
         </div>
       </div>
     `;
