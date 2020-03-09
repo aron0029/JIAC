@@ -41,15 +41,9 @@ class StartPage extends Base {
     <div class="card">
       <div class="card-body">
       <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
-<<<<<<< HEAD
         <h5 class="display-4">Boka värdering</h5>
         <p class="lead">För en professionell utvärdering från våra mäklare av hem som du vill sälja.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
-=======
-        <h5 class="card-title">Boka värdering</h5>
-        <p class="card-text">För en professionell utvärdering från våra mäklare av hem som du vill sälja.</p>
-        <a href="#" class="btn btn-primary">Boka Värdering</a>
->>>>>>> a8d57aa1aca627d9c0e54874d18b41a06065a3e1
       </div>
     </div>
   </div>
