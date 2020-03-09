@@ -12,4 +12,5 @@ class Salj extends Base {
       `;
   }
 
-} 
+}
+
