@@ -1,4 +1,4 @@
-class Tillsalu extends Base {
+class tillsalu extends Base {
   filterHousesByLocation(houses, keyword) {
     filteredHouses = houses.filter(a => a.location === keyword);
     return filteredHouses;
@@ -16,3 +16,11 @@ class Tillsalu extends Base {
   }
 
 }
+
+mount
+await sql(/*sql*/`
+  USE databas
+`);
+let databas = await sql(/*sql*/`
+  SELECT streetName FROM address
+`);
