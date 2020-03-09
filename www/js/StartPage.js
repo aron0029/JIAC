@@ -21,9 +21,9 @@ class StartPage extends Base {
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-      <img class="img-fluid" src="/images/vara-bostader.jpg"  style="width: 900px; height: 250px">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" style="width: 800px; height: 300px">
+        <h5 class="card-title">Våra hem</h5>
+        <p class="card-text">Här listar vi våra bostäder som vill har till salu.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
@@ -31,9 +31,9 @@ class StartPage extends Base {
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-      <img class="img-fluid" src="/images/boka-vardering.jpg"style="width: 900px; height: 250px">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
+        <h5 class="card-title">Boka värdering</h5>
+        <p class="card-text">För en professionell utvärdering från våra mäklare av hem som du vill sälja.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
