@@ -16,6 +16,7 @@
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "open": "^7.0.2",
+    "sqlite": "^3.0.3",
     "sqlite3": "^4.1.1"
   }
 }
