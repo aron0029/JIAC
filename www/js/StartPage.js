@@ -5,14 +5,20 @@ class StartPage extends Base {
   Jasmin 
       <div class="row"  route="/" page-title="Start">
      
-        <div class="col-12" class = "pb-3">
-          <div class="start-page-text-on-image">
-            
-          <p class="text-center startsidacolor"><strong>VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON 
-            </strong></p> 
-          </div>
-           <img src="/images/idasbild.png" alt="..." class="img-thumbnail">
-        </div>
+<div class="card bg-white text-black; col-12">
+<div class="card-body">
+  <img class="img-fluid" src="/images/idasbild.png" alt="Responsive image">
+  <div class="card-img-overlay">
+    <h5 class="card-title">VÄLKOMMEN TILL MÄKLARFIRMAN DHYR & RUMSON</h5>
+    
+  </div>
+</div>
+
+</div>
+
+<br></br>
+<br></br>
+
         
 
 <div class="card-group">
@@ -23,7 +29,10 @@ class StartPage extends Base {
       <div class="card-body">
       <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" style="width: 800px; height: 300px">
         <h5 class="card-title">Våra hem</h5>
-        <p class="card-text">Här listar vi våra bostäder som vill har till salu.</p>
+        <p class="card-text">Här listar vi våra bostäder som vill har till salu.
+        <br></br>
+        </p>
+        
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
