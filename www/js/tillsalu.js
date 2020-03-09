@@ -1,9 +1,27 @@
-class Tillsalu extends Base {
-  filterHousesByLocation(houses, keyword) {
-    filteredHouses = houses.filter(a => a.location === keyword);
-    return filteredHouses;
+class tillsalu extends Base {
+  async mount() {
+    sql(/*sql*/`USE databas`);
   }
+  
+   async search(){
+   this.result = await sql(/*sql*/`
 
+    SELECT * FROM Residence
+    JOIN Pics
+    ON Residence.residenceId = Pics.residenceId
+    WHERE Kvm >= $minArea
+    AND Kvm <= $maxArea
+    AND price >= $minPrice
+    AND price <= $maxPrice
+  `, {
+      minArea: 20,
+      maxArea: 100,
+      minPrice: 200000,
+      maxPrice: 20000000
+
+  });
+   }
+  
   render() {
     return /*html*/`
         <div class="row" route="/till-salu" page-title="Till salu">

@@ -8,6 +8,12 @@ class Salj extends Base {
             <p>Är du intresserad av att sälja din bostad? Boka en värdering!</p>
           </div>
         </div>
+        
       `;
   }
+<<<<<<< HEAD
 }
+=======
+
+} 
+>>>>>>> aca1011f9302716bfa8c5f152540f6fc2fa3bb9c
