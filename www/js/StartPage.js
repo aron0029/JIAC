@@ -13,9 +13,6 @@ class StartPage extends Base {
 
 
 
-
-        
-
 <div class="card-group">
  <br></br>
   
@@ -25,9 +22,11 @@ class StartPage extends Base {
       <div class="card-body">
 
       <button class="btn btn-default">
-     <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" style="width: 800px; height: 300px">
-     <a href="/till-salu"></a>
+     <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" 
+     style="width: 800px; height: 300px">
+     
       </button>
+      
         <h5 class="display-4">Våra hem</h5>
         <p class="lead">Här listar vi våra bostäder som vill har till salu.
         <br></br>
@@ -54,21 +53,12 @@ class StartPage extends Base {
   </div>
 </div>
 
-
-
-
-
-         
-     
   
       </div>
-
-
 
 </div>
           
     `;
-
 
   }
 
