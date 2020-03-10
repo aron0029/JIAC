@@ -1,30 +1,32 @@
 class Tillsalu extends Base {
+
   async mount() {
     sql(/*sql*/`USE databas`);
-  }
-  
-   async search(){
-   await sql(/*sql*/`
 
-    SELECT * FROM housing
-    JOIN housingImages
-    ON housing.id = housingImages.housingId
-    WHERE area >= $minArea
-    AND area <= $maxArea
+
+
+    this.searchResult = await sql(/*sql*/`
+
+    SELECT * FROM residence
+    JOIN Pics
+    ON residence.residenceId = Pics.PicId
+    WHERE kvm >= $kvm
+    AND kvm <= $kvm
     AND price >= $minPrice
     AND price <= $maxPrice
-  `, {
-      minArea: 20,
-      maxArea: 100,
+  `
+  , {
+      kvm: 20,
       minPrice: 200000,
       maxPrice: 20000000
 
-  });
-   }
+  }
+  );
+  }
   
     render() {
       return /*html*/`
-      
+          ${console.log(this.searchResult)}
           <div class="row" route="/till-salu" page-title="Till salu">
             <div class="col-12">
               <h1>Till salu</h1>
