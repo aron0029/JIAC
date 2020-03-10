@@ -1,11 +1,11 @@
 class Kundomdomen extends Base {
 
-    render() {
-      return /*html*/`
+  render() {
+    return /*html*/`
         <div class="row" route="/kundomdomen" page-title="Kundomdömen">
           <div class="col-12">
-            <h1>Lämna gärna ditt omdöme på oss!</h1>
-            <p>Skicka kommentar!</p>
+          <h1>Lämna gärna ditt omdöme på oss!</h1>
+            <p></p>
           </div>
 
           <!DOCTYPE html>
@@ -46,17 +46,21 @@ class Kundomdomen extends Base {
                   </select>
           
                   <input type="submit " name="skicka " id="skicka " value="Skicka meddelandet " question="vilket nordisk land " />
-          
+                  <button type="button" class="btn btn-primary">Skicka</button>
               </form>
+             
 
               <p> Observera att själva formuläret inte syns. </p>
 
               <p> Observera också att standardbredden för ett textinmatningsfält är 30 tecken. </p>
           
-              <h1>Telefon: 0046-12345678910</h1>
-              <h2>Adress: Centralplan 15, 111 20 Stockholm, Sverige.</h2>
-              <h3>DHYR & RUMSON</h3>
-              <h4>Upphovsrätt 2020</h4>
+              <p>Telefon: 0046-12345678910</p>
+              <br> <br/>
+              <p>Adress: Centralplan 15, 111 20 Stockholm, Sverige.</p>
+              
+              <p>DHYR & RUMSON</p>
+              
+              <p>Upphovsrätt 2020</p>
           
           </body>
           
@@ -66,5 +70,5 @@ class Kundomdomen extends Base {
 
         </div>
       `;
-    }
+  }
 }

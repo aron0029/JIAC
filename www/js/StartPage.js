@@ -56,6 +56,16 @@ class StartPage extends Base {
   
       </div>
 
+<<<<<<< HEAD
+      <div class="list-group" class="row" class="mx-auto" style= "width=400;">
+   
+
+            <a href="#" class="list-group-item ">Södermalm</a>
+            <a href="#" class="list-group-item">Vasastan</a>
+            <a href="#" class="list-group-item ">Östermalm</a>
+            
+=======
+>>>>>>> 15f2a73efc24c6bbb92809acc3d7ac62888e5f9e
 </div>
           
     `;
