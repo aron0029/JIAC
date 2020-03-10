@@ -1,7 +1,12 @@
-class Realtor extends Base {
+class Realtors extends Base {
+
+
+
+
+
+
 
   render() {
-
 
     return /*html*/`
       <div route="/${this.name}">
