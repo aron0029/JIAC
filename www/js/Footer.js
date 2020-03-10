@@ -2,22 +2,34 @@ class Footer extends Base {
 
   render() {
     return /*html*/`
-      <footer class="bg-primary p-4 container-fluid">
+      <footer class="bg-secondary p-4 container-fluid">
+
+   
         <div class="row">
+
+       
           <div class="col text-center text-light">
             © Dhyr & Rumson   
-           
+    
   
-      <button type="button" class="btn btn-lg btn-so">
-        <i class="fab fa-stack-overflow pr-1"></i>
-       <a href="http://facebook.com" class ="text-dark">FaceBook</a>
-      </button>
+
+
         <span class="counter counter-lg"></span>
-      
-          
-                          
-</a>
+<div class="col text-right text-center">
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-instagram"></a>
+
+    </div>
+
  </div>
+ 
+
         </div>
       </footer>
     `;
