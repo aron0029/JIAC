@@ -4,7 +4,7 @@ class Valavbostad extends Base {
     // Get basic info about the books in the category
     // (enough to list them)
     this.databas = await sql(/*sql*/`
-      SELECT price, Kvm, rooms FROM Residence WHERE 
+      SELECT price, Kvm, rooms FROM Residence
     `, {
       Residence: this.id
     });
