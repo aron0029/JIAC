@@ -37,8 +37,9 @@ class App extends Base {
     await sql(/*sql*/`
           USE databas
         `);
-    this.Valavbostad = await sql(Valavbostad,/*sql*/`
-      SELECT * FROM Address
+
+    this.valavbostad = await sql(Valavbostad,/*sql*/`
+      SELECT * FROM Area 
       `);
 
 

@@ -4,11 +4,17 @@ class Valavbostad extends Base {
   render() {
 
     return /*html*/`
-       <div route="/valavbostad" >
-        <h2>${this.streetName} + " " + ${this.streetNumber}</h2>
-          <p> detta bostad finns på: ${this.streetName} </p>
-          <p>${this.zipcode}</p>
+       <div route="/Valavbostad">
+        <h2>${this.region} +  ${this.community}</h2>
+          <p> detta bostad finns på: ${this.county} </p>
+          <p>${this.association}</p>
             </div>
   `
+
   }
+
+
+
+
+
 }
