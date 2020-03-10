@@ -34,8 +34,6 @@ class App extends Base {
 
 
 
-
-
   }
 
   render() {

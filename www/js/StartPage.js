@@ -21,7 +21,7 @@ class StartPage extends Base {
     <div class="card">
       <div class="card-body">
 <a href="/till-salu">
-      <button class="btn btn-default">
+      <button class="btn btn-default stretched-link">
      <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" 
      style="width: 800px; height: 300px">
       </button>
@@ -40,9 +40,8 @@ class StartPage extends Base {
     <div class="card">
       <div class="card-body">
 <a href="/salj">
-        <button class="btn btn-default">
+        <button class="btn btn-default stretched-link">
      <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
-     <a href="#">
       </button>
       </a>
         <h5 class="display-4">Boka värdering</h5>
@@ -56,17 +55,7 @@ class StartPage extends Base {
   
       </div>
 
-<<<<<<< HEAD
-      <div class="list-group" class="row" class="mx-auto" style= "width=400;">
-   
 
-            <a href="#" class="list-group-item ">Södermalm</a>
-            <a href="#" class="list-group-item">Vasastan</a>
-            <a href="#" class="list-group-item ">Östermalm</a>
-            
-=======
->>>>>>> 15f2a73efc24c6bbb92809acc3d7ac62888e5f9e
-</div>
           
     `;
 
