@@ -1,13 +1,17 @@
 class App extends Base {
 
-  mount() {
+  async mount() {
+
+
     this.navBarLinks = [
       { label: 'Välkommen', route: '/' },
       { label: 'Till salu', route: '/till-salu' },
       { label: 'Kontakta oss', route: '/kontaktaoss' },
       { label: 'Sälj', route: '/salj' },
       { label: 'Kundomdömen', route: '/kundomdomen' },
+      { label: 'Våra mäklare', route: '/varamaklare' },
     ];
+
     this.navBar = new NavBar({ links: this.navBarLinks });
     this.footer = new Footer();
     this.startPage = new StartPage();
@@ -16,6 +20,22 @@ class App extends Base {
     this.kontaktaoss = new Kontaktaoss();
     this.salj = new Salj();
     this.kundomdomen = new Kundomdomen();
+    this.realtors = new Realtors();
+
+
+    await sql(/*sql*/`
+          USE databas
+        `);
+
+    //get all hobbies
+    this.realtors = await sql(Realtors, /*sql*/`
+          SELECT * FROM Realtor
+        `);
+
+
+
+
+
   }
 
   render() {
@@ -31,6 +51,7 @@ class App extends Base {
           ${this.kontaktaoss}
           ${this.salj}
           ${this.kundomdomen}
+          ${this.realtors}
         </main>
         ${this.footer}
         ${this.shoppingCart}

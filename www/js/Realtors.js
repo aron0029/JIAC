@@ -1,10 +1,9 @@
-class Realtor extends Base {
+class Realtors extends Base {
 
   render() {
 
-
     return /*html*/`
-      <div route="/${this.name}">
+      <div route="/varamaklare">
         <h2>${this.firstName} + " " + ${this.lastName}</h2>
         <p>Mitt namn är: ${this.firstName}</p>
         <h4>Mejla mig</h4>
