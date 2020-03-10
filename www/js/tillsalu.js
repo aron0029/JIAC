@@ -12,9 +12,9 @@ class Tillsalu extends Base {
                         <div class="list-group" class="row" class="mx-auto" style= "width=400;">
    
 
-            <a href="#" class="list-group-item ">Södermaln</a>
+            <a href="#" class="list-group-item ">Södermalm</a>
             <a href="#" class="list-group-item">Vasastan</a>
-            <a href="#" class="list-group-item ">Östermaln</a>
+            <a href="#" class="list-group-item ">Östermalm</a>
             
 </div>
         </div>
