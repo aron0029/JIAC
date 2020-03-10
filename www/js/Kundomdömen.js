@@ -46,8 +46,9 @@ class Kundomdomen extends Base {
                   </select>
           
                   <input type="submit " name="skicka " id="skicka " value="Skicka meddelandet " question="vilket nordisk land " />
-          
+                  <button type="button" class="btn btn-primary">Skicka</button>
               </form>
+             
 
               <p> Observera att själva formuläret inte syns. </p>
 
