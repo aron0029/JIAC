@@ -4,8 +4,8 @@ class Realtors extends Base {
 
     return /*html*/`
       <div route="/varamaklare">
-        <h2>${this.firstName} + " " + ${this.lastName}</h2>
-        <p>Mitt namn är: ${this.firstName}</p>
+        <h5>${this.firstName} ${this.lastName}</h5>
+        <p>Kontakta mig</p>
         <h4>Mejla mig</h4>
         <p>${this.email}</p>
         <h4>Ring mig</h4>
