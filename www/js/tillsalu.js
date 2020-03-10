@@ -8,17 +8,18 @@ class Tillsalu extends Base {
     this.searchResult = await sql(/*sql*/`
 
     SELECT * FROM residence
-    JOIN Pics
-    ON residence.residenceId = Pics.PicId
-    WHERE kvm >= $kvm
-    AND kvm <= $kvm
+    --JOIN Pics
+    --ON residence.residenceId = Pics.PicId
+    WHERE kvm >= $kvmMin
+    AND kvm <= $kvmMax
     AND price >= $minPrice
     AND price <= $maxPrice
   `
   , {
-      kvm: 20,
+      kvmMin: 20,
+      kvmMax: 100,
       minPrice: 200000,
-      maxPrice: 20000000
+      maxPrice: 200000000
 
   }
   );
