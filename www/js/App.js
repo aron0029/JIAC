@@ -41,8 +41,6 @@ class App extends Base {
       SELECT * FROM Address
       `);
 
-
-
   }
 
   render() {
