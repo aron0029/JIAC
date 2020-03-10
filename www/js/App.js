@@ -3,6 +3,16 @@ class App extends Base {
   async mount() {
 
 
+    await sql(/*sql*/`
+          USE databas
+        `);
+
+    //get all hobbies
+    this.realtors = await sql(Realtors, /*sql*/`
+          SELECT * FROM Realtor
+        `);
+
+
     this.navBarLinks = [
       { label: 'Välkommen', route: '/' },
       { label: 'Till salu', route: '/till-salu' },
@@ -11,8 +21,6 @@ class App extends Base {
       { label: 'Kundomdömen', route: '/kundomdomen' },
       { label: 'Våra mäklare', route: '/varamaklare' },
     ];
-
-
 
     this.navBar = new NavBar({ links: this.navBarLinks });
     this.footer = new Footer();
@@ -25,14 +33,7 @@ class App extends Base {
     this.realtors = new Realtors();
 
 
-    await sql(/*sql*/`
-          USE databas
-        `);
 
-    //get all hobbies
-    this.realtors = await sql(Realtors, /*sql*/`
-          SELECT * FROM Realtor
-        `);
 
 
 
