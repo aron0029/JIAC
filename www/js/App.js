@@ -10,7 +10,7 @@ class App extends Base {
       { label: 'Sälj', route: '/salj' },
       { label: 'Kundomdömen', route: '/kundomdomen' },
       { label: 'Våra mäklare', route: '/varamaklare' },
-      { label: 'val av bostad', route: '/valavbostad' }
+      { label: 'val av bostad', route: '/valavbostad' },
     ];
 
     this.navBar = new NavBar({ links: this.navBarLinks });
