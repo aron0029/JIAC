@@ -55,7 +55,6 @@ class StartPage extends Base {
   
       </div>
 
-
           
     `;
 
