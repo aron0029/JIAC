@@ -46,7 +46,7 @@ class App extends Base {
     await sql(/*sql*/`
           USE databas
         `);
-    this.Valavbostad = await sql(Valavbostad,/*sql*/`
+    this.Tillsalu = await sql(Tillsalu,/*sql*/`
       SELECT * FROM Address
       `);
   }

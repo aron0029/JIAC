@@ -6,7 +6,7 @@ class Tillsalu extends Base {
        <div route="/till-salu">
       <h1> Här finner du alla våra bostäder som är till salu </h1>
         <h2>${this.area} +  ${this.streetName}</h2>
-          <p> detta bostad finns på: ${this.streetNumber} </p>
+          <p> denna bostad finns på: ${this.streetNumber} </p>
           <p>${this.zipCode}</p>
             </div>
     ` }
