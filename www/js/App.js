@@ -40,7 +40,6 @@ class App extends Base {
     this.Valavbostad = await sql(Valavbostad,/*sql*/`
       SELECT * FROM Address
       `);
-
   }
 
   render() {
