@@ -42,15 +42,13 @@ class App extends Base {
       SELECT * FROM Area 
       `);
 
+
     await sql(/*sql*/`
           USE databas
         `);
-
-    this.Tillsalu = await sql(Tillsalu,/*sql*/`
-      SELECT * FROM Adress
+    this.Valavbostad = await sql(Valavbostad,/*sql*/`
+      SELECT * FROM Address
       `);
-
-
   }
 
   render() {
