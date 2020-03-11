@@ -40,7 +40,7 @@ class App extends Base {
           USE databas
         `);
     this.tillsalu = await sql(Tillsalu,/*sql*/`
-      SELECT * FROM Addresss
+      SELECT * FROM Address
       `);
   }
 
