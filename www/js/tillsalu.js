@@ -2,15 +2,7 @@ class Tillsalu extends Base {
 
 
 
-
-
-
-
-
-
   render() {
-
-
 
     return /*html*/`
 <div route="/till-salu">
