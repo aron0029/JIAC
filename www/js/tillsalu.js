@@ -3,7 +3,7 @@ class Tillsalu extends Base {
   render() {
 
     return /*html*/`
-       <div route="/Tillsalu">
+       <div route="/till-salu">
       <h1> Här finner du alla våra bostäder som är till salu </h1>
         <h2>${this.area} +  ${this.streetName}</h2>
           <p> detta bostad finns på: ${this.streetNumber} </p>
