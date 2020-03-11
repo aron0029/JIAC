@@ -1,32 +1,21 @@
 class Tillsalu extends Base {
 
-  async mount() {
-    sql(/*sql*/`USE databas`);
 
+  render() {
 
-
-    this.searchResult = await sql(/*sql*/`
-
-    SELECT * FROM residence
-    --JOIN Pics
-    --ON residence.residenceId = Pics.PicId
-    WHERE kvm >= $kvmMin
-    AND kvm <= $kvmMax
-    AND price >= $minPrice
-    AND price <= $maxPrice
+    return /*html*/`
+       <div route="/Tillsalu">
+        <h2>${this.area} +  ${this.streetName}</h2>
+          <p> detta bostad finns på: ${this.streetNumber} </p>
+          <p>${this.zipCode}</p>
+            </div>
   `
-  , {
-      kvmMin: 20,
-      kvmMax: 100,
-      minPrice: 200000,
-      maxPrice: 200000000
 
   }
-  );
-  }
-  
-    render() {
-      return /*html*/`
+
+
+  render() {
+    return /*html*/`
           ${console.log(this.searchResult)}
           <div class="row" route="/till-salu" page-title="Till salu">
             <div class="col-12">
@@ -41,6 +30,7 @@ class Tillsalu extends Base {
                 <div class="column">
                   <img src="/images/södermalm/bild1.4.png" alt="vasastan" style="width:100%">
                 </div>
+                
               </div>
   
      
@@ -58,6 +48,6 @@ class Tillsalu extends Base {
     
         
       `;
-    }
-  
   }
+
+}
