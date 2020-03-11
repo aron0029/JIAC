@@ -47,7 +47,7 @@ class App extends Base {
         `);
 
     this.Tillsalu = await sql(Tillsalu,/*sql*/`
-      SELECT * FROM Address
+      SELECT * FROM Adress
       `);
 
 
