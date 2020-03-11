@@ -20,10 +20,10 @@ class Footer extends Base {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Add font awesome icons -->
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-instagram"></a>
+      <a href="https://sv-se.facebook.com/" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/?lang=sv" class="fa fa-twitter"></a>
+      <a href="https://se.linkedin.com/" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/?hl=sv" class="fa fa-instagram"></a>
 
     </div>
 
