@@ -10,7 +10,7 @@ class App extends Base {
       { label: 'Sälj', route: '/salj' },
       { label: 'Kundomdömen', route: '/kundomdomen' },
       { label: 'Våra mäklare', route: '/varamaklare' },
-      { label: 'val av bostad', route: '/valavbostad' },
+      { label: 'Val av bostad', route: '/valavbostad' },
     ];
 
     this.navBar = new NavBar({ links: this.navBarLinks });
@@ -25,20 +25,22 @@ class App extends Base {
     this.valavbostad = new Valavbostad();
 
 
-    await sql(/*sql*/`
-          USE databas
-        `);
 
-    //get all hobbies
-    this.realtors = await sql(Realtors, /*sql*/`
-          SELECT * FROM Realtor
-        `);
 
     await sql(/*sql*/`
           USE databas
         `);
-    this.Valavbostad = await sql(Valavbostad,/*sql*/`
-      SELECT * FROM Address
+
+    this.valavbostad = await sql(Valavbostad,/*sql*/`
+      SELECT * FROM Area 
+      `);
+
+
+    await sql(/*sql*/`
+          USE databas
+        `);
+    this.tillSalu = await sql(Tillsalu,/*sql*/`
+      SELECT * FROM Address 
       `);
   }
 

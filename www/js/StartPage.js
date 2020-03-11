@@ -8,7 +8,7 @@ class StartPage extends Base {
 
   <div class="card-body;card bg-white text-black; col-12; card mb-3">
   <img class="card-img-top" src="/images/idasbild.png" alt="Card image cap">
-    <h1 class="display-3">Mäklarfirma Dhyr & Rumson </h1>
+    <center> <h1 class="display-3">Mäklarfirman Dhyr & Rumson </h1> </center>
   </div>
 
 
