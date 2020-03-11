@@ -13,7 +13,6 @@ class Realtors extends Base {
     return /*html*/`
       <div route="/varamaklare">
 <div class="row">
-
 ${this.realtors.map(realtor => /*html*/`
   	<div class="card" style="width: 20rem;">
 
