@@ -39,9 +39,17 @@ class Tillsalu extends Base {
   <div class="carousel-caption d-none d-md-block">  
   </div>
 </div>
+       <h2> Denna lägenhet finns på </h2>
+<h1> ${this.streetName}${this.streetNumber} </h1>
+  <h2> </h2>
+  <p>  </p>
+  <p>${this.zipCode}</p>
+      </div >
       </div>
 
       </div>
+
+
       ` }
 
 }
