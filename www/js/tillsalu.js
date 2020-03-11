@@ -4,9 +4,10 @@ class Tillsalu extends Base {
 
     return /*html*/`
        <div route="/till-salu">
-      <h1> Här finner du alla våra bostäder som är till salu </h1>
-        <h2>${this.area}  ${this.streetName}</h2>
-          <p> Denna bostad finns på: ${this.streetNumber} </p>
+      <h2> Denna lägenhet finns på </h2>
+      <h1> ${this.streetName}${this.streetNumber} </h1>
+        <h2> </h2>
+          <p>  </p>
           <p>${this.zipCode}</p>
             </div>
     ` }
