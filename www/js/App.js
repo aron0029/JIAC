@@ -25,16 +25,6 @@ class App extends Base {
     this.valavbostad = new Valavbostad();
 
 
-    await sql(/*sql*/`
-          USE databas
-        `);
-
-    //get all hobbies
-    this.realtors = await sql(Realtors, /*sql*/`
-          SELECT * FROM Realtor
-        `);
-
-
 
     await sql(/*sql*/`
           USE databas
