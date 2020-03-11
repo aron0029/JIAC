@@ -25,8 +25,6 @@ class App extends Base {
     this.valavbostad = new Valavbostad();
 
 
-<<<<<<< HEAD
-=======
     await sql(/*sql*/`
           USE databas
         `);
@@ -44,7 +42,6 @@ class App extends Base {
       SELECT * FROM Area 
       `);
 
->>>>>>> aed76c10f5dc6e5e0e39747af021ff676c2f9caa
 
     await sql(/*sql*/`
           USE databas
