@@ -25,11 +25,31 @@ class App extends Base {
     this.valavbostad = new Valavbostad();
 
 
+<<<<<<< HEAD
+=======
+    await sql(/*sql*/`
+          USE databas
+        `);
+
+    //get all hobbies
+    this.realtors = await sql(Realtors, /*sql*/`
+          SELECT * FROM Realtor
+        `);
 
     await sql(/*sql*/`
           USE databas
         `);
-    this.Valavbostad = await sql(Valavbostad,/*sql*/`
+
+    this.valavbostad = await sql(Valavbostad,/*sql*/`
+      SELECT * FROM Area 
+      `);
+
+>>>>>>> aed76c10f5dc6e5e0e39747af021ff676c2f9caa
+
+    await sql(/*sql*/`
+          USE databas
+        `);
+    this.Tillsalu = await sql(Tillsalu,/*sql*/`
       SELECT * FROM Address
       `);
   }
