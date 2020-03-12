@@ -34,7 +34,7 @@ class Kundomdomen extends Base {
                   <input type="text" name="epost" id="epost" /> <br /> Meddelande:
           
                   <br />
-                  <textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> <br /> 
+                  <textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> <br/> 
           
                   <select name="kommun"> 
                   <option value="södermalm">Södermalm</option>   
