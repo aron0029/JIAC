@@ -14,6 +14,7 @@ class Tillsalu extends Base {
       'Södermalm',
       'Östermalm',
       'Vasastan'
+
     ];
 
     this.search();
@@ -52,7 +53,8 @@ class Tillsalu extends Base {
          <h1 class="mb-3"> Här finner du alla våra bostäder som är till salu </h1>
          <form>
            ${this.districtButtons.map(label => /*html*/`
-             <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ? 'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
+             <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ?
+        'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
            `)}
           <div class="form-group mt-3">
              <input type="text" placeholder="Sök" class="form-control">
@@ -61,9 +63,11 @@ class Tillsalu extends Base {
 
          <div class="row">
          ${this.searchResult && this.searchResult.map(bostad => /*html*/`
-                    <div class="col-6">
-                    Område: ${bostad.area} Pris: ${bostad.price}kr
-                    </div>
+                    <div class="card" style="width: 50rem;">
+                     ${bostad.area} Pris: ${bostad.price}kr <br> ${bostad.rooms} Rum
+                     men kök lägnehet på ${bostad.Kvm} Kvm  <br>Avgift på ${bostad.rent} kr<br>
+                     <br>
+                    </div>  
                   `)}
          <!--${JSON.stringify(this.searchResult)}-->
           <!-- <h2>${this.area} +  ${this.streetName}</h2>
