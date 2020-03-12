@@ -1,91 +1,59 @@
 class Tillsalu extends Base {
 
+  async mount() {
+    this.anvandarensVal = {
+      kvmMin: 20,
+      kvmMax: 100,
+      minPrice: 200000,
+      maxPrice: 200000000
+    };
+    this.search();
+  }
 
+  async search() {
+    this.searchResult = await sql(/*sql*/`
+      SELECT * 
+      FROM Residence
+      /*JOIN Pics
+      ON Residence.residenceId = Pics.PicId*/
+      WHERE kvm >= $kvmMin
+      AND kvm <= $kvmMax
+      AND price >= $minPrice
+      AND price <= $maxPrice
+    `
+      , {
+        kvmMin: 20,
+        kvmMax: 100,
+        minPrice: 200000,
+        maxPrice: 200000000
+      });
+  }
+
+  fangaUpp() {
+
+  }
 
   render() {
-
+    !this.searchResult ? this.search() : '';
     return /*html*/`
-<div route="/till-salu">
+    ${console.log(this.searchResult)}
+       <div route="/till-salu">
+         <h1> Här finner du alla våra bostäder som är till salu </h1>
 
-<div class="carousel-item">  
+         <div class="row">Här ska en form ligga</div>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="Södermalm" src="/images/Södermalm/bild5.2.png" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="östermalm" src="/images/Södermalm/bild3.2.png" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/images/Södermalm/bild4.3.png" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<img src="/images/Södermalm/bild3.3.png" alt="...">
-  <div class="carousel-caption d-none d-md-block">  
-  </div>
-</div>
-       <h2> Denna lägenhet finns på </h2>
-<h1> ${this.streetName}${this.streetNumber} </h1>
-  <h2> </h2>
-  <p>  </p>
-  <p>${this.zipCode}</p>
-      </div >
-      </div>
-
-      </div>
-
-
-      ` }
+         <div class="row">
+         ${this.searchResult && this.searchResult.map(bostad => /*html*/`
+                    <div class="col-6">
+                    Område: ${bostad.area} Pris: ${bostad.price}kr
+                    </div>
+                  `)}
+         <!--${JSON.stringify(this.searchResult)}-->
+          <!-- <h2>${this.area} +  ${this.streetName}</h2>
+              <p> detta bostad finns på: ${this.streetNumber} </p>
+              <p>${this.zipCode}</p>-->
+          </div>
+        </div>
+    ` }
 
 }
-
-/*       <h2> Denna lägenhet finns på </h2>
-<h1> ${this.streetName}${this.streetNumber} </h1>
-  <h2> </h2>
-  <p>  </p>
-  <p>${this.zipCode}</p>
-      </div >
-
-
-      //*  this.searchResult = await sql(/*sql*/`
-
-     //* SELECT * FROM residence
-    //*  --JOIN Pics
-    //*  --ON residence.residenceId = Pics.PicId
-    //*  WHERE kvm >= $kvmMin
-  //*  AND kvm <= $kvmMax
-      //*  AND price >= $minPrice
-  //*  AND price <= $maxPrice
-      //*`
-   //*      , {
-   //*       kvmMin: 20,
-   //*       kvmMax: 100,
-   //*       minPrice: 200000,
-   //*       maxPrice: 200000000
-//*
-   //*     }
-   //*   );
-  //*  }
-
-
-
-
-
-
-
- //* }
