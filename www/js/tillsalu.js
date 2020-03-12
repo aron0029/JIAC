@@ -58,6 +58,16 @@ class Tillsalu extends Base {
              <input type="text" placeholder="Sök" class="form-control">
            </div>
          </form>
+            
+            <form>
+            <div class="search-input__label push-half--left">KVM</div>
+            <div>
+            <div class="form-group">
+            <input type="range" class="form-control-range" id="formControlRange">
+            <input type="range" class="form-control-range" id="formControlRange">
+            </div>
+            </form>
+
 
          <div class="row">
          ${this.searchResult && this.searchResult.map(bostad => /*html*/`
