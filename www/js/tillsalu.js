@@ -1,11 +1,12 @@
 class Tillsalu extends Base {
 
   async mount() {
+    this.currencyFormatter = new Intl.NumberFormat('sv-SV', { style: 'currency', currency: 'SEK' });
     this.anvandarensVal = {
-      kvmMin: 20,
-      kvmMax: 100,
-      minPrice: 200000,
-      maxPrice: 200000000,
+      kvmMin: 10,
+      kvmMax: 300,
+      minPrice: 100000,
+      maxPrice: 100000000,
       chosenDistrict: 'Alla'
     };
 
@@ -36,6 +37,7 @@ class Tillsalu extends Base {
       , this.anvandarensVal);
 
     this.render();
+    this.fixInitialRenderBug();
   }
 
   chooseDistrict(e) {
@@ -45,6 +47,34 @@ class Tillsalu extends Base {
 
   fangaUpp() {
 
+  }
+
+  changeMinPrice(e) {
+    let av = this.anvandarensVal;
+    av.minPrice = e.target.value;
+    if (av.minPrice > av.maxPrice) {
+      av.maxPrice = av.minPrice;
+    }
+    this.render();
+  }
+
+  changeMaxPrice(e) {
+    let av = this.anvandarensVal;
+    av.maxPrice = e.target.value;
+    if (av.maxPrice < av.minPrice) {
+      av.minPrice = av.maxPrice;
+    }
+    this.render();
+  }
+
+  fixInitialRenderBug() {
+    let rangeSliders = document.querySelectorAll('input[type="range"]');
+    for (let rangeSlider of rangeSliders) {
+      // For some reason .value differs from getAttribute('value');
+      // with the first one controlling what is shown on the screen
+      // and the second one having correct values - this hack fixes that
+      rangeSlider.value = rangeSlider.getAttribute('value');
+    }
   }
 
   render() {
@@ -60,21 +90,36 @@ class Tillsalu extends Base {
              <input type="text" placeholder="Sök" class="form-control">
            </div>
          </form>
+            
+            <form>
+            <div class="search-input__label push-half--left">KVM</div>
+            <div>
+            <div class="form-group">
+            <input type="range" class="form-control-range" id="formControlRange" value="0">
+            <div class="search-input__label push-left">
+            LÄGSTA PRIS ${this.currencyFormatter.format(this.anvandarensVal.minPrice)}</div >
+      <input type="range" class="form-control-range" id="formControlRange" input="changeMinPrice" value="${this.anvandarensVal.minPrice}" min="100000" max="100000000" step="50000">
+<br><br>
+        HÖGSTA PRIS ${this.currencyFormatter.format(this.anvandarensVal.maxPrice)}</div >
+      <input type="range" class="form-control-range" id="formControlRange" input="changeMaxPrice" value="${this.anvandarensVal.maxPrice}" min="100000" max="100000000" step="50000">
+            </div>
+            </form >
 
-         <div class="row">
-         ${this.searchResult && this.searchResult.map(bostad => /*html*/`
+
+      <div class="row">
+        ${this.searchResult && this.searchResult.map(bostad => /*html*/`
                     <div class="card" style="width: 50rem;"> <div class="card" style="hight: 220rem;">
                      ${bostad.area} Pris: ${bostad.price}kr <br> ${bostad.rooms} Rum
                      men kök lägnehet på ${bostad.Kvm} Kvm  <br>Avgift på ${bostad.rent} kr<br>${bostad.residenceId}
                      <br>
                     </div>  
                   `)}
-         <!--${JSON.stringify(this.searchResult)}-->
+        <!{JSON.stringify(this.searchResult)}-->
           <!-- <h2>${this.area} +  ${this.streetName}</h2>
-              <p> detta bostad finns på: ${this.streetNumber} </p>
-              <p>${this.zipCode}</p>-->
+        <p> detta bostad finns på: ${this.streetNumber} </p>
+        <p>${this.zipCode}</p>-->
           </div>
-        </div>
-    ` }
+        </div >
+      ` }
 
 }
