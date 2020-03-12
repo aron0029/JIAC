@@ -5,7 +5,9 @@ class Salj extends Base {
       <div class="row" route="/salj" page-title="Sälj">
         <div class="col-12">
           <h1>Sälj din bostad</h1>
-          <p>Är du intresserad av att sälja din bostad? Boka en värdering!</p>
+          <p>Är du intresserad av att sälja din bostad? 
+          <br>
+            Boka en värdering!</p>
           <form>
             <div class="form-group">
               <label for="exampleFormControlInput1">Email address</label>
