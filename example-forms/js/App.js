@@ -31,6 +31,9 @@ class App extends Base {
     return /*html*/`
       <div class="container">
         <div class="row mt-5">
+
+
+
           ${this.formSent ? /*html*/`
             <div class="col-12">
               <h1>Tack för att du berättade!</h1>
@@ -59,6 +62,11 @@ class App extends Base {
             </form>
           </div>
           `}
+
+
+
+
+          
         </div>
       </div>
     `;
