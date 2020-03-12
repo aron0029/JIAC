@@ -34,18 +34,15 @@ class Kundomdomen extends Base {
                   <input type="text" name="epost" id="epost" /> <br /> Meddelande:
           
                   <br />
-                  <textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> <br /> Adress:
-                  <br />
-                  <textarea name="kommun" id="kommun" cols="60" rows="6"></textarea> <br />
+                  <textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> <br /> 
           
                   <select name="kommun"> 
                   <option value="södermalm">Södermalm</option>   
                   <option value="vasastan">Vasastan</option>  
                   <option value="östermalm">Östermalm</option>  
-                  <option value="mer">Mer</option>
                   </select>
           
-                  <input type="submit " name="skicka " id="skicka " value="Skicka meddelandet " question="vilket nordisk land " />
+                  <input type="submit " name="skicka " id="skicka "question="vilket nordisk land " />
                   <button type="button" class="btn btn-primary">Skicka</button>
               </form>
              
