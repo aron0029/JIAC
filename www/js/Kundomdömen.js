@@ -18,7 +18,7 @@ class Kundomdomen extends Base {
     console.log(formData);
     // Send the form data to the db
     await sql(/*sql*/`
-      INSERT INTO Customer (firstName, lastName, phoneNr) VALUES($firstName, $lastName, $phoneNr)
+      INSERT INTO Customer (firstName, lastName, phoneNr, email, message) VALUES($firstName, $lastName, $phoneNr, $email, $message)
     `, formData);
     // Update the "flag" formSent
     this.formSent = true;
@@ -41,7 +41,6 @@ class Kundomdomen extends Base {
             </div>
            ` :/*html*/`
            <div class="col-12">
-            
             <form submit="collectFormData">
               <div class="form-group">
                 <label class="w-100">Förnamn
@@ -58,7 +57,16 @@ class Kundomdomen extends Base {
                   <input name="phoneNr" type="text" class="form-control" placeholder="Telefon" required>
                 </label>
               </div>
-
+                <div class="form-group">
+                <label class="w-100">E-postadress
+                  <input name="email" type="email" class="form-control" placeholder="Din e-postadress" required>
+                </label>
+              </div>
+            <div class="form-group">
+                <label class="w-100">Meddelande
+                  <textarea name="message" class="form-control" placeholder="Lämna dina synpunkter" required></textarea>
+                </label>
+              </div>
 
               <input class="btn btn-primary float-right" type="submit" value="Skicka info">
             </form>
