@@ -1,91 +1,80 @@
 class Tillsalu extends Base {
 
+  async mount() {
+    this.anvandarensVal = {
+      kvmMin: 20,
+      kvmMax: 100,
+      minPrice: 200000,
+      maxPrice: 200000000,
+      chosenDistrict: 'Alla'
+    };
 
+    this.districtButtons = [
+      'Alla',
+      'Södermalm',
+      'Östermalm',
+      'Vasastan'
+
+    ];
+
+    this.search();
+  }
+
+  async search() {
+    console.log("GÖR NÅGOT UTIFRÅN VALET AV DISTRICT OCKSÅ + GE MÖJLIGHET TILL INMATNING KVM MIN MAX OCH PRIS MIN MAX")
+    this.searchResult = await sql(/*sql*/`
+      SELECT * 
+      FROM Residence
+      /*JOIN Pics
+      ON Residence.residenceId = Pics.PicId*/
+      WHERE kvm >= $kvmMin
+      AND kvm <= $kvmMax
+      AND price >= $minPrice
+      AND price <= $maxPrice
+      AND (area = $chosenDistrict OR "Alla" = $chosenDistrict)
+    `
+      , this.anvandarensVal);
+
+    this.render();
+  }
+
+  chooseDistrict(e) {
+    this.anvandarensVal.chosenDistrict = e.target.innerText;
+    this.search();
+  }
+
+  fangaUpp() {
+
+  }
 
   render() {
-
     return /*html*/`
-<div route="/till-salu">
+       <div route="/till-salu">
+         <h1 class="mb-3"> Här finner du alla våra bostäder som är till salu </h1>
+         <form>
+           ${this.districtButtons.map(label => /*html*/`
+             <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ?
+        'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
+           `)}
+          <div class="form-group mt-3">
+             <input type="text" placeholder="Sök" class="form-control">
+           </div>
+         </form>
 
-<div class="carousel-item">  
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="Södermalm" src="/images/Södermalm/bild5.2.png" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="östermalm" src="/images/Södermalm/bild3.2.png" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/images/Södermalm/bild4.3.png" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<img src="/images/Södermalm/bild3.3.png" alt="...">
-  <div class="carousel-caption d-none d-md-block">  
-  </div>
-</div>
-       <h2> Denna lägenhet finns på </h2>
-<h1> ${this.streetName}${this.streetNumber} </h1>
-  <h2> </h2>
-  <p>  </p>
-  <p>${this.zipCode}</p>
-      </div >
-      </div>
-
-      </div>
-
-
-      ` }
+         <div class="row">
+         ${this.searchResult && this.searchResult.map(bostad => /*html*/`
+                    <div class="card" style="width: 50rem;">
+                     ${bostad.area} Pris: ${bostad.price}kr <br> ${bostad.rooms} Rum
+                     men kök lägnehet på ${bostad.Kvm} Kvm  <br>Avgift på ${bostad.rent} kr<br>
+                     <br>
+                    </div>  
+                  `)}
+         <!--${JSON.stringify(this.searchResult)}-->
+          <!-- <h2>${this.area} +  ${this.streetName}</h2>
+              <p> detta bostad finns på: ${this.streetNumber} </p>
+              <p>${this.zipCode}</p>-->
+          </div>
+        </div>
+    ` }
 
 }
-
-/*       <h2> Denna lägenhet finns på </h2>
-<h1> ${this.streetName}${this.streetNumber} </h1>
-  <h2> </h2>
-  <p>  </p>
-  <p>${this.zipCode}</p>
-      </div >
-
-
-      //*  this.searchResult = await sql(/*sql*/`
-
-     //* SELECT * FROM residence
-    //*  --JOIN Pics
-    //*  --ON residence.residenceId = Pics.PicId
-    //*  WHERE kvm >= $kvmMin
-  //*  AND kvm <= $kvmMax
-      //*  AND price >= $minPrice
-  //*  AND price <= $maxPrice
-      //*`
-   //*      , {
-   //*       kvmMin: 20,
-   //*       kvmMax: 100,
-   //*       minPrice: 200000,
-   //*       maxPrice: 200000000
-//*
-   //*     }
-   //*   );
-  //*  }
-
-
-
-
-
-
-
- //* }
