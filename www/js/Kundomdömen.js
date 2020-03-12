@@ -25,8 +25,12 @@ class Kundomdomen extends Base {
                          
 
                   <br />
-                  <input type="text" name="epost" id="epost" /> <br /> Meddelande:
+                  <input type="text" name="epost" id="meddelande" /> <br /> Meddelande:
+
+                  <br />
                   <textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> 
+
+
                   <br /> 
           
                   
