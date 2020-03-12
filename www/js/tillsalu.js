@@ -24,18 +24,19 @@ class Tillsalu extends Base {
   async search() {
     console.log("GÖR NÅGOT UTIFRÅN VALET AV DISTRICT OCKSÅ + GE MÖJLIGHET TILL INMATNING KVM MIN MAX OCH PRIS MIN MAX")
     this.searchResult = await sql(/*sql*/`
-      SELECT * 
-      FROM Residence
-      /*JOIN Pics
-      ON Residence.residenceId = Pics.url*/
-      WHERE kvm >= $kvmMin
+      SELECT Residence.*, Pics.url AS picUrl
+      FROM Residence, Pics
+      WHERE Residence.residenceId = Pics.residenceId
+      AND kvm >= $kvmMin
       AND kvm <= $kvmMax
       AND price >= $minPrice
       AND price <= $maxPrice
       AND (area = $chosenDistrict OR "Alla" = $chosenDistrict)
-    `
-      , this.anvandarensVal);
+      GROUP BY Residence.residenceId
+    `, this.anvandarensVal);
 
+    console.log("this.anvandarensVal", this.anvandarensVal)
+    console.log("this.searchResult", this.searchResult)
     this.render();
     this.fixInitialRenderBug();
   }
