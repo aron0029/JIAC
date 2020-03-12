@@ -26,7 +26,7 @@ class Tillsalu extends Base {
       SELECT * 
       FROM Residence
       /*JOIN Pics
-      ON Residence.residenceId = Pics.PicId*/
+      ON Residence.residenceId = Pics.url*/
       WHERE kvm >= $kvmMin
       AND kvm <= $kvmMax
       AND price >= $minPrice
@@ -63,9 +63,9 @@ class Tillsalu extends Base {
 
          <div class="row">
          ${this.searchResult && this.searchResult.map(bostad => /*html*/`
-                    <div class="card" style="width: 50rem;"> <div class="card" style="hight: 220rem;">
+                    <div class="card" style="width: 50rem;"> <div class="card" style="height: 18rem;">
                      ${bostad.area} Pris: ${bostad.price}kr <br> ${bostad.rooms} Rum
-                     men kök lägnehet på ${bostad.Kvm} Kvm  <br>Avgift på ${bostad.rent} kr<br>${bostad.residenceId}
+                     men kök lägnehet på ${bostad.Kvm} Kvm  <br>Avgift på ${bostad.rent} kr<br>${bostad.residenceId.JOIN} 
                      <br>
                     </div>  
                   `)}
