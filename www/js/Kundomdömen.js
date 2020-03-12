@@ -30,12 +30,6 @@ class Kundomdomen extends Base {
                   <button type="button" class="btn btn-primary">Skicka</button>
               </form>
              
-
-              <h2> Observera att standardbredden för ett textinmatningsfält är 30 tecken. </h2>
-              <h3> Telefon: 0046-12345678910 </h3>
-              <h4> Adress: Centralplan 15, 111 20 Stockholm, Sverige. </h4>
-              <h5> Upphovsrätt 2020 </h5>  
-              <br> DHYR & RUMSON <br/>
           </body>
           
           
