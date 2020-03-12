@@ -29,8 +29,7 @@ class Salj extends Base {
               <label for="exampleFormControlSelect2">Vad vill du sälja?</label>
               <select class="form-control" id="exampleFormControlSelect2">
                 <option>Min Lägenhet</option>
-                <option>Min Villa</option>
-                 
+
               </select>
             </div>
             <div class="form-group">
@@ -38,8 +37,7 @@ class Salj extends Base {
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               <br>
               <button>Skicka</button>
-            
-
+          
             </div>
           </form>
         </div>
