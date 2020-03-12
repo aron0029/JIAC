@@ -1,6 +1,6 @@
 class Tillsalu extends Base {
 
-  async mount(){
+  async mount() {
     this.anvandarensVal = {
       kvmMin: 20,
       kvmMax: 100,
@@ -9,9 +9,9 @@ class Tillsalu extends Base {
     };
     this.search();
 
-}
-  async search(){
-  this.searchResult = await sql(/*sql*/`
+  }
+  async search() {
+    this.searchResult = await sql(/*sql*/`
   SELECT * 
   FROM Residence
   /*JOIN Pics
@@ -21,15 +21,15 @@ class Tillsalu extends Base {
   AND price >= $minPrice
   AND price <= $maxPrice
   `
-   , {
-    kvmMin: 20,
-    kvmMax: 100,
-    minPrice: 200000,
-    maxPrice: 200000000
-  });
-}
+      , {
+        kvmMin: 20,
+        kvmMax: 100,
+        minPrice: 200000,
+        maxPrice: 200000000
+      });
+  }
 
-  fangaUpp(){
+  fangaUpp() {
 
   }
 
@@ -40,13 +40,13 @@ class Tillsalu extends Base {
        <div route="/till-salu">
          <h1> Här finner du alla våra bostäder som är till salu </h1>
 
-         <div class="row">Här ska en form ligga</div>
+         <div class="row">Här ska en form ligga</div> 
 
-         <div class="row">
+         <div class="row"> 
          ${this.searchResult.map(bostad => /*html*/`
                     <div class="col-6">
                     Område: ${bostad.area} Pris: ${bostad.price}kr
-                    </div>
+                    </div>  
                   `)}
          <!--${JSON.stringify(this.searchResult)}-->
           <!-- <h2>${this.area} +  ${this.streetName}</h2>
