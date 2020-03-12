@@ -11,5 +11,4 @@ class MissingPage extends Base {
       </div>
     `;
   }
-
 }
