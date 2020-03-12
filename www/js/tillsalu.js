@@ -29,29 +29,6 @@ class Tillsalu extends Base {
       });
   }
 
-<<<<<<< HEAD
-  }
-  async search() {
-    this.searchResult = await sql(/*sql*/`
-  SELECT * 
-  FROM Residence
-  /*JOIN Pics
-  ON Residence.residenceId = Pics.PicId*/
-  WHERE kvm >= $kvmMin
-  AND kvm <= $kvmMax
-  AND price >= $minPrice
-  AND price <= $maxPrice
-  `
-      , {
-        kvmMin: 20,
-        kvmMax: 100,
-        minPrice: 200000,
-        maxPrice: 200000000
-      });
-  }
-
-=======
->>>>>>> 0603dcb9f72c5744701227cd1cafb65d69f35f2f
   fangaUpp() {
 
   }
@@ -65,13 +42,8 @@ class Tillsalu extends Base {
 
          <div class="row">Här ska en form ligga</div> 
 
-<<<<<<< HEAD
-         <div class="row"> 
-         ${this.searchResult.map(bostad => /*html*/`
-=======
          <div class="row">
          ${this.searchResult && this.searchResult.map(bostad => /*html*/`
->>>>>>> 0603dcb9f72c5744701227cd1cafb65d69f35f2f
                     <div class="col-6">
                     Område: ${bostad.area} Pris: ${bostad.price}kr
                     </div>  
