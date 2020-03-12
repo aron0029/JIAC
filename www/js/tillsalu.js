@@ -16,8 +16,6 @@ class Tillsalu extends Base {
 
   render() {
 
-
-
     return /*html*/`
 <div route="/till-salu">
 
@@ -28,9 +26,19 @@ class Tillsalu extends Base {
         <p>  </p>
         <p>${this.zipCode}</p>
       </div>
+
+
       ` }
 
 }
+
+/*       <h2> Denna lägenhet finns på </h2>
+<h1> ${this.streetName}${this.streetNumber} </h1>
+  <h2> </h2>
+  <p>  </p>
+  <p>${this.zipCode}</p>
+      </div >
+
 
       //*  this.searchResult = await sql(/*sql*/`
 
