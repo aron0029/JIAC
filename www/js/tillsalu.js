@@ -64,6 +64,7 @@ class Tillsalu extends Base {
             <div>
             <div class="form-group">
             <input type="range" class="form-control-range" id="formControlRange">
+            <div class="search-input__label push-left">PRIS</div>
             <input type="range" class="form-control-range" id="formControlRange">
             </div>
             </form>
