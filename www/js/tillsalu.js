@@ -5,12 +5,22 @@ class Tillsalu extends Base {
       kvmMin: 20,
       kvmMax: 100,
       minPrice: 200000,
-      maxPrice: 200000000
+      maxPrice: 200000000,
+      chosenDistrict: 'Alla'
     };
+
+    this.districtButtons = [
+      'Alla',
+      'Södermalm',
+      'Östermalm',
+      'Vasastan'
+    ];
+
     this.search();
   }
 
   async search() {
+    console.log("GÖR NÅGOT UTIFRÅN VALET AV DISTRICT OCKSÅ + GE MÖJLIGHET TILL INMATNING KVM MIN MAX OCH PRIS MIN MAX")
     this.searchResult = await sql(/*sql*/`
       SELECT * 
       FROM Residence
@@ -20,13 +30,16 @@ class Tillsalu extends Base {
       AND kvm <= $kvmMax
       AND price >= $minPrice
       AND price <= $maxPrice
+      AND (area = $chosenDistrict OR "Alla" = $chosenDistrict)
     `
-      , {
-        kvmMin: 20,
-        kvmMax: 100,
-        minPrice: 200000,
-        maxPrice: 200000000
-      });
+      , this.anvandarensVal);
+
+    this.render();
+  }
+
+  chooseDistrict(e) {
+    this.anvandarensVal.chosenDistrict = e.target.innerText;
+    this.search();
   }
 
   fangaUpp() {
@@ -34,18 +47,22 @@ class Tillsalu extends Base {
   }
 
   render() {
-    !this.searchResult ? this.search() : '';
     return /*html*/`
-    ${console.log(this.searchResult)}
        <div route="/till-salu">
-         <h1> Här finner du alla våra bostäder som är till salu </h1>
-
-         <div class="row">Här ska en form ligga</div> 
+         <h1 class="mb-3"> Här finner du alla våra bostäder som är till salu </h1>
+         <form>
+           ${this.districtButtons.map(label => /*html*/`
+             <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ? 'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
+           `)}
+          <div class="form-group mt-3">
+             <input type="text" placeholder="Sök" class="form-control">
+           </div>
+         </form>
 
          <div class="row">
          ${this.searchResult && this.searchResult.map(bostad => /*html*/`
                     <div class="col-6">
-                    Område: ${bostad.area} Pris: ${bostad.price}kr
+                     ${bostad.area} Pris: ${bostad.price}kr
                     </div>  
                   `)}
          <!--${JSON.stringify(this.searchResult)}-->
