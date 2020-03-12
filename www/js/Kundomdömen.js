@@ -9,11 +9,16 @@ class Kundomdomen extends Base {
           </div>
  
       <form>         
+      
+      <div class="form-group">
+       <label for="exampleFormControlInput1">Förnamn:</label>
+       <input type="förnamn" class="form-control" id="exampleFormControlInput1">
+      </div>
 
-      Förnamn:<br />
-      <input type="text" name="fnamn" id="fnamn" /> <br /> 
-      Efternamn: <br />
-      <input type="text" name="enamn" id="enamn" /> <br />
+      <div class="form-group">
+       <label for="exampleFormControlInput1">Efternamn:</label>
+       <input type="Efternamn" class="form-control" id="exampleFormControlInput1">
+      </div>
 
         <div class="form-group">
           <label for="exampleFormControlInput1">E-postadress:</label>
