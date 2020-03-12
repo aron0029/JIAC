@@ -7,43 +7,40 @@ class Kundomdomen extends Base {
           <h1>Lämna gärna ditt omdöme på oss!</h1>
             <p></p>
           </div>
+ 
+      <form>         
+      
+      <div class="form-group">
+       <label for="exampleFormControlInput1">Förnamn:</label>
+       <input type="förnamn" class="form-control" id="exampleFormControlInput1">
+      </div>
 
+      <div class="form-group">
+       <label for="exampleFormControlInput1">Efternamn:</label>
+       <input type="Efternamn" class="form-control" id="exampleFormControlInput1">
+      </div>
 
-          
-          
-          <body>
-              <form id="form" name="form" method="post" action=" ">
-          
-                  Förnamn:<br />
-                  <input type="text" name="fnamn" id="fnamn" /> <br /> Efternamn:
-          
-                  <br />
-                  <input type="text" name="enamn" id="enamn" /> <br /> E-postadress:
+        <div class="form-group">
+          <label for="exampleFormControlInput1">E-postadress:</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="namn@example.com">
+        </div>
 
-                  <br />
-                  <input type="text" name="telefon" id="telefon" /> <br /> Telefon:          
-                         
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Telefon:</label>
+          <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="+46073800000">
+        </div>
 
-                  <br />
-                  <input type="text" name="epost" id="meddelande" /> <br /> Meddelande:
-
-                  <br />
-                  <textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> 
-
-
-                  <br /> 
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Meddelande:</label>
+          <textarea class="form-control" id="meddelande" cols="45" rows="5"></textarea> 
           
-                  
-                  <button type="button" class="btn btn-primary">Skicka</button>
-              </form>
-             
-          </body>
-          
-          
-          
-          </html>
+          <br>
+          <button type="button" class="btn btn-primary">Skicka</button>
 
         </div>
+      </form>
+    </div>
+  </div>
       `;
   }
 }
