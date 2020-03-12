@@ -32,8 +32,11 @@ class App extends Base {
       <div class="container">
         <div class="row mt-5">
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 24958e7e8f481c87d9438bb0e4a29898524af4ea
           ${this.formSent ? /*html*/`
             <div class="col-12">
               <h1>Tack för att du berättade!</h1>
@@ -57,16 +60,23 @@ class App extends Base {
                 <label class="w-100">Mina intressen
                   <textarea name="interests" class="form-control" placeholder="Berätta om dina intressen" required></textarea>
                 </label>
+
               </div>
               <input class="btn btn-primary float-right" type="submit" value="Skicka info">
             </form>
+
+
           </div>
           `}
 
 
 
 
+<<<<<<< HEAD
           
+=======
+
+>>>>>>> 24958e7e8f481c87d9438bb0e4a29898524af4ea
         </div>
       </div>
     `;
