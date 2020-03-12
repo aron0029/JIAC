@@ -11,7 +11,7 @@ class Kontaktaoss extends Base {
           </div>
       </div>
 
-<img src="" class="img-fluid" alt="Responsive image">
+
 
       
     `;
