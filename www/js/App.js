@@ -42,6 +42,8 @@ class App extends Base {
     this.tillSalu = await sql(Tillsalu,/*sql*/`
       SELECT * FROM Address 
       `);
+
+
   }
 
   render() {
