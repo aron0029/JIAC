@@ -10,9 +10,8 @@ class Kontaktaoss extends Base {
           eller maila oss på dhyr.rumson@gmail.com</h6>
           </div>
       </div>
-
-
-
+    
+    
       
     `;
   }
