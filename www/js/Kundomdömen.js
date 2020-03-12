@@ -50,18 +50,11 @@ class Kundomdomen extends Base {
               </form>
              
 
-              <p> Observera att själva formuläret inte syns. </p>
-
-              <p> Observera också att standardbredden för ett textinmatningsfält är 30 tecken. </p>
-          
-              <p>Telefon: 0046-12345678910</p>
-              <br> <br/>
-              <p>Adress: Centralplan 15, 111 20 Stockholm, Sverige.</p>
-              
-              <p>DHYR & RUMSON</p>
-              
-              <p>Upphovsrätt 2020</p>
-          
+              <h2> Observera att standardbredden för ett textinmatningsfält är 30 tecken. </h2>
+              <h3> Telefon: 0046-12345678910 </h3>
+              <h4> Adress: Centralplan 15, 111 20 Stockholm, Sverige. </h4>
+              <h5> Upphovsrätt 2020 </h5>  
+              <br> DHYR & RUMSON <br/>
           </body>
           
           
