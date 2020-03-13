@@ -107,20 +107,33 @@ class Tillsalu extends Base {
             </form >
 
 
-      <div class="row">
+      
         ${this.searchResult && this.searchResult.map(bostad => /*html*/`
-                    <div class="card" style="width: 50rem;"> <div class="card" style="height: 15rem;">
-                     <img class="img-fluid" src="${bostad.picUrl}">
-                     ${bostad.area} Pris: ${bostad.price}kr <br> ${bostad.rooms} Rum
-                     med kök lägnehet på ${bostad.Kvm} Kvm  <br>Avgift på ${bostad.rent} kr<br>${bostad.residenceId}
-                     <br>
-                    </div>  
+                    <div class="card mb-3" style="max-width: 540px;">
+                                      <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img class="card-img" src="${bostad.picUrl}">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">${bostad.area}</h5>
+                        <p class="card-text">Pris: ${bostad.price}kr <br> ${bostad.rooms} Rum
+                     med kök lägnehet på ${bostad.Kvm} Kvm  <br>Avgift på ${bostad.rent} kr</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                   `)}
-        <!{JSON.stringify(this.searchResult)}-->
+
+
+
+
+        <!--{JSON.stringify(this.searchResult)}-->
           <!-- <h2>${this.area} +  ${this.streetName}</h2>
         <p> detta bostad finns på: ${this.streetNumber} </p>
         <p>${this.zipCode}</p>-->
-          </div>
+          
         </div >
       ` }
 
