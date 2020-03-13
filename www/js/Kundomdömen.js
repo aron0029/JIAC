@@ -79,13 +79,11 @@ class Kundomdomen extends Base {
                   </label>
                   </div>
 
-          
             <div class="form-group">
                 <label class="w-100">Meddelande
                   <textarea name="message" class="form-control" placeholder="Lämna dina synpunkter" required></textarea>
                 </label>
               </div>
-             
 
               <input class="btn btn-secondary float-left" type="submit" value="Skicka">
             </form>
