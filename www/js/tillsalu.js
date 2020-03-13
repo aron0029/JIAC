@@ -25,7 +25,7 @@ class Tillsalu extends Base {
     console.log("GÖR NÅGOT UTIFRÅN VALET AV DISTRICT OCKSÅ + GE MÖJLIGHET TILL INMATNING KVM MIN MAX OCH PRIS MIN MAX")
     this.searchResult = await sql(/*sql*/`
      SELECT Residence.*, Pics.url AS picUrl
-      FROM Residence, Pics
+      FROM Residence, Pics 
       WHERE Residence.residenceId = Pics.residenceId
       /*JOIN Pics
       ON Residence.residenceId = Pics.PicId*/
@@ -138,16 +138,16 @@ class Tillsalu extends Base {
 
   
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
-      <div class="card mb-3" style="max-width: 640px;">
+      <div class="card mb-8" style="max-width: 700px;">
                                       <div class="row no-gutters">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                       <img class="card-img" src="${bostad.picUrl}">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
                         <h5 class="card-title">${bostad.area}</h5>
-                        <p class="card-text">Pris: ${bostad.price}kr <br> ${bostad.rooms} Rum
-                     med kök lägnehet på ${bostad.Kvm} Kvm  <br>Avgift på ${bostad.rent} kr</p>
+                        <p class="card-text">Pris: ${bostad.price}kr <br> <strong> ${bostad.rooms}</strong> Rum
+                     med kök lägnehet på <strong>${bostad.Kvm}</strong> Kvm  <br>Avgift på ${bostad.rent} kr</p>
                       </div>
                     </div>
                   </div>
