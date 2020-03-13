@@ -75,26 +75,26 @@ class Kundomdomen extends Base {
                 <div class="form-group">
                 <label class="w-100">E-postadress
                   <input name="email" type="email" class="form-control" placeholder="name@example.com" required>
-
+                
                   </label>
                   </div>
 
-
+          
             <div class="form-group">
                 <label class="w-100">Meddelande
                   <textarea name="message" class="form-control" placeholder="Lämna dina synpunkter" required></textarea>
                 </label>
               </div>
-
+             
 
               <input class="btn btn-secondary float-left" type="submit" value="Skicka">
             </form>
           </div>
            </div>
-
+          
 `}
 
 
-  `;
+      `;
   }
 }
