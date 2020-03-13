@@ -22,7 +22,6 @@ class Tillsalu extends Base {
   }
 
   async search() {
-    console.log("GÖR NÅGOT UTIFRÅN VALET AV DISTRICT OCKSÅ + GE MÖJLIGHET TILL INMATNING KVM MIN MAX OCH PRIS MIN MAX")
     this.searchResult = await sql(/*sql*/`
       SELECT * 
       FROM Residence
@@ -51,38 +50,39 @@ class Tillsalu extends Base {
 
   changeMinPrice(e) {
     let av = this.anvandarensVal;
-    av.minPrice = e.target.value;
+    av.minPrice = +e.target.value;
     if (av.minPrice > av.maxPrice) {
       av.maxPrice = av.minPrice;
     }
-    this.render();
-  }
-
-  changeMinKvm(e) {
-    let av = this.anvandarensVal;
-    av.minKvm = e.target.value;
-    if (av.minKvm > av.maxKvm) {
-      av.maxKvm = av.minKvm;
-    }
-    this.render();
+    this.search();
   }
 
   changeMaxPrice(e) {
     let av = this.anvandarensVal;
-    av.maxPrice = e.target.value;
+    av.maxPrice = +e.target.value;
     if (av.maxPrice < av.minPrice) {
       av.minPrice = av.maxPrice;
     }
-    this.render();
+    this.search();
+  }
+
+  changeMinKvm(e) {
+    let av = this.anvandarensVal;
+    av.minKvm = +e.target.value;
+    if (av.minKvm > av.maxKvm) {
+      av.maxKvm = av.minKvm;
+
+    }
+    this.search();
   }
 
   changeMaxKvm(e) {
     let av = this.anvandarensVal;
-    av.maxKvm = e.target.value;
+    av.maxKvm = +e.target.value;
     if (av.maxKvm < av.minKvm) {
       av.minKvm = av.maxKvm;
     }
-    this.render();
+    this.search();
 
   }
 
@@ -122,12 +122,12 @@ class Tillsalu extends Base {
 
       <div class="row my-3">
         <div class="col-6">
-          LÄGSTA KVM ${this.currencyFormatter.format(this.anvandarensVal.minKvm)}
+          LÄGSTA BOYTA (kvm) ${this.anvandarensVal.minKvm}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMinKvm"
             value="${this.anvandarensVal.minKvm}" min="10" max="300" step="10">
         </div>
         <div class="col-6">
-          HÖGSTA KVM ${this.currencyFormatter.format(this.anvandarensVal.maxKvm)}
+          STÖRSTA BOYTA (kvm) ${this.anvandarensVal.maxKvm}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMaxKvm"
             value="${this.anvandarensVal.maxKvm}" min="10" max="300" step="10">
         </div>

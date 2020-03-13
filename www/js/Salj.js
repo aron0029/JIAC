@@ -4,8 +4,15 @@ class Salj extends Base {
     return /*html*/`
       <div class="row" route="/salj" page-title="Sälj">
         <div class="col-12">
-          <h1>Sälj din bostad</h1>
-          <p>Är du intresserad av att sälja din bostad? 
+          <h1>
+          <span>Sälj din bostad med Dhyr och Rumson</span>
+          </h1>
+          <p>På Dhyr och Rumson vet vi vad som krävs för att göra en riktigt bra bostadsaffär. Förutom att vi har skickliga mäklare, mycket god lokalkännedom och vårt köparregister Boagenten, så prioriterar vi alltid kundens önskemål. Oavsett om du är redo att sälja nu eller i framtiden så kommer vi gärna hem till dig för att göra en värdering av din nuvarande bostad. Det är helt kostnadsfritt och du förbinder dig inte till något.
+            <div class="myline"></div>
+            <h2 class="headline">Jag önskar boka en värdering!</h2>
+
+            <p>Vill du veta mer om hur vi kan hjälpa dig med din bostadsaffär? Fyll i formuläret, så kontaktar vi dig.</p>
+
           <br>
             Boka en värdering!</p>
           <form>
