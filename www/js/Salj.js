@@ -1,13 +1,40 @@
+
 class Salj extends Base {
+
+  async collectFormData(e) {
+    e.preventDeFault();
+    let form = e.target;
+    let formData = {};
+    for (let element of form.element) {
+      if (!element.name) { continue; }
+      formData[element.name] = element.value;
+    }
+    console.log(formData);
+    await sql(/*sql*/`
+      INSERT INTO saljFormular (adressemail, phoneNr, livingWhere, whatSell, explaint ) VALUES($adressemail,$phoneNr,$livingWhere,
+      $whatSell, $explaint) `, formData);
+    this.formSent = true;
+    this.render();
+  }
 
   render() {
     return /*html*/`
-      <div class="row" route="/salj" page-title="Sälj">
+       <div class="row" route="/salj" page-title="Sälj">
         <div class="col-12">
           <h1>Sälj din bostad</h1>
           <p>Är du intresserad av att sälja din bostad? 
           <br>
             Boka en värdering!</p>
+  
+
+        ${this.formSent ? /*html*/`
+            <div class="col-12">
+              <h1 class="display-3">Tack för din återkoppling</h1>
+            </div>
+           `
+        :
+       /*html*/`
+     
           <form>
             <div class="form-group">
               <label for="exampleFormControlInput1">Email address</label>
@@ -37,14 +64,14 @@ class Salj extends Base {
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               <br>
               <button>Skicka</button>
-          
-            </div>
-          </form>
-        </div>
-      </div>
+            </div >
+          </form >
+        </div >
+      </div >
+        
+        `}
+
+
       `;
   }
-
 }
-
-
