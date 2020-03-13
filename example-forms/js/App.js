@@ -32,6 +32,14 @@ class App extends Base {
       <div class="container">
         <div class="row mt-5">
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 24958e7e8f481c87d9438bb0e4a29898524af4ea
+=======
+>>>>>>> a07e44726c45bfd4c4f8ebf61a66e998f81dc6b8
           ${this.formSent ? /*html*/`
             <div class="col-12">
               <h1>Tack för att du berättade!</h1>
@@ -67,7 +75,15 @@ class App extends Base {
 
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+          
+=======
 
+>>>>>>> 24958e7e8f481c87d9438bb0e4a29898524af4ea
+=======
+
+>>>>>>> a07e44726c45bfd4c4f8ebf61a66e998f81dc6b8
         </div>
       </div>
     `;
