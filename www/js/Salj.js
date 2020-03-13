@@ -11,8 +11,8 @@ class Salj extends Base {
     }
     console.log(formData);
     await sql(/*sql*/`
-      INSERT INTO saljFormular (adressemail, phoneNr, livingWhere, whatSell, explaint ) VALUES($adressemail,$phoneNr,$livingWhere,
-      $whatSell, $explaint) `, formData);
+      INSERT INTO saljFormular (email,phone, message) VALUES($email,$phone,
+      $message) `, formData);
     this.formSent = true;
     this.render();
   }
@@ -38,11 +38,11 @@ class Salj extends Base {
           <form>
             <div class="form-group">
               <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <input name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="form-group">
               <label for="exampleFormControlInput1">Telefonnummer</label>
-              <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="+46073000000">
+              <input name="phone" class="form-control" id="exampleFormControlInput1" placeholder="+46073000000">
               </div>
             <div class="form-group">
               <label for="exampleFormControlSelect1">Vart bor du?</label>
@@ -61,7 +61,7 @@ class Salj extends Base {
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Skriv en förklaring av din bostad.</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               <br>
               <button>Skicka</button>
             </div >
