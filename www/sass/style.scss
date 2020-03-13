@@ -12,3 +12,9 @@
 // My own CSS (as little as possible)
 @import 'sticky-footer';
 @import 'miscellaneous';
+
+.myline {
+  width: 700px;
+  height: 20px;
+  border-top: 3px solid black;
+}
