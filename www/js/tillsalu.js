@@ -6,7 +6,7 @@ class Tillsalu extends Base {
       minKvm: 10,
       maxKvm: 300,
       minPrice: 100000,
-      maxPrice: 100000000,
+      maxPrice: 300000000,
       chosenDistrict: 'Alla'
     };
 
