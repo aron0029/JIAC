@@ -24,18 +24,20 @@ class Tillsalu extends Base {
   async search() {
     console.log("GÖR NÅGOT UTIFRÅN VALET AV DISTRICT OCKSÅ + GE MÖJLIGHET TILL INMATNING KVM MIN MAX OCH PRIS MIN MAX")
     this.searchResult = await sql(/*sql*/`
-      SELECT * 
-      FROM Residence
+     SELECT Residence.*, Pics.url AS picUrl
+      FROM Residence, Pics
+      WHERE Residence.residenceId = Pics.residenceId
       /*JOIN Pics
       ON Residence.residenceId = Pics.PicId*/
-      WHERE Kvm >= $minKvm 
+      AND Kvm >= $minKvm 
       AND Kvm <= $maxKvm
       AND price >= $minPrice
       AND price <= $maxPrice
-      AND (area = $chosenDistrict OR "Alla" = $chosenDistrict)
-    `
-      , this.anvandarensVal);
-
+       AND (area = $chosenDistrict OR "Alla" = $chosenDistrict)
+      GROUP BY Residence.residenceId
+    `, this.anvandarensVal);
+    console.log("this.anvandarensVal", this.anvandarensVal)
+    console.log("this.searchResult", this.searchResult)
     this.render();
     this.fixInitialRenderBug();
   }
@@ -134,15 +136,22 @@ class Tillsalu extends Base {
       </div>
     </form>
 
-    <div class="row">
-
+  
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
-      <div class="col-6 p-1">
-        <div class="card">
-          ${bostad.area} Pris: ${bostad.price}kr <br> ${bostad.rooms} Rum
-          men kök lägnehet på ${bostad.Kvm} Kvm <br>Avgift på ${bostad.rent} kr<br>${bostad.residenceId}
-        </div>
-      </div>
+      <div class="card mb-3" style="max-width: 640px;">
+                                      <div class="row no-gutters">
+                    <div class="col-md-6">
+                      <img class="card-img" src="${bostad.picUrl}">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">${bostad.area}</h5>
+                        <p class="card-text">Pris: ${bostad.price}kr <br> ${bostad.rooms} Rum
+                     med kök lägnehet på ${bostad.Kvm} Kvm  <br>Avgift på ${bostad.rent} kr</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
       `)}
 
       </div>
