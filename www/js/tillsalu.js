@@ -3,10 +3,10 @@ class Tillsalu extends Base {
   async mount() {
     this.currencyFormatter = new Intl.NumberFormat('sv-SV', { style: 'currency', currency: 'SEK' });
     this.anvandarensVal = {
-      minKvm: 20,
-      maxKvm: 200,
-      minPrice: 500000,
-      maxPrice: 30000000,
+      minKvm: 10,
+      maxKvm: 300,
+      minPrice: 100000,
+      maxPrice: 300000000,
       chosenDistrict: 'Alla'
     };
 
@@ -33,7 +33,7 @@ class Tillsalu extends Base {
       AND price >= $minPrice
       AND price <= $maxPrice
        AND (area = $chosenDistrict OR "Alla" = $chosenDistrict)
-      GROUP BY Residence.residenceId 
+      GROUP BY Residence.residenceId
     `, this.anvandarensVal);
     console.log("this.anvandarensVal", this.anvandarensVal)
     console.log("this.searchResult", this.searchResult)
@@ -85,7 +85,7 @@ class Tillsalu extends Base {
       av.minKvm = av.maxKvm;
     }
     this.search();
-    // en del av filtering från databas
+
   }
 
   fixInitialRenderBug() {
@@ -106,33 +106,33 @@ class Tillsalu extends Base {
       ${this.districtButtons.map(label => /*html*/`
       <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ?
         'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
-      `)} <!--knappar som filtrerar specifik område-->
+      `)}
 
       <div class="row my-3">
         <div class="col-6">
           LÄGSTA PRIS ${this.currencyFormatter.format(this.anvandarensVal.minPrice)}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMinPrice"
-            value="${this.anvandarensVal.minPrice}" min="500000" max="30000000" step="100000">
-        </div> <!--filtrering för priset på bostäder-->
+            value="${this.anvandarensVal.minPrice}" min="100000" max="100000000" step="50000">
+        </div>
 
         <div class="col-6">
           HÖGSTA PRIS ${this.currencyFormatter.format(this.anvandarensVal.maxPrice)}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMaxPrice"
-            value="${this.anvandarensVal.maxPrice}" min="500000" max="30000000" step="100000">
-        </div> <!--filtrering för pris på bostäder-->
+            value="${this.anvandarensVal.maxPrice}" min="100000" max="100000000" step="50000">
+        </div>
       </div>
 
       <div class="row my-3">
         <div class="col-6">
           LÄGSTA BOYTA (kvm) ${this.anvandarensVal.minKvm}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMinKvm"
-            value="${this.anvandarensVal.minKvm}" min="20" max="200" step="10">
-        </div> <!--filtrering för boyta på bostäder-->
+            value="${this.anvandarensVal.minKvm}" min="10" max="300" step="10">
+        </div>
         <div class="col-6">
           STÖRSTA BOYTA (kvm) ${this.anvandarensVal.maxKvm}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMaxKvm"
-            value="${this.anvandarensVal.maxKvm}" min="20" max="200" step="10">
-        </div> <!--filtrering för boyta på bostäder-->
+            value="${this.anvandarensVal.maxKvm}" min="10" max="300" step="10">
+        </div>
       </div>
     </form>
 
