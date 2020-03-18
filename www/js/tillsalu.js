@@ -136,7 +136,6 @@ class Tillsalu extends Base {
       </div>
     </form>
 
-<<<<<<< HEAD
 <form>
   <fieldset>
     <legend></legend>
@@ -154,9 +153,6 @@ class Tillsalu extends Base {
 
 
   
-=======
-   
->>>>>>> 624530a9678e8e9ba2ebe911e2ef6a5a6bbee958
 
 <div class="row">
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
