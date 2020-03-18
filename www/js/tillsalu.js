@@ -162,7 +162,7 @@ class Tillsalu extends Base {
 </form>
 
 
-  
+
 
 <div class="row">
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
@@ -177,7 +177,7 @@ class Tillsalu extends Base {
                       <div class="card-body">
                         <h5 class="card-title">${bostad.area}</h5>
                         <p class="card-text">Pris: ${bostad.price}kr <br> <strong> ${bostad.rooms}</strong> Rum
-                     med kök lägnehet på <strong>${bostad.Kvm}</strong> Kvm  <br>Avgift på ${bostad.rent} kr</p>
+                     med kök lägenhet på <strong>${bostad.Kvm}</strong> Kvm  <br>Avgift på ${bostad.rent} kr</p>
                       </div>
                     </div>
                   </div>
