@@ -5,6 +5,12 @@ class Tillsalu extends Base {
   }
 
   async mount() {
+    window.addEventListener("click", () => {
+      app.objekt.mount();
+      //detta får att params att funka 
+
+    });
+
     this.currencyFormatter = new Intl.NumberFormat('sv-SV', { style: 'currency', currency: 'SEK' });
     this.anvandarensVal = {
       minKvm: 10,
