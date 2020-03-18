@@ -27,9 +27,8 @@ ${this.realtors.map(realtor => /*html*/`
     		<a href="#" class="card-link">${realtor.phoneNr}</a>
 
 
- 
+
       </div>
-     
 	</div>
 `)}
  <center>
