@@ -23,7 +23,7 @@ class App extends Base {
     this.salj = new Salj();
     this.kundomdomen = new Kundomdomen();
     this.realtors = new Realtors();
-    this.objekt = new Object();
+    this.objekt = new Objekt();
 
 
 
