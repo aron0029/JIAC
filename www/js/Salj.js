@@ -26,7 +26,7 @@ class Salj extends Base {
           </h1>
           <p>På Dhyr och Rumson vet vi vad som krävs för att göra en riktigt bra bostadsaffär. Förutom att vi har skickliga mäklare, mycket god lokalkännedom och vårt köparregister Boagenten, så prioriterar vi alltid kundens önskemål. Oavsett om du är redo att sälja nu eller i framtiden så kommer vi gärna hem till dig för att göra en värdering av din nuvarande bostad. Det är helt kostnadsfritt och du förbinder dig inte till något.
             <div class="myline"></div>
-            <h2 class="headline">Jag önskar boka en värdering!</h2>
+            <h2 class="headline">Jag önskar att boka en värdering!</h2>
 
             <p>Vill du veta mer om hur vi kan hjälpa dig med din bostadsaffär? Fyll i formuläret, så kontaktar vi dig.</p>
 
