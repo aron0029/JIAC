@@ -10,6 +10,8 @@ class App extends Base {
       { label: 'Sälj', route: '/salj' },
       { label: 'Kundomdömen', route: '/kundomdomen' },
       { label: 'Våra mäklare', route: '/varamaklare' },
+      { label: 'Objekt', route: '/objekt' }
+
     ];
 
     this.navBar = new NavBar({ links: this.navBarLinks });
@@ -21,6 +23,7 @@ class App extends Base {
     this.salj = new Salj();
     this.kundomdomen = new Kundomdomen();
     this.realtors = new Realtors();
+    this.objekt = new Object();
 
 
 
@@ -57,7 +60,8 @@ class App extends Base {
           ${this.salj}
           ${this.kundomdomen}
           ${this.realtors}
-          
+          ${this.valavbostad}
+          ${this.objekt}
         </main>
         ${this.footer}
         ${this.shoppingCart}
