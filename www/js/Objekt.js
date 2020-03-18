@@ -38,6 +38,8 @@ class Objekt extends Base {
               </div>
             <div class="col-lg-3 mb-3 mb-lg-0">
               <span class="">Hus info: ${this.price}</span>
+              <div class="col-lg-3 mb-3 mb-lg-0">
+              <span class="">rum:${this.rooms}</span>
             </div>
             <div class="col-lg-3 mb-3 mb-lg-0">
               <span class="b">området: ${this.area}</span>
