@@ -1,9 +1,2 @@
-class BookPage extends Base {
+class Objekt extends Base {
 
-
-
-
-
-
-
-}
