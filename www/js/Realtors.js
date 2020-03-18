@@ -24,8 +24,9 @@ ${this.realtors.map(realtor => /*html*/`
     		<p class="card-text">Kontakta mig nedan.</p>
         <a href="#" class="card-link">${realtor.email}</a>
         <br>
-    		<a href="#" class="card-link">${realtor.phoneNr}</a>
-
+        <a href="#" class="card-link">${realtor.phoneNr}</a>
+        
+      
 
 
       </div>
