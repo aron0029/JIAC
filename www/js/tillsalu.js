@@ -138,9 +138,9 @@ class Tillsalu extends Base {
 
 <form>
   <fieldset>
-    <legend>Sortera</legend>
+    <legend></legend>
     <p>
-      <label>Sortera på</label>
+      <label><font size="5">Sortera på:</font></label>
       <select id="myList">
         <option value="1">Populärt</option>
         <option value="2">Nyast</option>
