@@ -136,6 +136,22 @@ class Tillsalu extends Base {
       </div>
     </form>
 
+<form>
+  <fieldset>
+    <legend>Sortera</legend>
+    <p>
+      <label>Sortera på</label>
+      <select id="myList">
+        <option value="1">Populärt</option>
+        <option value="2">Nyast</option>
+        <option value="3">Äldst</option>
+        <option value="4">Nyproduktion</option>
+      </select>
+    </p>
+  </fieldset>
+</form>
+
+
   
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
       <div class="card mb-8" style="max-width: 700px;">

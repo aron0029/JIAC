@@ -10,7 +10,6 @@ class App extends Base {
       { label: 'Sälj', route: '/salj' },
       { label: 'Kundomdömen', route: '/kundomdomen' },
       { label: 'Våra mäklare', route: '/varamaklare' },
-      { label: 'Val av bostad', route: '/valavbostad' },
     ];
 
     this.navBar = new NavBar({ links: this.navBarLinks });
@@ -22,7 +21,7 @@ class App extends Base {
     this.salj = new Salj();
     this.kundomdomen = new Kundomdomen();
     this.realtors = new Realtors();
-    this.valavbostad = new Valavbostad();
+
 
 
 
@@ -31,9 +30,7 @@ class App extends Base {
           USE databas
         `);
 
-    this.valavbostad = await sql(Valavbostad,/*sql*/`
-      SELECT * FROM Area 
-      `);
+
 
 
     //  await sql(/*sql*/`
@@ -60,7 +57,7 @@ class App extends Base {
           ${this.salj}
           ${this.kundomdomen}
           ${this.realtors}
-          ${this.valavbostad}
+          
         </main>
         ${this.footer}
         ${this.shoppingCart}
