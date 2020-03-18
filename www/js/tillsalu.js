@@ -1,4 +1,8 @@
 class Tillsalu extends Base {
+  async mount() {
+
+
+  }
 
   async mount() {
     window.addEventListener("click", () => {
@@ -104,6 +108,7 @@ class Tillsalu extends Base {
     }
   }
 
+
   render() {
     return /*html*/`
     <div route="/till-salu">
@@ -148,10 +153,9 @@ class Tillsalu extends Base {
     <p>
       <label><font size="5">Sortera på:</font></label>
       <select id="myList">
-        <option value="1">Populärt</option>
-        <option value="2">Nyast</option>
-        <option value="3">Äldst</option>
-        <option value="4">Nyproduktion</option>
+        <option value="1">Nyast</option>
+        <option value="2">Äldst</option>
+        <option value="3">Nyproduktion</option>
       </select>
     </p>
   </fieldset>
