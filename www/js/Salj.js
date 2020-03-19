@@ -11,7 +11,7 @@ class Salj extends Base {
     }
     console.log(formData);
     await sql(/*sql*/`
-      INSERT INTO saljFormular (email,phone, message) VALUES($email,$phone,
+      INSERT INTO saljFormular (email, phoneNr, livingArea, message) VALUES($email,$phone, $livingArea,
       $message) `, formData);
     this.formSent = true;
     this.render();
@@ -53,7 +53,7 @@ class Salj extends Base {
               </div>
             <div class="form-group">
               <label for="exampleFormControlSelect1">Vart bor du?</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <select name="livingArea" class="form-control" id="exampleFormControlSelect1">
                 <option>Östermalm</option>
                 <option>Södermalm</option>
                 <option>Vasastan</option>
