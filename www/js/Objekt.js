@@ -26,7 +26,7 @@ class Objekt extends Base {
       <div class="row">
         <div class="col">
           <h5>
-            tillsalu: <a href="/databas/Address/${this.Residence}">${this.Area}</a>
+            Till salu: <a href="/databas/Address/${this.Residence}">${this.Area}</a>
             </h5>
         <h1>${this.title}</h1>
         <h4 class="mb-3">${this.Address}</h4>
