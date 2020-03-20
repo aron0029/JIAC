@@ -4,7 +4,7 @@ class Objekt extends Base {
 
     //hör ska info från databasen hämtas
     let info = await sql(/*sql*/`
-     SELECT * FROM Residence  WHERE residenceId = $id
+     SELECT * FROM Residence   WHERE residenceId = $id
       `, {
       id: params.id
 
