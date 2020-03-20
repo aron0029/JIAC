@@ -30,6 +30,7 @@ class Kundomdomen extends Base {
   render() {
     return /*html*/`
         <div class="row" route="/kundomdomen" page-title="Kundomdömen">
+        <div class="box">
           <div class="col-12">
           <h1 class="display-5"> Dina åsikter är viktiga för oss</h1>
             <p>Lämna synpunkter på hur vi kan bli bättre</p>
@@ -88,6 +89,7 @@ class Kundomdomen extends Base {
               <input class="btn btn-secondary float-left" type="submit" value="Skicka">
             </form>
           </div>
+           </div>
            </div>
           
 `}

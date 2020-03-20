@@ -49,9 +49,9 @@ class StartPage extends Base {
       </div>
     </div>
   </div>
-</div>
 
   
+      </div>
       </div>
 
           
