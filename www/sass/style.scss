@@ -18,3 +18,16 @@
   height: 20px;
   border-top: 3px solid black;
 }
+
+body { 
+  background-image: url(/images/img/bricks.jpg);
+  min-height: 100%;
+  min-width: 1024px;
+
+  width: 100%;
+  height: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
