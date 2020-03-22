@@ -52,6 +52,7 @@ class Objekt extends Base {
           </div>
           <div class="row mt-n4 mt-lg-0">
             <div class="col-md-12">
+            </div>
 `
 
   }
