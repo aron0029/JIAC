@@ -33,9 +33,10 @@ class Tillsalu extends Base {
 
   async search() {
     this.searchResult = await sql(/*sql*/`
-     SELECT Residence.*, Pics.url AS picUrl
-      FROM Residence, Pics 
+     SELECT Area.community, Residence.*, Pics.url AS picUrl
+      FROM Residence, Pics, Area
       WHERE Residence.residenceId = Pics.residenceId
+      AND Area.district = Residence.area
       /*JOIN Pics
       ON Residence.residenceId = Pics.PicId*/
       AND Kvm >= $minKvm 
@@ -174,11 +175,11 @@ class Tillsalu extends Base {
 
   <a href="/objekt/${bostad.residenceId}" style="color:black">
    <button class="btn btn-default stretched-link">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">${bostad.area}</h5>
+    
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><strong> ${bostad.area} </strong></li>
+  <li class="list-group-item"><strong>${bostad.community} </strong></li>
     <li class="list-group-item"><strong>${bostad.price} </strong> kr</li>
     <li class="list-group-item"><strong>${bostad.rooms}</strong> rum</li>
   </ul>
