@@ -163,24 +163,22 @@ class Tillsalu extends Base {
 
 <div class="row">
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
-      <div class="card mb-8" style="max-width: 400px;">
-                                      <div class="row no-gutters">
-                    <div class="col-md-4">
-                      <img class="card-img" src="${bostad.picUrl}">
-                    </div>
-                    
-                    <div class="col-md-5">
-                     <a href="/objekt/${bostad.residenceId}">
-                      <div class="card-body">
-                        <h5 class="card-title">${bostad.area}</h5>
-                        <p class="card-text">Pris: ${bostad.price}kr <br> <strong> ${bostad.rooms}</strong> Rum
-                     med kök lägenhet på <strong>${bostad.Kvm}</strong> Kvm  <br>Avgift på ${bostad.rent} kr</p>
-                      </div>
-                    </div>
-                  </div>
-                   </a>
-                  
-                </div>
+    <div class="card"  style="width: 18rem;">
+  <img src="${bostad.picUrl}" class="card-img-top; h-50" style="height:600px" >
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><strong> ${bostad.area} </strong></li>
+    <li class="list-group-item"><strong>${bostad.price} </strong> kr</li>
+    <li class="list-group-item"><strong>${bostad.rooms}</strong> rum</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
       `)}
 
       </div>
