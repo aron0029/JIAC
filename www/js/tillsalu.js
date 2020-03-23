@@ -147,8 +147,8 @@ class Tillsalu extends Base {
       </div>
     </form>
 
+    
 <form>
-  <fieldset>
     <legend></legend>
     <p>
       <label><font size="5">Sortera på:</font></label>
@@ -158,15 +158,12 @@ class Tillsalu extends Base {
         <option value="3">Nyproduktion</option>
       </select>
     </p>
-  </fieldset>
 </form>
 
-   
 
 
 
-
- <div class= "row">
+<div class="row">
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
    
     
