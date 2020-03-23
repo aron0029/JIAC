@@ -40,18 +40,18 @@ class Objekt extends Base {
               </div>
                <div class="col-lg-3 mb-3 mb-lg-0">
               <span class=""> ${this.price} Kr</span> </div>
-              <div class="col-lg-3 mb-3 mb-lg-0">
-              <span class="">Rum:${this.rooms}</span> </div>
+              
+
+              
+              <span class="">Rum:${this.rooms}</span>
                 <div class="col-lg-3 mb-3 mb-lg-0">
               <span class="">kvadratmeter:${this.Kvm}</span>
-              
-              <span class="">Avgift:${this.rent}</span>
+             <span class="">Avgift:${this.rent}</span>
             </div>
             <div class="col-lg-3 mb-3 mb-lg-0">
               <span class="b">området: ${this.area}</span>
               <br> förening: <span class="c">${this.community}</span> 
-              <br>
-              <br>
+             
               <span class="c"> Mäklare <Strong>${this.firstName} ${this.lastName} </strong>
               <p class="card-text">Kontakta mig nedan.</p>
                 <a href="mailto:${this.email}" class="card-link">${this.email}</a>
