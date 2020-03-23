@@ -170,7 +170,7 @@ class Tillsalu extends Base {
    
     
     <div class="card m-4" style="width: 18rem;">
-  <img src="${bostad.picUrl}" class="card-img-top; h-30" style="height:200px" >
+  <img src="${bostad.picUrl}" class="card-img-top; h-30; img-thumbnail" style="height:200px" >
   <div class="card-body">
 
   <a href="/objekt/${bostad.residenceId}" style="color:black">

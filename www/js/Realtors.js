@@ -17,7 +17,7 @@ class Realtors extends Base {
 <div class="row"> 
 ${this.realtors.map(realtor => /*html*/`
     <div class="card m-4" style="width: 18rem;">
-    <img src ="${realtor.pic}" style="width: 18rem;">
+    <img src ="${realtor.pic}" style="width: 18rem;" class="img-thumbnail">
   		<div class="card-body">
     		<h5 class="card-title">${realtor.firstName} ${realtor.lastName}</h5>
     		<h6 class="card-subtitle mb-2 text-muted">Mäklare</h6>
