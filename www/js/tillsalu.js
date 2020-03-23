@@ -147,8 +147,8 @@ class Tillsalu extends Base {
       </div>
     </form>
 
+    
 <form>
-  <fieldset>
     <legend></legend>
     <p>
       <label><font size="5">Sortera på:</font></label>
@@ -158,32 +158,40 @@ class Tillsalu extends Base {
         <option value="3">Nyproduktion</option>
       </select>
     </p>
-  </fieldset>
 </form>
 
-<div class="row">
+
+
+<div class="col-12"><center>
+<div class="row"> 
+
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
-      <div class="card mb-8" style="max-width: 400px;">
-                                      <div class="row no-gutters">
-                    <div class="col-md-4">
-                      <img class="card-img" src="${bostad.picUrl}">
-                    </div>
-                    
-                    <div class="col-md-5">
-                     <a href="/objekt/${bostad.residenceId}">
-                      <div class="card-body">
-                        <h5 class="card-title">${bostad.area}</h5>
-                        <p class="card-text">Pris: ${bostad.price}kr <br> <strong> ${bostad.rooms}</strong> Rum
-                     med kök lägenhet på <strong>${bostad.Kvm}</strong> Kvm  <br>Avgift på ${bostad.rent} kr</p>
-                      </div>
-                    </div>
-                  </div>
-                   </a>
-                  
-                </div>
+   
+    
+    <div class="card m-4" style="width: 18rem;">
+  <img src="${bostad.picUrl}" class="card-img-top; h-30" style="height:200px" >
+  <div class="card-body">
+
+  <a href="/objekt/${bostad.residenceId}" style="color:black">
+   <button class="btn btn-default stretched-link">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><strong> ${bostad.area} </strong></li>
+    <li class="list-group-item"><strong>${bostad.price} </strong> kr</li>
+    <li class="list-group-item"><strong>${bostad.rooms}</strong> rum</li>
+  </ul>
+ </a>
+  </button>
+</div>
+
+      
       `)}
+
 
       </div>
        </div>
+       
       ` }
 }
