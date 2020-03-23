@@ -161,10 +161,17 @@ class Tillsalu extends Base {
   </fieldset>
 </form>
 
-<div class="row">
+   
+
+
+
+
+ <div class= "row">
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
-    <div class="card"  style="width: 18rem;">
-  <img src="${bostad.picUrl}" class="card-img-top; h-50" style="height:600px" >
+   
+    
+    <div class="card m-4" style="width: 18rem;">
+  <img src="${bostad.picUrl}" class="card-img-top; h-30" style="height:200px" >
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -179,9 +186,13 @@ class Tillsalu extends Base {
     <a href="#" class="card-link">Another link</a>
   </div>
 </div>
+
+      
       `)}
+
 
       </div>
        </div>
+       
       ` }
 }
