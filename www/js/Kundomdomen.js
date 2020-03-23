@@ -31,7 +31,7 @@ class Kundomdomen extends Base {
     return /*html*/`
         <div class="row" route="/kundomdomen" page-title="Kundomdömen">
         <div class="box">
-          <div class="col-12">
+          <div class="col-12"><center>
           <h1 class="display-5"> Dina åsikter är viktiga för oss</h1>
             <p>Lämna synpunkter på hur vi kan bli bättre</p>
           </div>

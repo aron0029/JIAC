@@ -162,8 +162,9 @@ class Tillsalu extends Base {
 
 
 
+<div class="col-12"><center>
+<div class="row"> 
 
-<div class="row">
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
    
     
@@ -178,10 +179,7 @@ class Tillsalu extends Base {
     <li class="list-group-item"><strong>${bostad.price} </strong> kr</li>
     <li class="list-group-item"><strong>${bostad.rooms}</strong> rum</li>
   </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
+
 </div>
 
       
