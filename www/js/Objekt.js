@@ -4,7 +4,7 @@ class Objekt extends Base {
 
     //hör ska info från databasen hämtas
     let info = await sql(/*sql*/`
-     SELECT * FROM Residence, Pics 
+     SELECT * FROM Residence, Pics, Realtor, Area
       WHERE Residence.residenceId AND Pics.residenceId = $id 
       
      `, {
@@ -32,17 +32,16 @@ class Objekt extends Base {
             </h5>
         <h1>${this.title}</h1>
         <h4 class="mb-3">${this.Address}</h4>
-        <div class="row mb-3">
-          <div class="col-lg-3 mb-3 mb-lg-0 order-lg-last">
-          </div>
-          <div class="col-12 d-md-none pl-4 mb-3">
+           <div class="row mb-3">
+            <div class="col-lg-3 mb-3 mb-lg-0">
+           </div>
+            <div class="col-lg-3 mb-3 mb-lg-0">
              <img class="card-img" src="${this.url}">
               </div>
-            <div class="col-lg-3 mb-3 mb-lg-0">
-              <span class="">Hus info: ${this.price}</span>
-              <div class="col-lg-3 mb-3 mb-lg-0">
-              <span class="">rum:${this.rooms}</span>
                <div class="col-lg-3 mb-3 mb-lg-0">
+              <span class=""> ${this.price} Kr</span> </div>
+              <div class="col-lg-3 mb-3 mb-lg-0">
+              <span class="">Rum:${this.rooms}</span> </div>
                 <div class="col-lg-3 mb-3 mb-lg-0">
               <span class="">kvadratmeter:${this.Kvm}</span>
               
@@ -50,7 +49,15 @@ class Objekt extends Base {
             </div>
             <div class="col-lg-3 mb-3 mb-lg-0">
               <span class="b">området: ${this.area}</span>
-            </div>
+              <br> förening: <span class="c">${this.community}</span> 
+              <br>
+              <br>
+              <span class="c"> Mäklare <Strong>${this.firstName} ${this.lastName} </strong>
+              <p class="card-text">Kontakta mig nedan.</p>
+                <a href="mailto:${this.email}" class="card-link">${this.email}</a>
+                <img src ="${this.pic}" style="width: 18rem;">    
+        </div>
+          
           </div>
           <div class="row mt-n4 mt-lg-0">
             <div class="col-md-12">
