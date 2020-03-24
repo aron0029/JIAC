@@ -31,7 +31,7 @@ class Kontaktaoss extends Base {
   render() {
     return /*html*/`
       <div class="row" route="/kontaktaOss" page-title="kontakt">
-        <div class="col-12">
+        <div class="col-8">
           <h1 class="display-4">Kontakta oss</h1>
           <p></p>
           <h6> 
@@ -60,44 +60,55 @@ Org.nr: 556444-4593
         <br>
           
         </h6>
+</div>
+
+<div class="col-4; p-3 mb-2 bg-light">
+
 
 ${this.formSent ? /*html*/`
-            <div class="col-12">
-              <h1 class="display-3">Tack för din återkoppling</h1>
+
+            <div class="float-right">
+              <br>
+               <br>
+              <h3>Tack för din återkoppling</h3>
+              <br>
+              <br>
+              <h5>Vi hör av oss inom kort till dig.</h5>
             </div>
            ` :/*html*/`
-            <form submit="collectFormData">
-            <div class="col-12">
-            <div class="form-row">
+
+            <form submit="collectFormData" >
             
-              <div class="form-group col-md-6">
-                <label class="w-100">Förnamn
-                  <input name="firstName" type="text" class="form-control" placeholder="förnamn" required pattern=".{2,}">
+              <br>
+              <strong>Har du några frågor?</strong>
+              <br>
+              <br>
+              <a href ="support@dhyr-rumson.com" style="color:black">support@dhyr-rumson.com</span></a> 
+              <br>
+              <br>
+              <strong>Eller kontakta oss via formuläret nedan</strong>
+              <br>
+              <br>
+              <div class="form-group">
+                <label class="w-100">Namn
+                  <input name="firstName" type="text" class="form-control" placeholder="Carl" required pattern=".{2,}">
                 </label>
               </div>
-               <div class="form-group col-md-6">
+               <div class="form-group">
                 <label class="w-100">Efternamn
-                  <input name="lastName" type="text" class="form-control" placeholder="efternamn" required>
+                  <input name="lastName" type="text" class="form-control" placeholder="Carlson" required>
                 </label>
               </div>
-            </div>
-
-
               <div class="form-group">
                 <label class="w-100">Telefon
                   <input name="phoneNr" type="text" class="form-control" placeholder="+46(0)76010101" required>
                 </label>
               </div>
-
-
-
                 <div class="form-group">
                 <label class="w-100">E-postadress
                   <input name="email" type="email" class="form-control" placeholder="name@example.com" required>
-                
                   </label>
                   </div>
-
             <div class="form-group">
                 <label class="w-100">Meddelande
                   <textarea name="message" class="form-control" placeholder="Lämna dina synpunkter" required></textarea>
@@ -105,18 +116,17 @@ ${this.formSent ? /*html*/`
               </div>
 
               <input class="btn btn-secondary float-left" type="submit" value="Skicka">
+
             </form>
-          </div>
-           </div>
-           </div>
-                </div>
-      </div>
-          
+
+            </div>
+            
+      
 `}
 
 
      
-    
+      </div> 
     
       
     `;
