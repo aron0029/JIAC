@@ -33,13 +33,13 @@ ${this.realtors.map(realtor => /*html*/`
 <div class="collapse" id="mail-${realtor.realtorId}">
 
   <div class="card card-body">
-    <a href="mailto:${realtor.email}" class="card-link">${realtor.email} </a>
+    <a href="mailto:${realtor.email}" style="color:black" class="card-link">${realtor.email} </a>
   </div>
 </div>
 
 <div class="collapse" id="phone-${realtor.realtorId}">
   <div class="card card-body">
-     <a href="${realtor.phoneNr}" class="card-link">${realtor.phoneNr}</a>
+     <a href="${realtor.phoneNr}" style="color:black" class="card-link">${realtor.phoneNr}</a>
   </div>
 </div>
 
