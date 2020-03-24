@@ -148,22 +148,19 @@ class Tillsalu extends Base {
       </div>
     </form>
 
-    
+
 <form>
     <legend></legend>
     <p>
-      <label><font size="5">Sortera på:</font></label>
+      <label>Sortera på:</label>
       <select id="myList">
-        <option value="1">Nyast</option>
-        <option value="2">Äldst</option>
-        <option value="3">Nyproduktion</option>
+        <option value="1">Högst Pris</option>
+        <option value="2">Lägst Pris</option>
       </select>
     </p>
 </form>
 
-
-
-<div class="col-12"><center>
+<div class="col-12">
 <div class="row"> 
 
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`

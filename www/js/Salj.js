@@ -48,7 +48,7 @@ class Salj extends Base {
 
 ${this.formSent ? /*html*/`
             <div class="col-12" ><center>
-              <h1 class="display-3">Tack för din återkoppling</h1>
+              <h1 class="display-3">Tack för din återkoppling!</h1>
             </div>
            ` :/*html*/`
 
