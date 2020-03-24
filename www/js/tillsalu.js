@@ -33,9 +33,10 @@ class Tillsalu extends Base {
 
   async search() {
     this.searchResult = await sql(/*sql*/`
-     SELECT Residence.*, Pics.url AS picUrl
-      FROM Residence, Pics 
+     SELECT Area.community, Residence.*, Pics.url AS picUrl
+      FROM Residence, Pics, Area
       WHERE Residence.residenceId = Pics.residenceId
+      AND Area.district = Residence.area
       /*JOIN Pics
       ON Residence.residenceId = Pics.PicId*/
       AND Kvm >= $minKvm 
@@ -165,19 +166,19 @@ class Tillsalu extends Base {
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
    
     
-    <div class="card m-4" style="width: 18rem;">
+    <div class="card m-4 bg-light" style="width: 18rem;">
   <img src="${bostad.picUrl}" class="card-img-top; h-30" style="height:200px" >
   <div class="card-body">
 
   <a href="/objekt/${bostad.residenceId}" style="color:black">
    <button class="btn btn-default stretched-link">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">${bostad.area}</h5>
+    
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><strong> ${bostad.area} </strong></li>
-    <li class="list-group-item"><strong>${bostad.price} </strong> kr</li>
-    <li class="list-group-item"><strong>${bostad.rooms}</strong> rum</li>
+  <li class="list-group-item bg-light"><strong>${bostad.community} </strong></li>
+    <li class="list-group-item bg-light"><strong>${bostad.price} </strong> kr</li>
+    <li class="list-group-item bg-light"><strong>${bostad.rooms}</strong> rum</li>
   </ul>
  </a>
   </button>

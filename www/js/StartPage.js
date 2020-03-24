@@ -27,7 +27,7 @@ class StartPage extends Base {
 </a>
       
         <h5 class="display-4">Våra hem</h5>
-        <p class="lead">Här listar vi våra bostäder som vill har till salu.
+        <p class="lead">Här listar vi våra bostäder som vi har till salu.
         <br></br>
         </p>
         
