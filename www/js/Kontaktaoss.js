@@ -34,6 +34,11 @@ class Kontaktaoss extends Base {
         <div class="col-7">
           <h1 class="display-4">Kontakta oss</h1>
           <p></p>
+<<<<<<< HEAD
+          <h6> Kontakta oss via telefon: 0700229981
+          eller maila oss på dhyr.rumson@gmail.com</h6>
+          </div>
+=======
           <h6> 
           Kundtjänst via email: <a href style="color:black">support@dhyr-rumson.com</a> eller via kontaktformuläret.
           <br>
@@ -133,6 +138,7 @@ ${this.formSent ? /*html*/`
       </div> 
     
       
+>>>>>>> 4167a9026f3e7a1f94886721a517758ac65b699e
     `;
   }
 
