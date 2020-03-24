@@ -20,8 +20,10 @@ ${this.realtors.map(realtor => /*html*/`
     <img src ="${realtor.pic}" style="width: 18rem;" >
     <br>
   		<div class="card-body">
-    		<h5 class="card-title">${realtor.firstName} ${realtor.lastName}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">${realtor.title}</h6>
+        <h5 class="card-title">${realtor.firstName} ${realtor.lastName}</h5>
+        <h6 class="card-subtitle text-dark">${realtor.title}</h6>
+        <br>
+        
         
              <p>
   <a class="btn btn-secondary" data-toggle="collapse" href="#mail-${realtor.realtorId}" role="button" aria-expanded="false" aria-controls="collapseExample">
