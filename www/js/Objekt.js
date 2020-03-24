@@ -27,19 +27,21 @@ class Objekt extends Base {
     <div route="/objekt/:id" page-Area="${this.Area}">
         <div class="col">
           <h5>
-            Till salu: <a href="/databas/Address/${this.Residence}">${this.Area}</a>
+            Till salu: <br>
+            <a href="/databas/Address/${this.Residence}">${this.Area}</a>
             </h5>
         <h1>${this.title}</h1>
         <h4 class="mb-3">${this.Address}</h4>
            <div class="row mb-3">
-            <div class="col-lg-3 mb-3 mb-lg-0">
+            <div class="col-lg-2 mb-2 mb-lg-0">
+           <h3> ${this.streetName} 
            </div>
-            <div class="col-lg-5 mb-3 mb-lg-0">
+            <div class="col-lg-7 mb-8 mb-lg-1">
              <img class="card-img" src="${this.url}">
             </div>
             <br><div class="col-lg-5 mb-3 mb-lg-0">
-            <div class="col-lg-3 mb-3 mb-lg-0">
-            <span class=""> ${this.price}Kr</span>
+            <div class="col-lg-5 mb-3 mb-lg-0">
+            <strong><span  class=""> ${this.price} </strong> Kr</span> 
               <br>
             Rum: ${this.rooms}</span>
                 <div class="col-lg-3 mb-3 mb-lg-0">
