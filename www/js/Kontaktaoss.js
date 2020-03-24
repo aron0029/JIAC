@@ -34,10 +34,6 @@ class Kontaktaoss extends Base {
         <div class="col-6">
           <h1 class="display-4">Kontakta oss</h1>
           <p></p>
-<<<<<<< HEAD
-          <h6> 
-=======
->>>>>>> 943114264bacf73e8a517188fb1eb2def42236e2
           Kundtjänst via email: <a href style="color:black">support@dhyr-rumson.com</a> eller via kontaktformuläret.
           <br>
           <br>
