@@ -22,8 +22,8 @@ class Objekt extends Base {
 
 
   render() {
-
     return /*html*/`
+        <div class="row" route="/objekt" page-title="Objekt">
     <div route="/objekt/:id" page-Area="${this.Area}">
         <div class="col">
           <h5>
