@@ -20,18 +20,40 @@ ${this.realtors.map(realtor => /*html*/`
     <img src ="${realtor.pic}" style="width: 18rem;" class="img-thumbnail">
   		<div class="card-body">
     		<h5 class="card-title">${realtor.firstName} ${realtor.lastName}</h5>
-    		<h6 class="card-subtitle mb-2 text-muted">Mäklare</h6>
-    		<p class="card-text">Kontakta mig nedan.</p>
-        <a href="mailto:${realtor.email}" class="card-link">${realtor.email}</a>
-        <br>
-        <a href="#" class="card-link">${realtor.phoneNr}</a>
+        <h6 class="card-subtitle mb-2 text-muted">${realtor.title}</h6>
         
+             <p>
+  <a class="btn btn-secondary" data-toggle="collapse" href="#mail-${realtor.realtorId}" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Mejla
+  </a>
+  <a class="btn btn-secondary" data-toggle="collapse" href="#phone-${realtor.realtorId}" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Ring
+  </a>
+</p>
+<div class="collapse" id="mail-${realtor.realtorId}">
+
+  <div class="card card-body">
+    <a href="mailto:${realtor.email}" class="card-link">${realtor.email} </a>
+  </div>
+</div>
+
+<div class="collapse" id="phone-${realtor.realtorId}">
+  <div class="card card-body">
+     <a href="${realtor.phoneNr}" class="card-link">${realtor.phoneNr}</a>
+  </div>
+</div>
+
+
+
+ 
       
 
 
       </div>
 	</div>
 `)}
+
+
  <center>
 </div>
 </div>
