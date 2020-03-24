@@ -13,12 +13,11 @@
 @import 'sticky-footer';
 @import 'miscellaneous';
 
+// fonts from google
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
 .myline {
   width: 700px;
   height: 20px;
   border-top: 3px solid black;
 } //added a black line to salj to make it look better.
-
-body { 
-  background-color: silver;
-}
