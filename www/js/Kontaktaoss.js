@@ -9,10 +9,6 @@ class Kontaktaoss extends Base {
           <h6> Kontakta oss via telefon: 0700229981
           eller maila oss på dhyr.rumson@gmail.com</h6>
           </div>
-      </div>
-    
-    
-      
     `;
   }
 
