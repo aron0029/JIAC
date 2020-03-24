@@ -169,8 +169,8 @@ class Tillsalu extends Base {
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
    
     
-    <div class="card m-4" style="width: 18rem;">
-  <img src="${bostad.picUrl}" class="card-img-top; h-30; img-thumbnail" style="height:200px" >
+    <div class="card m-4 bg-light" style="width: 18rem;">
+  <img src="${bostad.picUrl}" class="card-img-top; h-30" style="height:200px" >
   <div class="card-body">
 
   <a href="/objekt/${bostad.residenceId}" style="color:black">
@@ -179,9 +179,9 @@ class Tillsalu extends Base {
     
   </div>
   <ul class="list-group list-group-flush">
-  <li class="list-group-item"><strong>${bostad.community} </strong></li>
-    <li class="list-group-item"><strong>${bostad.price} </strong> kr</li>
-    <li class="list-group-item"><strong>${bostad.rooms}</strong> rum</li>
+  <li class="list-group-item bg-light"><strong>${bostad.community} </strong></li>
+    <li class="list-group-item bg-light"><strong>${bostad.price} </strong> kr</li>
+    <li class="list-group-item bg-light"><strong>${bostad.rooms}</strong> rum</li>
   </ul>
  </a>
   </button>

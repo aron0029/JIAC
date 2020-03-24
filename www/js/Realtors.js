@@ -16,8 +16,9 @@ class Realtors extends Base {
 <div class="col-12"><center>
 <div class="row"> 
 ${this.realtors.map(realtor => /*html*/`
-    <div class="card m-4" style="width: 18rem;">
-    <img src ="${realtor.pic}" style="width: 18rem;" class="img-thumbnail">
+    <div class="card m-4 bg-light" style="width: 18rem;">
+    <img src ="${realtor.pic}" style="width: 18rem;" >
+    <br>
   		<div class="card-body">
     		<h5 class="card-title">${realtor.firstName} ${realtor.lastName}</h5>
         <h6 class="card-subtitle mb-2 text-muted">${realtor.title}</h6>
@@ -33,13 +34,13 @@ ${this.realtors.map(realtor => /*html*/`
 <div class="collapse" id="mail-${realtor.realtorId}">
 
   <div class="card card-body">
-    <a href="mailto:${realtor.email}" class="card-link">${realtor.email} </a>
+    <a href="mailto:${realtor.email}" style="color:black" class="card-link">${realtor.email} </a>
   </div>
 </div>
 
 <div class="collapse" id="phone-${realtor.realtorId}">
   <div class="card card-body">
-     <a href="${realtor.phoneNr}" class="card-link">${realtor.phoneNr}</a>
+     <a href="${realtor.phoneNr}" style="color:black" class="card-link">${realtor.phoneNr}</a>
   </div>
 </div>
 
