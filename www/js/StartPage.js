@@ -15,25 +15,25 @@ class StartPage extends Base {
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/images/idasbild.png" alt="First slide">
+      <img class="d-block w-100" width ="200"height="500" src="/images/Carousel/sodermalm.jpg" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
     <h5>Södermalm</h5>
-    <p>Stadsdelen som har allt. Från myllrande folkliv till stilla natur.</p>
+    <p><strong>Stadsdelen som har allt. Från myllrande folkliv till stilla natur.</strong></p>
   </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/images/idasbild.png" alt="Second slide">
+      <img class="d-block w-100" width ="200" height="500"  src="/images/Carousel/vasastan.jpg" alt="Second slide">
          <div class="carousel-caption d-none d-md-block">
     <h5>Vasastan</h5>
-    <p>Stockholms Stadsbibliotek med ca 700 000 böcker, mängder med butiker och restauranger.</p>
+    <p><strong>Stockholms Stadsbibliotek med ca 700 000 böcker, mängder med butiker och restauranger.</strong></p>
   </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/images/idasbild.png" alt="Third slide">
+      <img class="d-block w-100"  width ="200"height="500" src="/images/Carousel/ostermalm.jpg" alt="Third slide">
 
          <div class="carousel-caption d-none d-md-block">
     <h5>Östermalm</h5>
-    <p>Barerna och restaurangerna kring Stureplan, Östermalmshallen och Humlegården.</p>
+    <p><strong>Barerna och restaurangerna kring Stureplan, Östermalmshallen och Humlegården.</strong></p>
   </div>
     </div>
   </div>
