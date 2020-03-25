@@ -6,7 +6,6 @@ class App extends Base {
       { label: 'Välkommen', route: '/' },
       { label: 'Till salu', route: '/till-salu' },
       { label: 'Sälj', route: '/salj' },
-      { label: 'Kundomdömen', route: '/kundomdomen' },
       { label: 'Våra mäklare', route: '/varamaklare' },
       { label: 'Objekt', route: '/objekt' },
       { label: 'Kontakta oss', route: '/kontaktaoss' },
@@ -18,7 +17,6 @@ class App extends Base {
     this.tillSalu = new Tillsalu();
     this.missingPage = new MissingPage();
     this.salj = new Salj();
-    this.kundomdomen = new Kundomdomen();
     this.realtors = new Realtors();
     this.objekt = new Objekt();
     this.kontaktaoss = new Kontaktaoss();
@@ -54,7 +52,6 @@ class App extends Base {
           ${this.tillSalu}
           ${this.missingPage}
           ${this.salj}
-          ${this.kundomdomen}
           ${this.realtors}
           ${this.valavbostad}
           ${this.objekt}
