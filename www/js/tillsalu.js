@@ -165,31 +165,23 @@ class Tillsalu extends Base {
         </div>
       </div>
     </form>
-
-<<<<<<< HEAD
     
 <form> 
-=======
-
 <form>
->>>>>>> fd63664a84aae16538461ef25145a2b0b4edd72f
     <legend></legend>
     <p>
       <label>Sortera på:</label>
       <select id="myList">
-<<<<<<< HEAD
         <option value="lowestPrice">Lägsta Pris</option>
         <option value="highestPrice">Högsta Pris</option>
       </select>
     </p>
 </form> <!-- form for sorting-->
-=======
         <option value="1">Högst Pris</option>
         <option value="2">Lägst Pris</option>
       </select>
     </p>
 </form>
->>>>>>> fd63664a84aae16538461ef25145a2b0b4edd72f
 
 <div class="col-12">
 <div class="row"> 
