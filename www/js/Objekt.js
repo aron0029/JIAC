@@ -37,28 +37,28 @@ class Objekt extends Base {
            <div class="row mb-3">
             <div class="col-lg-3 mb-3 mb-lg-0">
            </div>
-            <div class="col-lg-5 mb-3 mb-lg-0">
+            <div class="col-lg-8 mb-4 mb-lg-0">
              <img class="card-img" src="${this.url}">
             </div>
-            <br><div class="col-lg-5 mb-3 mb-lg-0">
-            <div class="col-lg-3 mb-3 mb-lg-0">
+            <br>
+             <div class="col-lg-5 mb-3 mb-lg-0">
+            <div class="col-lg-3 mb-3 mb-lg-0"> 
             <span class=""> ${this.price}Kr</span>
               <br>
             Rum: ${this.rooms}</span>
                 <div class="col-lg-3 mb-3 mb-lg-0">
-              <span class="">kvadratmeter:${this.Kvm}</span>
+              <span class="">Kvadratmeter:${this.Kvm}</span>
              <span class="">Avgift:${this.rent}</span>
             </div>
             <div class="col-lg-3 mb-3 mb-lg-0">
-              <span class="b">området: ${this.area}</span>
-              <br> förening: <span class="c">${this.community}</span> 
+              <span class="b">Området: ${this.area}</span>
+              <br> Förening: <span class="c">${this.community}</span> 
              
-              <span class="c"> Mäklare <Strong>${this.firstName} ${this.lastName} </strong>
+              <span class=""> Mäklare <Strong>${this.firstName} ${this.lastName} </strong>
               <p class="card-text">Kontakta mig nedan.</p>
                 <a href="mailto:${this.email}" class="card-link">${this.email}</a>
                 <img src ="${this.pic}" style="width: 18rem;">    
         </div>
-          
           </div>
           <div class="row mt-n4 mt-lg-0">
             <div class="col-md-12">
