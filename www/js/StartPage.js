@@ -5,8 +5,9 @@ class StartPage extends Base {
       <div class="row"  route="/" page-title="Start">
      <div class= "col-12">
 
-  <div class="card-body;card bg-light text-black; col-12; card mb-3">
-
+  <!--div class="card-body;card bg-light text-black; col-12; card mb-3"-->
+<div class="card bg-light; col-12 bg-light">
+<div class="card-body bg-light">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -49,9 +50,10 @@ class StartPage extends Base {
 
 
    <h1 class="display-3"><center>Mäklarfirman Dhyr & Rumson </center></h1>
-  </div>
+  </!--div>
 
-
+</div>
+</div>
 
 
 
