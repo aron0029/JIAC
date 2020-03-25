@@ -66,15 +66,9 @@ class StartPage extends Base {
     <span class="sr-only">Next</span>
   </a>
 </div>
-<<<<<<< HEAD
-    
-
-   <h1 class="display-3"><center>Mäklarfirman Dhyr & Rumson </center></h1>
-=======
  <br>
 
    <h1 class="display-4 text-center">Mäklarfirman Dhyr & Rumson </h1>
->>>>>>> 164f65d4348aac39e5db76c85f2c83f1de8fe7b7
   </!--div>
 
 </div>
