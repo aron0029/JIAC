@@ -36,7 +36,7 @@ class Tillsalu extends Base {
       minKvm: 10,
       maxKvm: 300,
       minPrice: 100000,
-      maxPrice: 20000000,
+      maxPrice: 10000000,
       chosenDistrict: 'Alla'
     };
     this.sort = 'lowestPrice';
@@ -142,13 +142,13 @@ class Tillsalu extends Base {
         <div class="col-6">
           LÄGSTA PRIS ${this.currencyFormatter.format(this.anvandarensVal.minPrice)}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMinPrice"
-            value="${this.anvandarensVal.minPrice}" min="100000" max="20000000" step="50000">
+            value="${this.anvandarensVal.minPrice}" min="100000" max="10000000" step="50000">
         </div>
 
         <div class="col-6">
           HÖGSTA PRIS ${this.currencyFormatter.format(this.anvandarensVal.maxPrice)}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMaxPrice"
-            value="${this.anvandarensVal.maxPrice}" min="100000" max="20000000" step="50000">
+            value="${this.anvandarensVal.maxPrice}" min="100000" max="10000000" step="50000">
         </div>
       </div>
 
