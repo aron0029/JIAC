@@ -78,7 +78,7 @@ class StartPage extends Base {
   
 <div class="row">
   <div class="col-sm-6">
-    <div class="">
+    <div class="card">
       <div class="card-body">
 <a href="/till-salu">
       <button class="btn btn-default stretched-link">
@@ -97,7 +97,7 @@ class StartPage extends Base {
     </div>
   </div>
   <div class="col-sm-6">
-    <div class="">
+    <div class="card">
       <div class="card-body">
 <a href="/salj">
         <button class="btn btn-default stretched-link">
