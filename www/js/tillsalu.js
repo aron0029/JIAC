@@ -8,18 +8,38 @@ class Tillsalu extends Base {
     window.addEventListener("click", () => {
       app.objekt.mount();
       //detta får att params att funka 
-
     });
+
+    //part of code for sorting by price starts here
+    window.addEventListener("change", () => {
+      this.sort = event.target.value;
+      this.searchResult.sort((bostadA, bostadB) => {
+        if (this.sort === 'highestPrice') {
+          if (bostadA.price > bostadB.price) {
+            return -1;
+          } else {
+            return 1;
+          }
+        } else if (this.sort === 'lowestPrice') {
+          if (bostadA.price < bostadB.price) {
+            return -1;
+          } else {
+            return 1;
+          }
+        }
+      });
+      this.render();
+    }); //part of code for sorting by price ends here
 
     this.currencyFormatter = new Intl.NumberFormat('sv-SV', { style: 'currency', currency: 'SEK' });
     this.anvandarensVal = {
       minKvm: 10,
       maxKvm: 300,
       minPrice: 100000,
-      maxPrice: 300000000,
+      maxPrice: 20000000,
       chosenDistrict: 'Alla'
     };
-
+    this.sort = 'lowestPrice';
     this.districtButtons = [
       'Alla',
       'Södermalm',
@@ -37,8 +57,6 @@ class Tillsalu extends Base {
       FROM Residence, Pics, Area
       WHERE Residence.residenceId = Pics.residenceId
       AND Area.district = Residence.area
-      /*JOIN Pics
-      ON Residence.residenceId = Pics.PicId*/
       AND Kvm >= $minKvm 
       AND Kvm <= $maxKvm
       AND price >= $minPrice
@@ -46,8 +64,8 @@ class Tillsalu extends Base {
        AND (area = $chosenDistrict OR "Alla" = $chosenDistrict)
       GROUP BY Residence.residenceId
     `, this.anvandarensVal);
-    console.log("this.anvandarensVal", this.anvandarensVal)
-    console.log("this.searchResult", this.searchResult)
+    // console.log("this.anvandarensVal", this.anvandarensVal)
+    // console.log("this.searchResult", this.searchResult)
     this.render();
     this.fixInitialRenderBug();
   }
@@ -124,13 +142,13 @@ class Tillsalu extends Base {
         <div class="col-6">
           LÄGSTA PRIS ${this.currencyFormatter.format(this.anvandarensVal.minPrice)}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMinPrice"
-            value="${this.anvandarensVal.minPrice}" min="100000" max="100000000" step="50000">
+            value="${this.anvandarensVal.minPrice}" min="100000" max="20000000" step="50000">
         </div>
 
         <div class="col-6">
           HÖGSTA PRIS ${this.currencyFormatter.format(this.anvandarensVal.maxPrice)}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMaxPrice"
-            value="${this.anvandarensVal.maxPrice}" min="100000" max="100000000" step="50000">
+            value="${this.anvandarensVal.maxPrice}" min="100000" max="20000000" step="50000">
         </div>
       </div>
 
@@ -147,18 +165,18 @@ class Tillsalu extends Base {
         </div>
       </div>
     </form>
-
-
+    
+<form> 
 <form>
     <legend></legend>
     <p>
       <label>Sortera på:</label>
       <select id="myList">
-        <option value="1">Högst Pris</option>
-        <option value="2">Lägst Pris</option>
+        <option value="lowestPrice">Lägsta Pris</option>
+        <option value="highestPrice">Högsta Pris</option>
       </select>
     </p>
-</form>
+</form> <!-- form for sorting-->
 
 <div class="col-12">
 <div class="row"> 
