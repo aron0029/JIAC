@@ -66,9 +66,9 @@ class StartPage extends Base {
     <span class="sr-only">Next</span>
   </a>
 </div>
+ <br>
 
-
-   <h1 class="display-3"><center>Mäklarfirman Dhyr & Rumson </center></h1>
+   <h1 class="display-4 text-center">Mäklarfirman Dhyr & Rumson </h1>
   </!--div>
 
 </div>
@@ -91,10 +91,10 @@ class StartPage extends Base {
       </button>
 </a>
       
-        <h5 class="display-4"><center>Våra hem</center></h5>
-        <p class="lead"><center>Här listar vi våra bostäder som vi har till salu.
-        <br></br>
-        </center></p>
+        <h5 class="display-5 text-center"><strong>Våra hem</strong></h5>
+        <p class="lead text-center">Här listar vi våra bostäder som vi har till salu.
+        <br>
+        </p>
         
         
       </div>
@@ -108,8 +108,8 @@ class StartPage extends Base {
      <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
       </button>
       </a>
-        <h5 class="display-4"><center>Boka värdering</center></h5>
-        <p class="lead"><center>För en professionell utvärdering från våra mäklare av hem som du vill sälja.</center></p>
+        <h5 class="display-5 text-center"><strong>Boka värdering</strong></h5>
+        <p class="lead text-center">För en professionell utvärdering från våra mäklare.</p>
         
       </div>
     </div>
