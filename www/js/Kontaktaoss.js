@@ -32,9 +32,13 @@ class Kontaktaoss extends Base {
     return /*html*/`
       <div class="row" route="/kontaktaOss" page-title="kontakt">
         <div class="col-6">
+        <br>
+          
           <h1 class="display-4">Kontakta oss</h1>
+          <br>
+        
           <p></p>
-          Kundtjänst via email: <a href style="color:black">support@dhyr-rumson.com</a> eller via kontaktformuläret.
+          Kundtjänst via email: <a href style="color:black">support@dhyr-rumson.com</a> eller via formuläret.
           <br>
           <br>
         Kontakta oss gärna om du har några frågor! Vi försöker alltid svara så snabbt vi kan. 
@@ -76,20 +80,20 @@ ${this.formSent ? /*html*/`
               <h3>Tack för din återkoppling</h3>
               <br>
               <br>
-              <h5>Vi hör av oss inom kort till dig.</h5>
+              <h5>Vi har mottagit dina synpunkter.</h5>
             </div>
            ` :/*html*/`
 
             <form submit="collectFormData" >
             
               <br>
-              <strong>Har du några frågor?</strong>
+              <strong>Dina åsikter är viktiga för oss</strong>
               <br>
               <br>
               <a href ="support@dhyr-rumson.com" style="color:black">support@dhyr-rumson.com</span></a> 
               <br>
               <br>
-              <strong>Eller kontakta oss via formuläret nedan</strong>
+              <strong>Lämna synpunkter på hur vi kan bli bättre</strong>
               <br>
               <br>
               <div class="form-group">

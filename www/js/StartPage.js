@@ -18,14 +18,14 @@ class StartPage extends Base {
       <img class="d-block w-100" src="/images/idasbild.png" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
     <h5>Södermalm</h5>
-    <p>Den bästa stadsdelen</p>
+    <p>Stadsdelen som har allt. Från myllrande folkliv till stilla natur.</p>
   </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/images/idasbild.png" alt="Second slide">
          <div class="carousel-caption d-none d-md-block">
     <h5>Vasastan</h5>
-    <p>Den mysiga stadsdelen</p>
+    <p>Stockholms Stadsbibliotek med ca 700 000 böcker, mängder med butiker och restauranger.</p>
   </div>
     </div>
     <div class="carousel-item">
@@ -33,7 +33,7 @@ class StartPage extends Base {
 
          <div class="carousel-caption d-none d-md-block">
     <h5>Östermalm</h5>
-    <p>Den finaste stadsdelen</p>
+    <p>Barerna och restaurangerna kring Stureplan, Östermalmshallen och Humlegården.</p>
   </div>
     </div>
   </div>
@@ -53,6 +53,9 @@ class StartPage extends Base {
 
 
 
+
+
+
 <div class="card-group">
  <br></br>
   
@@ -67,10 +70,10 @@ class StartPage extends Base {
       </button>
 </a>
       
-        <h5 class="display-4">Våra hem</h5>
-        <p class="lead">Här listar vi våra bostäder som vi har till salu.
+        <h5 class="display-4"><center>Våra hem</center></h5>
+        <p class="lead"><center>Här listar vi våra bostäder som vi har till salu.
         <br></br>
-        </p>
+        </center></p>
         
         
       </div>
@@ -84,8 +87,8 @@ class StartPage extends Base {
      <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
       </button>
       </a>
-        <h5 class="display-4">Boka värdering</h5>
-        <p class="lead">För en professionell utvärdering från våra mäklare av hem som du vill sälja.</p>
+        <h5 class="display-4"><center>Boka värdering</center></h5>
+        <p class="lead"><center>För en professionell utvärdering från våra mäklare av hem som du vill sälja.</center></p>
         
       </div>
     </div>
