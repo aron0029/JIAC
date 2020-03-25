@@ -3,7 +3,7 @@ class NavBar extends Base {
   render() {
     return /*html*/`
       <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <img class="img-fluid" src="/images/logo2.png.jpeg" style="width: 80px; height: 40px">
+        <img class="img-fluid" src="/images/drlogo7.png" style="width:87px; height:70px">
         <a class="navbar-brand" href="/">  </a>
         <img src ="" style="width: 19rem;" >
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
