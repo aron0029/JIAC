@@ -8,8 +8,28 @@ class Tillsalu extends Base {
     window.addEventListener("click", () => {
       app.objekt.mount();
       //detta får att params att funka 
-
     });
+
+    //part of code for sorting by price starts here
+    window.addEventListener("change", () => {
+      this.sort = event.target.value;
+      this.searchResult.sort((bostadA, bostadB) => {
+        if (this.sort === 'highestPrice') {
+          if (bostadA.price > bostadB.price) {
+            return -1;
+          } else {
+            return 1;
+          }
+        } else if (this.sort === 'lowestPrice') {
+          if (bostadA.price < bostadB.price) {
+            return -1;
+          } else {
+            return 1;
+          }
+        }
+      });
+      this.render();
+    }); //part of code for sorting by price ends here
 
     this.currencyFormatter = new Intl.NumberFormat('sv-SV', { style: 'currency', currency: 'SEK' });
     this.anvandarensVal = {
@@ -19,7 +39,7 @@ class Tillsalu extends Base {
       maxPrice: 300000000,
       chosenDistrict: 'Alla'
     };
-
+    this.sort = 'lowestPrice';
     this.districtButtons = [
       'Alla',
       'Södermalm',
@@ -37,8 +57,6 @@ class Tillsalu extends Base {
       FROM Residence, Pics, Area
       WHERE Residence.residenceId = Pics.residenceId
       AND Area.district = Residence.area
-      /*JOIN Pics
-      ON Residence.residenceId = Pics.PicId*/
       AND Kvm >= $minKvm 
       AND Kvm <= $maxKvm
       AND price >= $minPrice
@@ -46,8 +64,8 @@ class Tillsalu extends Base {
        AND (area = $chosenDistrict OR "Alla" = $chosenDistrict)
       GROUP BY Residence.residenceId
     `, this.anvandarensVal);
-    console.log("this.anvandarensVal", this.anvandarensVal)
-    console.log("this.searchResult", this.searchResult)
+    // console.log("this.anvandarensVal", this.anvandarensVal)
+    // console.log("this.searchResult", this.searchResult)
     this.render();
     this.fixInitialRenderBug();
   }
@@ -149,21 +167,18 @@ class Tillsalu extends Base {
     </form>
 
     
-<form>
+<form> 
     <legend></legend>
     <p>
-      <label><font size="5">Sortera på:</font></label>
+      <label>Sortera på:</label>
       <select id="myList">
-        <option value="1">Nyast</option>
-        <option value="2">Äldst</option>
-        <option value="3">Nyproduktion</option>
+        <option value="lowestPrice">Lägsta Pris</option>
+        <option value="highestPrice">Högsta Pris</option>
       </select>
     </p>
-</form>
+</form> <!-- form for sorting-->
 
-
-
-<div class="col-12"><center>
+<div class="col-12">
 <div class="row"> 
 
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
