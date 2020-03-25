@@ -6,8 +6,8 @@ class StartPage extends Base {
      <div class= "col-12">
 
   <!--div class="card-body;card bg-light text-black; col-12; card mb-3"-->
-<div class="card bg-light; col-12 bg-light">
-<div class="card-body bg-light">
+<div class="card; col-12">
+<div class="card-body">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -66,23 +66,19 @@ class StartPage extends Base {
     <span class="sr-only">Next</span>
   </a>
 </div>
+ <br>
 
-
-   <h1 class="display-3"><center>Mäklarfirman Dhyr & Rumson </center></h1>
+   <h1 class="display-4 text-center">Mäklarfirman Dhyr & Rumson </h1>
   </!--div>
 
 </div>
 </div>
-
-
-
-
 <div class="card-group">
  <br></br>
   
 <div class="row">
   <div class="col-sm-6">
-    <div class="card bg-light">
+    <div class="">
       <div class="card-body">
 <a href="/till-salu">
       <button class="btn btn-default stretched-link">
@@ -91,25 +87,25 @@ class StartPage extends Base {
       </button>
 </a>
       
-        <h5 class="display-4"><center>Våra hem</center></h5>
-        <p class="lead"><center>Här listar vi våra bostäder som vi har till salu.
-        <br></br>
-        </center></p>
+        <h5 class="display-5 text-center"><strong>Våra hem</strong></h5>
+        <p class="lead text-center">Här listar vi våra bostäder som vi har till salu.
+        <br>
+        </p>
         
         
       </div>
     </div>
   </div>
   <div class="col-sm-6">
-    <div class="card bg-light">
+    <div class="">
       <div class="card-body">
 <a href="/salj">
         <button class="btn btn-default stretched-link">
      <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
       </button>
       </a>
-        <h5 class="display-4"><center>Boka värdering</center></h5>
-        <p class="lead"><center>För en professionell utvärdering från våra mäklare av hem som du vill sälja.</center></p>
+        <h5 class="display-5 text-center"><strong>Boka värdering</strong></h5>
+        <p class="lead text-center">För en professionell utvärdering från våra mäklare.</p>
         
       </div>
     </div>
