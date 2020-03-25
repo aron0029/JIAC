@@ -16,22 +16,41 @@ class StartPage extends Base {
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" style="height: 400px;" src="/images/Carousel/sodermalm.jpg" alt="First slide">
+
+    <div style= "height: 400px">
+      <img class="d-block w-100 h-120" src="/images/Carousel/sodermalm.jpg" alt="First slide">
+</div>
+
+
+
       <div class="carousel-caption d-none d-md-block">
     <h5 class="display-5">Södermalm</h5>
     <p>Stadsdelen som har allt. Från myllrande folkliv till stilla natur.</p>
   </div>
     </div>
+
+
+
     <div class="carousel-item">
-      <img class="d-block w-100" style="height: 400px;"  src="/images/Carousel/vasastan.jpg" alt="Second slide">
+
+<div style= "height: 400px">
+      <img class="d-block w-100 h-120"  src="/images/Carousel/vasastan.jpg" alt="Second slide">
+</div>
+
+
          <div class="carousel-caption d-none d-md-block">
     <h5 class="display-5">Vasastan</h5>
     <p>Stockholms Stadsbibliotek med ca 700 000 böcker, butiker och restauranger.</p>
   </div>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100"  style="height: 400px;" src="/images/Carousel/ostermalm.jpg" alt="Third slide">
 
+
+    <div class="carousel-item">
+
+
+    <div style= "height: 400px">
+      <img class="d-block w-100 h-180"  style="height: 400px;" src="/images/Carousel/ostermalm.jpg" alt="Third slide">
+</div>
          <div class="carousel-caption d-none d-md-block">
     <h5 class="display-5">Östermalm</h5>
     <p>Barerna och restaurangerna kring Stureplan, Östermalmshallen och Humlegården.</p>
