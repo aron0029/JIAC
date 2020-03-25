@@ -1,8 +1,4 @@
 class Tillsalu extends Base {
-  async mount() {
-
-
-  }
 
   async mount() {
     window.addEventListener("click", () => {
@@ -129,7 +125,7 @@ class Tillsalu extends Base {
 
 
   render() {
-    return /*html*/`
+    let toRender = /*html*/`
     <div route="/till-salu">
     <h1 class="mb-3"> Här finner du alla våra bostäder som är till salu </h1>
     <form>
@@ -209,5 +205,8 @@ class Tillsalu extends Base {
       </div>
        </div>
        
-      ` }
+      `;
+    setTimeout(() => this.fixInitialRenderBug(), 0);
+    return toRender;
+  }
 }
