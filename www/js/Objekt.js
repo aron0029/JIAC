@@ -28,7 +28,7 @@ class Objekt extends Base {
     return /*html*/`
         <div class="row" route="/objekt/:id" page-title="Objekt">
     <div page-Area="${this.Area}">
-        <div class="col">
+        <div class="col-12">
           <h5>
             Till salu: <a href="/databas/Address/${this.Residence}">${this.Area}</a>
             </h5>
