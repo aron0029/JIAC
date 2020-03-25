@@ -68,7 +68,7 @@ class StartPage extends Base {
 </div>
  <br>
 
-   <h1 class="display-3 text-center">Mäklarfirman Dhyr & Rumson </h1>
+   <h1 class="display-4 text-center">Mäklarfirman Dhyr & Rumson </h1>
   </!--div>
 
 </div>
