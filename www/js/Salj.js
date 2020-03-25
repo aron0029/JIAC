@@ -29,27 +29,31 @@ class Salj extends Base {
     return /*html*/`
        <div class="row" route="/salj" page-title="Sälj">
         <div class="col-6">
-          <h1>
-          <span>Sälj din bostad med Dhyr och Rumson</span>
-          </h1>
-          <p>På Dhyr och Rumson vet vi vad som krävs för att göra en riktigt bra bostadsaffär. Förutom att vi har skickliga mäklare, mycket god lokalkännedom och vårt köparregister Boagenten, så prioriterar vi alltid kundens önskemål. Oavsett om du är redo att sälja nu eller i framtiden så kommer vi gärna hem till dig för att göra en värdering av din nuvarande bostad. Det är helt kostnadsfritt och du förbinder dig inte till något.
-            <div class="myline"></div>
-
-
-
-
-            <h2 class="headline">Jag önskar att boka en värdering!</h2>
-
-            <p>Vill du veta mer om hur vi kan hjälpa dig med din bostadsaffär? Fyll i formuläret, så kontaktar vi dig.</p>
+          <h1 class = "display-4">Sälj din bostad med Dhyr och Rumson</h1>
 
           <br>
-            Boka en värdering!</p>
+          
+          <p>På Dhyr och Rumson vet vi vad som krävs för att göra en riktigt bra bostadsaffär. Förutom att vi har skickliga mäklare, mycket god lokalkännedom och vårt köparregister Boagenten, så prioriterar vi alltid kundens önskemål. Oavsett om du är redo att sälja nu eller i framtiden så kommer vi gärna hem till dig för att göra en värdering av din nuvarande bostad. Det är helt kostnadsfritt och du förbinder dig inte till något.
+           
+
+            <br>
+          <br>
+            <h2 class="display-5">Jag önskar att boka en värdering</h2>
+            <br>
+            <p>Vill du veta mer om hur vi kan hjälpa dig med din bostadsaffär? Fyll i formuläret, så kontaktar vi dig.</p>
+
+          
+            
   </div>
 
+
+
+<div class="col-6; p-3 mb-2 bg-light">
+
 ${this.formSent ? /*html*/`
-            <div class="col-6" >
+            
               <h1 class="display-3">Tack för din återkoppling!</h1>
-            </div>
+           
            ` :/*html*/`
 
            
@@ -97,10 +101,11 @@ ${this.formSent ? /*html*/`
               <input class="btn btn-secondary float-left" type="submit" value="Skicka">
             </form>
           </div>
-           
-           
-          
+            
 `}
+
+</div>
+
 </div>
 
       `;
