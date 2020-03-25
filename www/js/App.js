@@ -2,7 +2,6 @@ class App extends Base {
 
   async mount() {
 
-
     this.navBarLinks = [
       { label: 'Välkommen', route: '/' },
       { label: 'Till salu', route: '/till-salu' },
