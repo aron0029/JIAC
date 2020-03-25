@@ -11,7 +11,6 @@ class App extends Base {
       { label: 'Våra mäklare', route: '/varamaklare' },
       { label: 'Objekt', route: '/objekt' },
       { label: 'Kontakta oss', route: '/kontaktaoss' },
-      { label: 'ShoppingCart', route: '/shoppingCart' }
     ];
 
     this.navBar = new NavBar({ links: this.navBarLinks });
@@ -24,7 +23,6 @@ class App extends Base {
     this.realtors = new Realtors();
     this.objekt = new Objekt();
     this.kontaktaoss = new Kontaktaoss();
-    this.shoppingCart = new ShoppingCart();
 
 
     await sql(/*sql*/`
@@ -48,7 +46,7 @@ class App extends Base {
     return /*html*/`
       <div base-title="Minimal: ">
         <header>
-          ${this.shoppingCart}
+        
           ${this.navBar}
 
         </header>
