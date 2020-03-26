@@ -143,23 +143,28 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: #00AFF0;
 } //code for social media icons in footer
 
-.custom-select{
+.sortingbar{
   position: relative;
   font-family: Arial;
-  font-size: inherit;
 }
-.custom-select select{
+.sortingbar select{
   display: none;
+  overflow: hidden;
 }
-.custom-select{
+.sortingbar{
+  margin-top: 10px;
+  padding: 7px;
+  width: 100%;
   background-color:#ffffff;
   border: none;
-  font-size: 20px;
-  box-shadow: 0 1px 10px #367ebd;
+  font-size: 18px;
+  box-shadow: 0 1px 10px #5fb2fa;
   -webkit-appearance: button;
-  outline: none;
+  outline: solid;
+  outline-width: 1px;
+  outline-color: #367ebd;
 }
-.custom-select:before{
+.sortingbar:before{
   position: absolute;
   content: "";
   top: 14px;
@@ -170,7 +175,6 @@ input[type=range]:focus::-ms-fill-upper {
   border-color: rgb(76, 73, 201) transparent transparent transparent;
 }
 
-.custom-select-hide{
+.sortingbar-hide{
   display:none;
 }
-

@@ -2,7 +2,7 @@ class Footer extends Base {
 
   render() {
     return /*html*/`
-      <footer class="bg-secondary p-2 container-fluid">
+      <footer class="bg-dark p-2 container-fluid">
 
    
         <div class="row">

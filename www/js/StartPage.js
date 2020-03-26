@@ -6,6 +6,7 @@ class StartPage extends Base {
      <div class= "col-12">
 
   <!--div class="card-body;card bg-light text-black; col-12; card mb-3"-->
+<h1 class="display-3 text-center"> DHYR & RUMSON</h1>
 <div class="card; col-12">
 <div class="card-body">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -17,8 +18,8 @@ class StartPage extends Base {
   <div class="carousel-inner">
     <div class="carousel-item active">
 
-    <div style= "height: 400px">
-      <img class="d-block w-100 h-120" src="/images/Carousel/soder2.jpg" alt="First slide">
+    <div style= "height: 400px"> 
+      <img class="d-block w-100 h-120" src="/images/Carousel/soder3.jpg" alt="First slide">
 </div>
 
 
@@ -29,7 +30,7 @@ class StartPage extends Base {
   </div>
     </div>
 
-
+    
 
     <div class="carousel-item">
 
@@ -68,7 +69,7 @@ class StartPage extends Base {
 </div>
  <br>
 
-   <h1 class="display-3 text-center">Mäklarfirman Dhyr & Rumson </h1>
+   <h1 class="display-3 text-center"> </h1>
   </!--div>
 
 </div>
@@ -111,7 +112,7 @@ class StartPage extends Base {
     </div>
   </div>
 
-  
+
       </div>
       </div>
 
