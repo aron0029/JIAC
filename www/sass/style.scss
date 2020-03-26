@@ -143,39 +143,30 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: #00AFF0;
 } //code for social media icons in footer
 
+/*.custom-select{
+  position: relative;
+  font-family: Arial;
 
 
-
-/*.districtButtons {
-position: relative;
-display: block;
-color: white;
-font-size: 14px;
-font-family: 'monserrat';
-text-decoration: none;
-margin: 30px 0;
-border: 2px solid #ff7675;
-padding: 14px 60px;
-text-transform: uppercase;
-overflow: hidden;
-transition: 1s all ease;
+/*.custom-select{
 =======
-/*.custom-select{
+.custom-select{
   position: relative;
   font-family: Arial;
-
-
-/*.custom-select{
-  position: relative;
-  font-family: Arial;
+  font-size: inherit;
 }
 .custom-select select{
   display: none;
 }
-.select-selected{
-  background-color: rgb(34, 43, 94);
+.custom-select{
+  background-color:#ffffff;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 1px 10px #367ebd;
+  -webkit-appearance: button;
+  outline: none;
 }
-.select-selected:after{
+.custom-select:before{
   position: absolute;
   content: "";
   top: 14px;
@@ -183,16 +174,9 @@ transition: 1s all ease;
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+  border-color: rgb(76, 73, 201) transparent transparent transparent;
 }
-.select-selected.select-arrow-active:after{
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-.select-hide{
+.custom-select-hide{
   display:none;
 }
-.select-items div:hover, .same-as-selected{
-  background-color: rgba(0, 0, 0, 0.1);
-}*/
 
