@@ -4,11 +4,9 @@ class Objekt extends Base {
 
     //hör ska info från databasen hämtas
     let info = await sql(/*sql*/`
-     SELECT * FROM Residence, Pics, Realtor, Area, Addres
-      WHERE Residence.residenceId AND Pics.residenceId = $id 
-      
+     SELECT * FROM fullResidenceInfoAndPics
+     GROUP BY residenceId AND addressId
      `, {
-      id: params.id
     });
     // FÖRST NÄR DEN HÄR CONSOLE.loggen säger 1 rad
     // har vi lyckats skriva vår databas fråga... (join)
@@ -29,7 +27,10 @@ class Objekt extends Base {
         <div class="row" route="/objekt/:id" page-title="Objekt">
     <div page-Area="${this.Area}">
         <div class="col-12">
-          <h5>
+         
+        
+        
+        <h5>
             Till salu: <br>
             <a href="/databas/Addres/${this.Residence}">${this.Area}</a>
             </h5>
