@@ -41,7 +41,8 @@ class Objekt extends Base {
             <div class="col-lg-3 mb-3 mb-lg-0">
            </div>
             <div class="col-lg-8 mb-4 mb-lg-0">
-             <img class="card-img" src="${this.url}">
+             <img class="card-img" src="${this.pics}">
+             
             </div>
             <br>
              <div class="col-lg-5 mb-3 mb-lg-0">
