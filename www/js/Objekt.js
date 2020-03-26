@@ -1,15 +1,14 @@
 class Objekt extends Base {
 
   async mount() {
-
-    //hör ska info från databasen hämtas
     let info = await sql(/*sql*/`
-     SELECT * FROM Residence, Pics, Realtor, Area, Addres
-      WHERE Residence.residenceId AND Pics.residenceId = $id 
-      
-     `, {
-      id: params.id
-    });
+    SELECT * FROM fullResidenceInfoAndPics
+    WHERE residenceId = $id
+  `, { id: params.id });
+    Object.assign(this, info[0]);
+
+
+    ;
     // FÖRST NÄR DEN HÄR CONSOLE.loggen säger 1 rad
     // har vi lyckats skriva vår databas fråga... (join)
     // Kanske börja jobba i databasen först?
@@ -29,7 +28,10 @@ class Objekt extends Base {
         <div class="row" route="/objekt/:id" page-title="Objekt">
     <div page-Area="${this.Area}">
         <div class="col-12">
-          <h5>
+         
+        
+        
+        <h5>
             Till salu: <br>
             <a href="/databas/Addres/${this.Residence}">${this.Area}</a>
             </h5>
