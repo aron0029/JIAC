@@ -49,7 +49,7 @@ class StartPage extends Base {
 
 
     <div style= "height: 400px">
-      <img class="d-block w-100 h-180"  style="height: 400px;" src="/images/Carousel/oster.jpg" alt="Third slide">
+      <img class="d-block w-100 h-180"  style="height: 400px;" src="/images/Carousel/oster5.jpg" alt="Third slide">
 </div>
          <div class="carousel-caption d-none d-md-block">
     <h5 class="display-5">Östermalm</h5>
