@@ -28,7 +28,7 @@ class Objekt extends Base {
     return /*html*/`
         <div class="row" route="/objekt/:id" page-title="Objekt">
     <div page-Area="${this.Area}">
-        <div class="col">
+        <div class="col-12">
           <h5>
             Till salu: <br>
             <a href="/databas/Addres/${this.Residence}">${this.Area}</a>
@@ -36,32 +36,30 @@ class Objekt extends Base {
         <h1>${this.title}</h1>
         <h4 class="mb-3">${this.Addres}</h4>
            <div class="row mb-3">
-            <div class="col-lg-2 mb-2 mb-lg-0">
-           <span class="b"> ${this.streetName}</span>
-           <br>Med ${this.rooms} med och kök</span>
-               
-              <span class="">kvadratmeter:${this.Kvm}</span>
-             <span class="">Avgift:${this.rent}</span>
-          </div>
-            <div class="col-lg-7 mb-7 mb-lg-1">
+            <div class="col-lg-3 mb-3 mb-lg-0">
+           </div>
+            <div class="col-lg-8 mb-4 mb-lg-0">
              <img class="card-img" src="${this.url}">
             </div>
-            <br><div class="col-lg-5 mb-3 mb-lg-0">
-            <div class="col-lg-5 mb-3 mb-lg-0">
-            <strong><span  class=""> ${this.price} </strong> Kr</span> 
+            <br>
+             <div class="col-lg-5 mb-3 mb-lg-0">
+            <div class="col-lg-3 mb-3 mb-lg-0"> 
+            <span class=""> ${this.price}Kr</span>
               <br>
-            
+            Rum: ${this.rooms}</span>
+                <div class="col-lg-3 mb-3 mb-lg-0">
+              <span class="">Kvadratmeter:${this.Kvm}</span>
+             <span class="">Avgift:${this.rent}</span>
             </div>
             <div class="col-lg-3 mb-3 mb-lg-0">
-              <span class="b">området: ${this.area}</span>
-              <br> förening: <span class="c">${this.community}</span> 
+              <span class="b">Området: ${this.area}</span>
+              <br> Förening: <span class="c">${this.community}</span> 
              
-              <span class="c"> Mäklare <Strong>${this.firstName} ${this.lastName} </strong>
+              <span class=""> Mäklare <Strong>${this.firstName} ${this.lastName} </strong>
               <p class="card-text">Kontakta mig nedan.</p>
                 <a href="mailto:${this.email}" class="card-link">${this.email}</a>
                 <img src ="${this.pic}" style="width: 18rem;">    
         </div>
-          
           </div>
           <div class="row mt-n4 mt-lg-0">
             <div class="col-md-12">

@@ -139,7 +139,7 @@ input[type=range]:focus::-ms-fill-upper {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-color: rgb(150, 148, 148);
+  background-color: rgb(255, 255, 255);
   text-align: center;
   transition: 0.2s;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
@@ -185,3 +185,7 @@ height: 100%;
 .districtButtons:hover::before {
 height: 100%;
 }*/ 
+
+.navbar {
+  background-color: red;
+}

@@ -3,12 +3,9 @@ class NavBar extends Base {
   render() {
     return /*html*/`
       <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <img class="img-fluid" src="/images/logos.png" 
-      style="width: 70px; height: 30px">
+        <img class="img-fluid" src="/images/drlogo13.png" style="width:123px; height:90px">
         <a class="navbar-brand" href="/"> </a>
         <img src ="" style="width: 19rem;" >
-
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

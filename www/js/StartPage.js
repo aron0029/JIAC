@@ -78,7 +78,7 @@ class StartPage extends Base {
   
 <div class="row">
   <div class="col-sm-6">
-    <div class="">
+    <div class="card">
       <div class="card-body">
 <a href="/till-salu">
       <button class="btn btn-default stretched-link">
@@ -87,7 +87,7 @@ class StartPage extends Base {
       </button>
 </a>
       
-        <h5 class="display-5 text-center"><strong>Våra hem</strong></h5>
+        <h5 class="display-4 text-center">Våra hem</h5>
         <p class="lead text-center">Här listar vi våra bostäder som vi har till salu.
         <br>
         </p>
@@ -97,14 +97,14 @@ class StartPage extends Base {
     </div>
   </div>
   <div class="col-sm-6">
-    <div class="">
+    <div class="card">
       <div class="card-body">
 <a href="/salj">
         <button class="btn btn-default stretched-link">
      <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
       </button>
       </a>
-        <h5 class="display-5 text-center"><strong>Boka värdering</strong></h5>
+        <h5 class="display-4 text-center">Boka värdering</h5>
         <p class="lead text-center">För en professionell utvärdering från våra mäklare.</p>
         
       </div>

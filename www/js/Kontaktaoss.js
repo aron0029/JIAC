@@ -71,7 +71,6 @@ Org.nr: 556444-4593
 
 <div class="col-6; p-3 mb-2 bg-light">
 
-
 ${this.formSent ? /*html*/`
 
             <div class="float-right">
@@ -87,13 +86,13 @@ ${this.formSent ? /*html*/`
             <form submit="collectFormData" >
             
               <br>
-              <strong>Dina åsikter är viktiga för oss</strong>
-              <br>
+              <h2 class="display-5">Dina åsikter är viktiga för oss</h2>
+              
               <br>
               <a href ="support@dhyr-rumson.com" style="color:black">support@dhyr-rumson.com</span></a> 
               <br>
               <br>
-              <strong>Lämna synpunkter på hur vi kan bli bättre</strong>
+              Lämna synpunkter på hur vi kan bli bättre
               <br>
               <br>
               <div class="form-group">
