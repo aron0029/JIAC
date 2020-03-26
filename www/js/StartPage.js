@@ -25,8 +25,8 @@ class StartPage extends Base {
 
 
       <div class="carousel-caption d-none d-md-block">
-    <h5 class="display-5">Södermalm</h5>
-    <p>Stadsdelen som har allt. Från myllrande folkliv till stilla natur.</p>
+    <h5 class="display-4"><strong>Södermalm</strong></h5>
+    <h4>Stadsdelen som har allt. Från myllrande folkliv till stilla natur.</h4>
   </div>
     </div>
 
@@ -40,8 +40,8 @@ class StartPage extends Base {
 
 
          <div class="carousel-caption d-none d-md-block">
-    <h5 class="display-5">Vasastan</h5>
-    <p>Stockholms Stadsbibliotek med ca 700 000 böcker, butiker och restauranger.</p>
+    <h5 class="display-4"><strong>Vasastan</strong></h5>
+    <h4>Stockholms Stadsbibliotek med ca 700 000 böcker, butiker och restauranger.</h4>
   </div>
     </div>
 
@@ -53,8 +53,8 @@ class StartPage extends Base {
       <img class="d-block w-100 h-180"  style="height: 400px;" src="/images/Carousel/oster5.jpg" alt="Third slide">
 </div>
          <div class="carousel-caption d-none d-md-block">
-    <h5 class="display-5">Östermalm</h5>
-    <p>Barerna och restaurangerna kring Stureplan, Östermalmshallen och Humlegården.</p>
+    <h5 class="display-4"><strong>Östermalm</strong></h5>
+    <h4>Barerna och restaurangerna kring Stureplan, Östermalmshallen och Humlegården.</h4>
   </div>
     </div>
   </div>

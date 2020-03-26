@@ -178,3 +178,10 @@ input[type=range]:focus::-ms-fill-upper {
 .sortingbar-hide{
   display:none;
 }
+
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
