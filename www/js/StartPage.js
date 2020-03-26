@@ -18,7 +18,7 @@ class StartPage extends Base {
     <div class="carousel-item active">
 
     <div style= "height: 400px">
-      <img class="d-block w-100 h-120" src="/images/Carousel/sodermalm.jpg" alt="First slide">
+      <img class="d-block w-100 h-120" src="/images/Carousel/soder.jpg" alt="First slide">
 </div>
 
 
@@ -34,7 +34,7 @@ class StartPage extends Base {
     <div class="carousel-item">
 
 <div style= "height: 400px">
-      <img class="d-block w-100 h-120"  src="/images/Carousel/vasastan.jpg" alt="Second slide">
+      <img class="d-block w-100 h-120"  src="/images/Carousel/vasa2.jpg" alt="Second slide">
 </div>
 
 
@@ -49,7 +49,7 @@ class StartPage extends Base {
 
 
     <div style= "height: 400px">
-      <img class="d-block w-100 h-180"  style="height: 400px;" src="/images/Carousel/ostermalm.jpg" alt="Third slide">
+      <img class="d-block w-100 h-180"  style="height: 400px;" src="/images/Carousel/oster.jpg" alt="Third slide">
 </div>
          <div class="carousel-caption d-none d-md-block">
     <h5 class="display-5">Östermalm</h5>
