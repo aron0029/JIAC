@@ -4,7 +4,7 @@ class NavBar extends Base {
     return /*html*/`
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <img class="img-fluid" src="/images/drlogo13.png" style="width:123px; height:90px">
-        <a class="navbar-brand" href="/"> DHYR & RUMSON</a>
+        <a class="navbar-brand" href="/">DHYR & RUMSON</a>
         <img src ="" style="width: 10rem;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
