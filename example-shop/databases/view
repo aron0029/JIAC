@@ -1,0 +1,7 @@
+
+SELECT newProperties,balcony, elevator, adressID, Price,Kvm,rooms, rent, Nyproduktion,firstName,lastName,email,phoneNr,pic,
+
+ 1 FROM Amenities ,Residence,Realtor,
+
+
+WHERE Amenities.amenitiesId = Residence.ResidenceId AND Realtor.realtorId =  Amenities.amenitiesId
