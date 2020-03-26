@@ -1,12 +1,26 @@
 class Objekt extends Base {
 
   async mount() {
+
     let info = await sql(/*sql*/`
     SELECT * FROM fullResidenceInfoAndPics
     WHERE residenceId = $id
   `, { id: params.id });
     Object.assign(this, info[0]);
     ;
+    // FÖRST NÄR DEN HÄR CONSOLE.loggen säger 1 rad
+    // har vi lyckats skriva vår databas fråga... (join)
+    // Kanske börja jobba i databasen först?
+    // Kanske skriv en färdig vy och spara i databasen
+    // För då kan vi ställa frågan mot vyn här i vår JS.
+    // Och slipper komplicerad kod i SQL här i denna fil
+    // Istället så sparar vi vår JOIN som en vy i databasen.
+    console.log("HUR MÅNGA RADER FRÅN DATABASEN?", info.length);
+    Object.assign(this, info[0] || {});
+    console.log("HEPP", this)
+    //gör en list variabel som stopar in url eller 
+    // turnery som frågar om det finns en eller 2 koma i texten  Filtrera efter om det finns ",""
+    this.render();
 
   }
 
@@ -16,6 +30,11 @@ class Objekt extends Base {
     <div page-Area="${this.Area}">
         <div class="col-12">
          
+          
+                
+              
+
+
         
         
         <h5>
@@ -26,7 +45,8 @@ class Objekt extends Base {
        
             
 
-            <img class="card-img" src="${this.pics}">
+            <img class="card-img" src= "${this.pics}">
+           
              
             </div>
 
@@ -62,7 +82,7 @@ class Objekt extends Base {
                 <a href="mailto:${this.email}" class="card-link">${this.email}</a>
       
               
-                 <img class="card-img" src="${this.realtorPic}"> 
+                 <img class="card-img" src="/${this.realtorPic}"> 
              
             </div>
           
