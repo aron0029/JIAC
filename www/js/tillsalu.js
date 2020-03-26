@@ -127,21 +127,26 @@ class Tillsalu extends Base {
   render() {
     let toRender = /*html*/`
     <div route="/till-salu">
+    <br>
+    <br>
     <h1 class="mb-3"> Här finner du alla våra bostäder som är till salu </h1>
     <form>
+    <br>
       ${this.districtButtons.map(label => /*html*/`
       <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ?
         'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
       `)}
-
+        
       <div class="row my-3">
         <div class="col-6">
+        <br>
           LÄGSTA PRIS ${this.currencyFormatter.format(this.anvandarensVal.minPrice)}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMinPrice"
             value="${this.anvandarensVal.minPrice}" min="100000" max="10000000" step="50000">
         </div>
 
         <div class="col-6">
+        <br>
           HÖGSTA PRIS ${this.currencyFormatter.format(this.anvandarensVal.maxPrice)}
           <input type="range" class="form-control-range" id="formControlRange" input="changeMaxPrice"
             value="${this.anvandarensVal.maxPrice}" min="100000" max="10000000" step="50000">
@@ -166,8 +171,8 @@ class Tillsalu extends Base {
 <form>
     <legend></legend>
     <p>
-      <label>Sortera på:</label>
-      <select id="myList">
+      <label>Sortera efter:</label>
+      <select class="custom-select" id="myList">
         <option value="lowestPrice">Lägsta Pris</option>
         <option value="highestPrice">Högsta Pris</option>
       </select>

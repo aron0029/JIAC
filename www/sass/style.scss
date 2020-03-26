@@ -142,34 +142,3 @@ input[type=range]:focus::-ms-fill-upper {
 .social-menu:nth-child(2) a:hover {
   background-color: #00AFF0;
 } //code for social media icons in footer
-
-/*.custom-select{
-  position: relative;
-  font-family: Arial;
-}
-.custom-select select{
-  display: none;
-}
-.select-selected{
-  background-color: rgb(34, 43, 94);
-}
-.select-selected:after{
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-.select-selected.select-arrow-active:after{
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-.select-hide{
-  display:none;
-}
-.select-items div:hover, .same-as-selected{
-  background-color: rgba(0, 0, 0, 0.1);
-}*/
