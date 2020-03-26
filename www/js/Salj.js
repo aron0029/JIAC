@@ -33,12 +33,18 @@ class Salj extends Base {
 
           <br>
           
-          <p>På Dhyr och Rumson vet vi vad som krävs för att göra en riktigt bra bostadsaffär. Förutom att vi har skickliga mäklare, mycket god lokalkännedom och vårt köparregister Boagenten, så prioriterar vi alltid kundens önskemål. Oavsett om du är redo att sälja nu eller i framtiden så kommer vi gärna hem till dig för att göra en värdering av din nuvarande bostad. Det är helt kostnadsfritt och du förbinder dig inte till något.
+          <p>På Dhyr och Rumson vet vi vad som krävs för att göra en riktigt bra bostadsaffär. 
+          <br>
+          <br>
+          Förutom att vi har skickliga mäklare, mycket god lokalkännedom och vårt köparregister Boagenten, så prioriterar vi alltid kundens önskemål. 
+          <br>
+          <br>
+          Oavsett om du är redo att sälja nu eller i framtiden så kommer vi gärna hem till dig för att göra en värdering av din nuvarande bostad. Det är helt kostnadsfritt och du förbinder dig inte till något.
            
 
             <br>
           <br>
-            <h2 class="display-5">Jag önskar att boka en värdering</h2>
+            <h2 class="display-5">Vill du boka en värdering?</h2>
             <br>
             <p>Vill du veta mer om hur vi kan hjälpa dig med din bostadsaffär? Fyll i formuläret, så kontaktar vi dig.</p>
 
