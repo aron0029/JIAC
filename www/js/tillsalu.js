@@ -161,7 +161,7 @@ class Tillsalu extends Base {
         </div>
       </div>
     </form>
-    
+    <br>
 <form> 
 <form>
     <legend></legend>
@@ -173,6 +173,8 @@ class Tillsalu extends Base {
       </select>
     </p>
 </form> <!-- form for sorting-->
+<br>
+<br>
 
 <div class="col-12">
 <div class="row"> 
