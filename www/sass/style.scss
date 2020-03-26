@@ -185,3 +185,8 @@ input[type=range]:focus::-ms-fill-upper {
     left: 50%;
     transform: translatex(-50%);
 }
+.display-4 {
+  display: inline;
+  max-width: 135px;
+  text-align: left !important;
+}
