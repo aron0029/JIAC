@@ -33,7 +33,7 @@ class Salj extends Base {
 
           <br>
           
-          <p>På Dhyr och Rumson vet vi vad som krävs för att göra en riktigt bra bostadsaffär. 
+          <p>På Dhyr och Rumson vet vi vad som krävs för att göra en riktigt bra bostadsaffär. Vi förmedlar objekt på Södermalm, i Vasastan och på Östermalm. 
           <br>
           <br>
           Förutom att vi har skickliga mäklare, mycket god lokalkännedom och vårt köparregister Boagenten, så prioriterar vi alltid kundens önskemål. 
@@ -42,11 +42,7 @@ class Salj extends Base {
           Oavsett om du är redo att sälja nu eller i framtiden så kommer vi gärna hem till dig för att göra en värdering av din nuvarande bostad. Det är helt kostnadsfritt och du förbinder dig inte till något.
            
 
-            <br>
-          <br>
-            <h2 class="display-5">Vill du boka en värdering?</h2>
-            <br>
-            <p>Vill du veta mer om hur vi kan hjälpa dig med din bostadsaffär? Fyll i formuläret, så kontaktar vi dig.</p>
+           
 
           
             
@@ -59,15 +55,20 @@ class Salj extends Base {
 ${this.formSent ? /*html*/`
             
       <div class="float-right">
-              <h1 class="display-5">Tack för ditt anmälan</h1>
+              <h3>Tack för ditt anmälan</h3>
               <br>
               <br>
-              <h3>Våra mäklare återkommer så snart som möjligt.</h3>
+              <h5>Våra mäklare återkommer så snart som möjligt.</h5>
             </div>
 
 
            ` :/*html*/`
 
+           <h2 class="display-5">Vill du boka en värdering?</h2>
+            <br>
+          
+            
+            <p>Fyll i formuläret, så kontaktar vi dig.</p>
            
             <form submit="collectFormData">
 
