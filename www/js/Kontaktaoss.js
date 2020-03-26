@@ -71,7 +71,6 @@ Org.nr: 556444-4593
 
 <div class="col-6; p-3 mb-2 bg-light">
 
-
 ${this.formSent ? /*html*/`
 
             <div class="float-right">
