@@ -82,7 +82,7 @@ class StartPage extends Base {
       <div class="card-body">
 <a href="/till-salu">
       <button class="btn btn-default stretched-link">
-     <img class="img-fluid" src="/images/minimalistiskt-mysigt-hem.jpg" 
+     <img class="img-fluid" src="/images/varahem.jpg" 
      style="width: 800px; height: 300px">
       </button>
 </a>
@@ -101,7 +101,7 @@ class StartPage extends Base {
       <div class="card-body">
 <a href="/salj">
         <button class="btn btn-default stretched-link">
-     <img class="img-fluid" src="/images/move.jpg"style="width: 800px; height: 300px">
+     <img class="img-fluid" src="/images/move4.jpg"style="width: 800px; height: 300px">
       </button>
       </a>
         <h5 class="display-4 text-center">Boka värdering</h5>
