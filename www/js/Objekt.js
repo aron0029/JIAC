@@ -4,7 +4,7 @@ class Objekt extends Base {
 
     //hör ska info från databasen hämtas
     let info = await sql(/*sql*/`
-     SELECT * FROM Residence, Pics, Realtor, Area
+     SELECT * FROM Residence, Pics, Realtor, Area, Addres
       WHERE Residence.residenceId AND Pics.residenceId = $id 
       
      `, {
@@ -30,10 +30,11 @@ class Objekt extends Base {
     <div page-Area="${this.Area}">
         <div class="col-12">
           <h5>
-            Till salu: <a href="/databas/Address/${this.Residence}">${this.Area}</a>
+            Till salu: <br>
+            <a href="/databas/Addres/${this.Residence}">${this.Area}</a>
             </h5>
         <h1>${this.title}</h1>
-        <h4 class="mb-3">${this.Address}</h4>
+        <h4 class="mb-3">${this.Addres}</h4>
            <div class="row mb-3">
             <div class="col-lg-3 mb-3 mb-lg-0">
            </div>
