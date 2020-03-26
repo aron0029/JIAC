@@ -10,7 +10,7 @@ class NavBar extends Base {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="nav navbar-nav navbar-center">
             ${this.links.map(link => !link.dropdown ? /*html*/`
               <li class="nav-item">
                 <a class="nav-link" href="${link.route}">
