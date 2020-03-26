@@ -1,13 +1,14 @@
 class Objekt extends Base {
 
   async mount() {
-
-    //hör ska info från databasen hämtas
     let info = await sql(/*sql*/`
-     SELECT * FROM fullResidenceInfoAndPics
-     GROUP BY residenceId AND addressId
-     `, {
-    });
+    SELECT * FROM fullResidenceInfoAndPics
+    WHERE residenceId = $id
+  `, { id: params.id });
+    Object.assign(this, info[0]);
+
+
+    ;
     // FÖRST NÄR DEN HÄR CONSOLE.loggen säger 1 rad
     // har vi lyckats skriva vår databas fråga... (join)
     // Kanske börja jobba i databasen först?
