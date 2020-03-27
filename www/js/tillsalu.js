@@ -174,6 +174,7 @@ class Tillsalu extends Base {
     <legend></legend>
     <p>
       <label>Sortera efter pris:</label>
+      <br>
       <select class="sortingbar" id="myList">
         <option value="lowestPrice">Lägsta Pris</option>
         <option value="highestPrice">Högsta Pris</option>

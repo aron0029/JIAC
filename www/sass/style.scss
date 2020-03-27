@@ -33,17 +33,26 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 0 2px px #3070a8;
   background: #3071a9;
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-color: black;
+  border-right: 17px solid rgb(255, 253, 251);
+  border-top: 17px solid rgb(255, 253, 251);
+  border-left: 17px solid rgb(255, 253, 251);
+  border-bottom: 17px solid rgb(255, 253, 251);
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  box-shadow: 0 2px 8px #3070a8;
+  border-radius: 1,3px;
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
@@ -54,15 +63,15 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 input[type=range]::-moz-range-track {
   width: 100%;
-  height: 8.4px;
+  height: 4,2px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 0 2px 4px #3070a8;
   background: #3071a9;
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
 input[type=range]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 0 2px 4px #3070a8;
   border: 1px solid #000000;
   height: 36px;
   width: 16px;
@@ -83,16 +92,16 @@ input[type=range]::-ms-fill-lower {
   background: #2a6495;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 0 2px 4px #3070a8;
 }
 input[type=range]::-ms-fill-upper {
   background: #3071a9;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 0 2px 4px #3070a8;
 }
 input[type=range]::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 0 2px 4px #3070a8;
   border: 1px solid #000000;
   height: 36px;
   width: 16px;
@@ -154,18 +163,28 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .sortingbar{
   margin-top: 10px;
+  margin-bottom: 10px;
   padding: 7px;
-  width: 100%;
+  width: 48%;
   background-color:#ffffff;
   border: none;
   font-size: 18px;
   box-shadow: 0 2px 8px #3070a8;
-  -webkit-appearance: button;
   outline: solid;
   outline-width: 1px;
   outline-color: #367ebd;
 }
 .sortingbar:before{
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: rgb(76, 73, 201) transparent transparent transparent;
+}
+.sortingbar:after{
   position: absolute;
   content: "";
   top: 14px;
@@ -209,7 +228,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: bold;
 }
 .btn-lg:hover{
-  background: linear-gradient(90deg, #00ff37, #00ff80);
+  background: linear-gradient(90deg, #00ff00, #bdffe3);
   color: black;
 } //kod för knappar i tillsalu , alla, söder, öster och vasa.
 
@@ -247,4 +266,6 @@ p {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 1rem;
-}
+} //text
+
+
