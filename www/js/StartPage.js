@@ -81,7 +81,7 @@ class StartPage extends Base {
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<a href="/till-salu">
+<a href="/kopa-bostad">
       <button class="btn btn-default stretched-link">
      <img class="img-fluid" src="/images/varahem.jpg" 
      style="width: 800px; height: 300px">
