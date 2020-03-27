@@ -105,7 +105,7 @@ class StartPage extends Base {
      <img class="img-fluid" src="/images/move4.jpg"style="width: 800px; height: 300px">
       </button>
       </a>
-        <h5 class="display-4 text-center">Boka värdering</h5>
+        <h6 class="display-4 text-center">Boka värdering</h6>
         <p class="lead text-center">För en professionell utvärdering från våra mäklare.</p>
         
       </div>
