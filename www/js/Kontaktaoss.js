@@ -71,6 +71,7 @@ Org.nr: 556444-4593
 
 <div class="col-6; p-3 mb-2 bg-light">
 
+
 ${this.formSent ? /*html*/`
 
             <div class="float-right">
@@ -80,7 +81,7 @@ ${this.formSent ? /*html*/`
               <br>
               <br>
               <h5>Vi har mottagit dina synpunkter.</h5>
-            </div>
+            </div><br>
            ` :/*html*/`
 
             <form submit="collectFormData" >

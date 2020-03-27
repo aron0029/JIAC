@@ -3,12 +3,12 @@ class App extends Base {
   async mount() {
 
     this.navBarLinks = [
-      { label: 'Välkommen', route: '/' },
-      { label: 'Till salu', route: '/till-salu' },
-      { label: 'Sälj', route: '/salj' },
-      { label: 'Våra mäklare', route: '/varamaklare' },
+      { label: 'VÄLKOMMEN', route: '/' },
+      { label: 'KÖPA BOSTAD', route: '/till-salu' },
+      { label: 'SÄLJA BOSTAD', route: '/salj' },
+      { label: 'VÅRA MÄKLARE', route: '/varamaklare' },
       { label: 'Objekt', route: '/objekt' },
-      { label: 'Kontakta oss', route: '/kontaktaoss' },
+      { label: 'KONTAKTA OSS', route: '/kontaktaoss' },
     ];
 
     this.navBar = new NavBar({ links: this.navBarLinks });
@@ -62,6 +62,7 @@ class App extends Base {
         ${this.footer}
 
       </div>
+      
     `;
   }
 
