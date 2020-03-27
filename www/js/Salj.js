@@ -82,7 +82,7 @@ ${this.formSent ? /*html*/`
               </div>
 
               <div class="form-group">
-              <label for="exampleFormControlInput1">EfterNamn</label>
+              <label for="exampleFormControlInput1">Efternamn</label>
               <input name="lastName" class="form-control" placeholder="Efternamn">
               </div>
 
