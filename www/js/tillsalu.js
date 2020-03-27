@@ -134,7 +134,7 @@ class Tillsalu extends Base {
     <form>
     <br>
     <br>
-    <h2>Välj eller filtrera för att se aktuella bostäder:</h2>
+    <h2>Välj eller filtrera din sökning av bostad:</h2>
       ${this.districtButtons.map(label => /*html*/`
       <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ?
         'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
