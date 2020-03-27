@@ -38,14 +38,11 @@ class Kontaktaoss extends Base {
           <br>
         
           <p></p>
-          Kundtjänst via email: <a href style="color:black">support@dhyr-rumson.com</a> eller via formuläret.
-          <br>
-          <br>
-        Kontakta oss gärna om du har några frågor! Vi försöker alltid svara så snabbt vi kan. 
+        Har du frågor eller funderingar? Vi hjälper dig!
         <br>
         <br>
 
-          Om din fråga rör några av våra mäklare, se gärna vår mäklarlänk där mer information finns.
+          Mejla eller ring oss, alla vardagar <br> kl.10.00–12.00 och 13.00–16.00
           <br>
           <br>
 
@@ -71,6 +68,7 @@ Org.nr: 556444-4593
 
 <div class="col-6; p-3 mb-2 bg-light">
 
+
 ${this.formSent ? /*html*/`
 
             <div class="float-right">
@@ -80,7 +78,7 @@ ${this.formSent ? /*html*/`
               <br>
               <br>
               <h5>Vi har mottagit dina synpunkter.</h5>
-            </div>
+            </div><br>
            ` :/*html*/`
 
             <form submit="collectFormData" >

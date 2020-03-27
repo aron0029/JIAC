@@ -29,7 +29,8 @@ class Salj extends Base {
     return /*html*/`
        <div class="row" route="/salj" page-title="Sälj">
         <div class="col-6">
-          <h1 class = "display-4">Sälj din bostad med Dhyr och Rumson</h1>
+        <br>
+          <h1 class = "display-4">Sälj din bostad med Dhyr och Rumson</h1><br>
 
           <br>
           
@@ -63,7 +64,7 @@ ${this.formSent ? /*html*/`
 
 
            ` :/*html*/`
-
+          <br>
            <h2 class="display-5">Vill du boka en värdering?</h2>
             <br>
           

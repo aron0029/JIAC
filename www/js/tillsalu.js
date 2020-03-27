@@ -129,14 +129,17 @@ class Tillsalu extends Base {
     <div route="/till-salu">
     <br>
     <br>
-    <h1 class="mb-3"> Här finner du alla våra bostäder som är till salu </h1>
+    <h1 class="mb-3"> Köpa bostad i Södermalm, Östermalm eller Vasastan?</h1><br>
+    <h2>Här hittar du vårt utbud av bostäder och information om hur du bäst går tillväga för att köpa din nya bostad.</h2>
     <form>
     <br>
+    <br>
+    <h2>Välj eller filtrera din sökning:</h2>
       ${this.districtButtons.map(label => /*html*/`
       <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ?
         'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
       `)}
-        
+  
       <div class="row my-3">
         <div class="col-6">
         <br>
@@ -171,7 +174,7 @@ class Tillsalu extends Base {
 <form>
     <legend></legend>
     <p>
-      <label>Sortera efter:</label>
+      <label>Sortera efter pris:</label>
       <select class="sortingbar" id="myList">
         <option value="lowestPrice">Lägsta Pris</option>
         <option value="highestPrice">Högsta Pris</option>

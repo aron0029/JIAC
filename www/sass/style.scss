@@ -115,6 +115,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .fa {
   font-size: 25px;line-height: 50px;font-style:normal;
+  margin-bottom: 10px;
 }
 .socical-menu .fa {
   list-style: none;
@@ -158,7 +159,7 @@ input[type=range]:focus::-ms-fill-upper {
   background-color:#ffffff;
   border: none;
   font-size: 18px;
-  box-shadow: 0 1px 10px #5fb2fa;
+  box-shadow: 0 2px 8px #3070a8;
   -webkit-appearance: button;
   outline: solid;
   outline-width: 1px;
@@ -174,19 +175,76 @@ input[type=range]:focus::-ms-fill-upper {
   border: 6px solid transparent;
   border-color: rgb(76, 73, 201) transparent transparent transparent;
 }
-
 .sortingbar-hide{
   display:none;
-}
-
+} //sorting price on tillsalu
 
 .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
-}
+} //centering navbar
 .display-4 {
   display: inline;
   max-width: 135px;
   text-align: left !important;
+} //fixed text for mobile version
+
+.navbar{
+  font-size: large;
+} //storlek på navbaren
+
+.btn-lg{
+  margin-right: 8px;
+  border-radius: 12px;
+  padding: 12px 45px;
+  transition-duration: 0.2;
+  box-shadow: 0 1px 10px #ffffff;
+  background: linear-gradient(90deg, rgb(22, 172, 206), #00375f);
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-lg:hover{
+  background: linear-gradient(90deg, #00ff37, #00ff80);
+  color: black;
+} //kod för knappar i tillsalu , alla, söder, öster och vasa.
+
+h2, .h2 {
+    font-size: 150%;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+} //text i tillsalu
+
+label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    font-size: 1,35rem;
+    padding-bottom: 7px;
+    font-weight: 500;
+    font-weight: bold;
+} //filtrerings text
+
+p {
+    font-size: 100%;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.col-6 {
+    font-size: 150%;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
