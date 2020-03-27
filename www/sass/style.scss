@@ -115,6 +115,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .fa {
   font-size: 25px;line-height: 50px;font-style:normal;
+  margin-bottom: 10px;
 }
 .socical-menu .fa {
   list-style: none;
@@ -218,14 +219,6 @@ h2, .h2 {
     font-weight: 500;
     font-weight: bold;
 } //text i tillsalu
-
-/*label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    font-size: larger;
-    font-style: initial;
-    font-weight: bold;
-} //sortera efter text i tillsalu */
 
 label {
     font-size: 1.5rem;
