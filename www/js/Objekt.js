@@ -44,8 +44,17 @@ class Objekt extends Base {
         <h1>${this.title}</h1>
        
             
-
-            <img class="card-img" src= "${this.pics}">
+              <script>
+               this.pics = pics.split(',');
+            console.log(this.pics);
+            for (x of pics) {
+              document.write(x + "<br >");
+                 }
+             
+            var pics = <img  class="card-img" src= "${this.pics}">
+            
+             
+        
            
              
             </div>
