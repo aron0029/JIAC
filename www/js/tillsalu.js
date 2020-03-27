@@ -126,10 +126,10 @@ class Tillsalu extends Base {
 
   render() {
     let toRender = /*html*/`
-    <div route="/till-salu">
+    <div route="/kopa-bostad">
     <br>
     <br>
-    <h1 class="mb-3"> Köpa bostad i Södermalm, Östermalm eller Vasastan?</h1><br>
+    <h1 class="mb-3"> Köpa bostad på Södermalm, på Östermalm eller i Vasastan?</h1><br>
     <h2>Här hittar du vårt utbud av bostäder och information om hur du bäst går tillväga för att köpa din nya bostad.</h2>
     <form>
     <br>
