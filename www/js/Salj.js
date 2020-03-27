@@ -30,7 +30,7 @@ class Salj extends Base {
        <div class="row" route="/salj" page-title="Sälj">
         <div class="col-6">
         <br>
-          <h1 class = "display-4">Sälj din bostad med Dhyr och Rumson</h1>
+          <h1 class = "display-4">Sälj din bostad med Dhyr och Rumson</h1><br>
 
           <br>
           
