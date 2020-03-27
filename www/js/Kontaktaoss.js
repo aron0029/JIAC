@@ -38,12 +38,10 @@ class Kontaktaoss extends Base {
           <br>
         
           <p></p>
-        Har du frågor eller funderingar? Vi hjälper dig!
+        Behöver du hjälp med att köpa eller sälja din bostad? Hos oss får du hjälp av Stockholms bästa mäklare!
         <br>
         <br>
-
-          Mejla eller ring oss, alla vardagar <br> kl.10.00–12.00 och 13.00–16.00
-          <br>
+        Kontaktinfo:
           <br>
 
 Dhyr & Rumson Sverige AB
