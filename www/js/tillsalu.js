@@ -1,33 +1,9 @@
 class Tillsalu extends Base {
 
   async mount() {
-    window.addEventListener("click", () => {
-      app.objekt.mount();
-      //detta får att params att funka 
-    });
-
-    //part of code for sorting by price starts here
-    window.addEventListener("change", () => {
-      this.sort = event.target.value;
-      this.searchResult.sort((bostadA, bostadB) => {
-        if (this.sort === 'highestPrice') {
-          if (bostadA.price > bostadB.price) {
-            return -1;
-          } else {
-            return 1;
-          }
-        } else if (this.sort === 'lowestPrice') {
-          if (bostadA.price < bostadB.price) {
-            return -1;
-          } else {
-            return 1;
-          }
-        }
-      });
-      this.render();
-    }); //part of code for sorting by price ends here
 
     this.currencyFormatter = new Intl.NumberFormat('sv-SV', { style: 'currency', currency: 'SEK' });
+
     this.anvandarensVal = {
       minKvm: 10,
       maxKvm: 300,
@@ -35,13 +11,14 @@ class Tillsalu extends Base {
       maxPrice: 10000000,
       chosenDistrict: 'Alla'
     };
+
     this.sort = 'lowestPrice';
+
     this.districtButtons = [
       'Alla',
       'Södermalm',
       'Östermalm',
       'Vasastan'
-
     ];
 
     this.search();
@@ -62,17 +39,13 @@ class Tillsalu extends Base {
     `, this.anvandarensVal);
     // console.log("this.anvandarensVal", this.anvandarensVal)
     // console.log("this.searchResult", this.searchResult)
-    this.render();
+    this.resort();
     this.fixInitialRenderBug();
   }
 
   chooseDistrict(e) {
     this.anvandarensVal.chosenDistrict = e.target.innerText;
     this.search();
-  }
-
-  fangaUpp() {
-
   }
 
   changeMinPrice(e) {
@@ -110,7 +83,6 @@ class Tillsalu extends Base {
       av.minKvm = av.maxKvm;
     }
     this.search();
-
   }
 
   fixInitialRenderBug() {
@@ -123,6 +95,29 @@ class Tillsalu extends Base {
     }
   }
 
+  updateParameterDataInObjekt() {
+    app.objekt.mount();
+  }
+
+  resort(e) {
+    this.sort = e ? e.target.value : 'lowestPrice';
+    this.searchResult.sort((bostadA, bostadB) => {
+      if (this.sort === 'highestPrice') {
+        if (bostadA.price > bostadB.price) {
+          return -1;
+        } else {
+          return 1;
+        }
+      } else if (this.sort === 'lowestPrice') {
+        if (bostadA.price < bostadB.price) {
+          return -1;
+        } else {
+          return 1;
+        }
+      }
+    });
+    this.render();
+  };
 
   render() {
     let toRender = /*html*/`
@@ -173,9 +168,8 @@ class Tillsalu extends Base {
 <form>
     <legend></legend>
     <p>
-      <label>Sortera efter pris:</label>
-      <br>
-      <select class="sortingbar" id="myList">
+    <label>Sortera efter pris:</label>
+      <select change="resort" class="sortingbar" id="myList">
         <option value="lowestPrice">Lägsta Pris</option>
         <option value="highestPrice">Högsta Pris</option>
       </select>
@@ -185,7 +179,7 @@ class Tillsalu extends Base {
 <br>
 
 <div class="col-12">
-<div class="row"> 
+<div class="row" click="updateParameterDataInObjekt"> 
 
       ${this.searchResult && this.searchResult.map(bostad => /*html*/`
    
