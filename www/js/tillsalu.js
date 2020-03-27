@@ -169,8 +169,7 @@ class Tillsalu extends Base {
         </div>
       </div>
     </form>
-    <br>
-<form> 
+    <form> 
 <form>
     <legend></legend>
     <p>

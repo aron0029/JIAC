@@ -223,7 +223,7 @@ h2, .h2 {
 label {
     font-size: 1.5rem;
     font-weight: 500;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .col-6 {
@@ -243,8 +243,8 @@ p {
 }
 
 .col-6 {
-    font-size: 150%;
-    font-weight: normal;
+    font-size: 115%;
+    font-weight: bold;
     margin-top: 0;
     margin-bottom: 1rem;
 }
