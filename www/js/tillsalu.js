@@ -129,8 +129,8 @@ class Tillsalu extends Base {
     <div route="/till-salu">
     <br>
     <br>
-    <h1 class="mb-3"> Köpa bostad i Södermalm, Östermalm eller Vasastan? <br>
-    Här hittar du vårt utbud av bostäder och information om hur du bäst går tillväga för att köpa din nya bostad. </h1>
+    <h1 class="mb-3"> Köpa bostad i Södermalm, Östermalm eller Vasastan?</h1><br>
+    <h2>Här hittar du vårt utbud av bostäder och information om hur du bäst går tillväga för att köpa din nya bostad.</h2>
     <form>
     <br>
     <br>

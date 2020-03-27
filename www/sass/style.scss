@@ -214,10 +214,10 @@ input[type=range]:focus::-ms-fill-upper {
 } //kod för knappar i tillsalu , alla, söder, öster och vasa.
 
 h2, .h2 {
-    font-size: 1.5rem;
-    padding-bottom: 7px;
-    font-weight: 500;
-    font-weight: bold;
+    font-size: 150%;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
 } //text i tillsalu
 
 label {
@@ -234,3 +234,17 @@ label {
     font-weight: 500;
     font-weight: bold;
 } //filtrerings text
+
+p {
+    font-size: 100%;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.col-6 {
+    font-size: 150%;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

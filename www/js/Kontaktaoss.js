@@ -38,14 +38,11 @@ class Kontaktaoss extends Base {
           <br>
         
           <p></p>
-          Kundtjänst via email: <a href style="color:black">support@dhyr-rumson.com</a> eller via formuläret.
-          <br>
-          <br>
-        Kontakta oss gärna om du har några frågor! Vi försöker alltid svara så snabbt vi kan. 
+        Har du frågor eller funderingar? Vi hjälper dig!
         <br>
         <br>
 
-          Om din fråga rör några av våra mäklare, se gärna vår mäklarlänk där mer information finns.
+          Mejla eller ring oss, alla vardagar <br> kl.10.00–12.00 och 13.00–16.00
           <br>
           <br>
 
