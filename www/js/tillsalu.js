@@ -124,7 +124,7 @@ class Tillsalu extends Base {
     <div route="/kopa-bostad">
     <br>
     <br>
-    <h1 class="mb-3"> Köpa bostad i Södermalm, Östermalm eller Vasastan?</h1><br>
+    <h1 class="mb-3"> Köpa bostad på Södermalm, på Östermalm eller i Vasastan?</h1><br>
     <h2>Här hittar du vårt utbud av bostäder och information om hur du bäst går tillväga för att köpa din nya bostad.</h2>
     <form>
     <br>
@@ -168,9 +168,14 @@ class Tillsalu extends Base {
 <form>
     <legend></legend>
     <p>
+<<<<<<< HEAD
       <label>Sortera efter pris:</label>
       <br>
       <select class="sortingbar" id="myList">
+=======
+    <label>Sortera efter pris:</label>
+      <select change="resort" class="sortingbar" id="myList">
+>>>>>>> 53c3153c43800591deb8605a51e438bd9efb4798
         <option value="lowestPrice">Lägsta Pris</option>
         <option value="highestPrice">Högsta Pris</option>
       </select>
