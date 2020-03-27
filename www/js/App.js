@@ -7,7 +7,6 @@ class App extends Base {
       { label: 'KÖPA BOSTAD', route: '/kopa-bostad' },
       { label: 'SÄLJA BOSTAD', route: '/salj' },
       { label: 'VÅRA MÄKLARE', route: '/varamaklare' },
-      { label: 'Objekt', route: '/objekt' },
       { label: 'KONTAKTA OSS', route: '/kontaktaoss' },
     ];
 
