@@ -51,7 +51,7 @@ class Salj extends Base {
 
 
 
-<div class="col-sm-6; p-3 mb-2 bg-light">
+<div class="col-sm-6; p-3 ml-2 mb-2 bg-light">
 
 ${this.formSent ? /*html*/`
             
