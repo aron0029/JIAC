@@ -28,7 +28,7 @@ class Salj extends Base {
   render() {
     return /*html*/`
        <div class="row" route="/salj" page-title="Sälj">
-        <div class="col-6">
+        <div class="col-sm-6">
         <br>
           <h1 class = "display-4">Sälj din bostad med Dhyr och Rumson</h1><br>
 
@@ -51,7 +51,7 @@ class Salj extends Base {
 
 
 
-<div class="col-6; p-3 mb-2 bg-light">
+<div class="col-sm-6; p-3 mb-2 bg-light">
 
 ${this.formSent ? /*html*/`
             
