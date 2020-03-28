@@ -32,15 +32,17 @@ class Objekt extends Base {
             </ul>
           </div>
         </div>  
+
+
       
       <div class="row mt-4">
-        <div class="col-12">
+        <div class="col-sm-4">
       
            ${this.activeTab !== 'Info' ? '' : /*html*/`
             <div>
 
               <!-- Om ni vill ha den första bilden här också -->
-              <img class="my-3 w-50" src="${this.pics.split(',')[0]}">
+              
               <p><strong> &nbsp Pris: </strong>${this.price}</p>
               <p><strong> &nbsp Område: </strong>${this.area}</p>
               <p><strong> &nbsp Kvm: </strong>${this.Kvm}</p>
@@ -48,17 +50,11 @@ class Objekt extends Base {
               <p><strong> &nbsp Avgift: </strong>${this.rent}</p>
               <p><strong> &nbsp Adress: </strong>${this.streetName} ${this.streetNumber}</p>
               <p><strong> &nbsp Församling: </strong>${this.community}</p>
-              <p><strong> &nbsp Förening: </strong>${this.association}</p>
+              <p><strong>Förening: </strong>${this.association}</p>
             </div>
           `}
 
-          ${!this.activeTab.includes('Bilder') ? '' : `
-            <div>
-              ${this.pics.split(',').map(pic => `
-                <img class="w-100 mt-4" src="${pic}">
-              `)}
-            </div>
-          `}
+   
 
           ${this.activeTab !== 'Kontakt' ? '' : `
             <div>
@@ -68,8 +64,32 @@ class Objekt extends Base {
               <img src ="/${this.realtorPic}" style="width: 18rem;">
             </div>
           `}
-       
+
+
+
+         ${!this.activeTab.includes('Bilder') ? '' : `
+            <div>
+              ${this.pics.split(',').map(pic => `
+                <img class="w-100 mt-4" src="${pic}">
+              `)}
+            </div>
+          `}
+
+
         </div>
+
+
+        <div class="col-sm-4">
+        
+        <img class=" w-100" src="${this.pics.split(',')[0]}">
+     
+
+      </div>
+
+
+
+   
+
       </div>
 
     </div>

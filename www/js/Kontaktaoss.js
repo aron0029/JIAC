@@ -71,7 +71,7 @@ Org.nr: 556444-4593
 
 
 
-<div class="center; col-sm-6; p-3 ml-2 mb-2 bg-light">
+<div class="col-sm-6; p-3 ml-4 bg-light">
 
 
 ${this.formSent ? /*html*/`
