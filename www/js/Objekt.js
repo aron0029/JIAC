@@ -43,7 +43,7 @@ class Objekt extends Base {
 
 
               <!-- Om ni vill ha den första bilden här också -->
-              
+              <div class="col-sm-3">
               <p><strong>  Pris: </strong>${this.price}</p>
               <p><strong>  Område: </strong>${this.area}</p>
               <p><strong>  Kvm: </strong>${this.Kvm}</p>
@@ -51,7 +51,7 @@ class Objekt extends Base {
               <p><strong>  Avgift: </strong>${this.rent}</p>
               <p><strong>  Adress: </strong>${this.streetName} ${this.streetNumber}</p>
               <p><strong> Församling: </strong>${this.community}</p>
-
+              </div>
 
               <div class="col-sm-7">
              <img class="w-100"  src="${this.pics.split(',')[0]}">
