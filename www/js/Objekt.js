@@ -36,13 +36,14 @@ class Objekt extends Base {
 
       
       <div class="row mt-4">
-        <div class="col-sm-4">
+        <div class="col-sm-10">
       
            ${this.activeTab !== 'Info' ? '' : /*html*/`
             <div>
 
               <!-- Om ni vill ha den första bilden här också -->
-              
+              <div class="float-right"><div class="col-sm-4">  <img class=" w-100" src="${this.pics.split(',')[0]}">
+                  </div>
               <p><strong> &nbsp Pris: </strong>${this.price}</p>
               <p><strong> &nbsp Område: </strong>${this.area}</p>
               <p><strong> &nbsp Kvm: </strong>${this.Kvm}</p>
@@ -51,7 +52,9 @@ class Objekt extends Base {
               <p><strong> &nbsp Adress: </strong>${this.streetName} ${this.streetNumber}</p>
               <p><strong> &nbsp Församling: </strong>${this.community}</p>
               <p><strong>Förening: </strong>${this.association}</p>
-            </div>
+              <div> <div class="col-sm-8">
+
+      
           `}
 
    
@@ -77,11 +80,6 @@ class Objekt extends Base {
 
 
         </div>
-
-
-        <div class="col-sm-4">
-        
-        <img class=" w-100" src="${this.pics.split(',')[0]}">
      
 
       </div>
