@@ -22,7 +22,7 @@ class Objekt extends Base {
       <div route="/objekt/:id" page-title="Objekt">
 
         <div class="row mt-4">
-          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
             <ul class="nav nav-tabs nav-justified" click="changeTab">
               ${this.tabs.map(tab => /*html*/`
                 <li class="nav-item">
@@ -33,41 +33,75 @@ class Objekt extends Base {
           </div>
         </div>  
 
+        <div class="&nbsp row mt-4">
 
-      
-      <div class="row mt-4">
-        <div class="col-sm-4">
+ 
       
            ${this.activeTab !== 'Info' ? '' : /*html*/`
-            <div>
+           
+          
+
 
               <!-- Om ni vill ha den första bilden här också -->
-              
-              <p><strong> &nbsp Pris: </strong>${this.price}</p>
-              <p><strong> &nbsp Område: </strong>${this.area}</p>
-              <p><strong> &nbsp Kvm: </strong>${this.Kvm}</p>
-              <p><strong> &nbsp Rum: </strong>${this.rooms}</p>
-              <p><strong> &nbsp Avgift: </strong>${this.rent}</p>
-              <p><strong> &nbsp Adress: </strong>${this.streetName} ${this.streetNumber}</p>
-              <p><strong> &nbsp Församling: </strong>${this.community}</p>
-              <p><strong>Förening: </strong>${this.association}</p>
+              <div class="col-sm-3">
+              <p><strong>  Pris: </strong>${this.price}</p>
+              <p><strong>  Område: </strong>${this.area}</p>
+              <p><strong>  Kvm: </strong>${this.Kvm}</p>
+              <p><strong>  Rum: </strong>${this.rooms}</p>
+              <p><strong>  Avgift: </strong>${this.rent}</p>
+              <p><strong>  Adress: </strong>${this.streetName} ${this.streetNumber}</p>
+              <p><strong> Församling: </strong>${this.community}</p>
+              </div>
+
+              <div class="col-sm-7">
+             <img class="w-100"  src="${this.pics.split(',')[0]}">
+
+        <br>
+        <br>
+      <p><strong>Området: </strong>${this.association}</p>
+       <div>
+      
+          `}
+    </div>
+
+       
+      
+
+
+
+      
+          ${this.activeTab !== 'Kontakt' ? '' : /*html*/`
+            
+          <div class="&nbsp row mt-4">
+      
+            <div class="col-sm-5">
+              <img class="w-100"  src ="/${this.realtorPic}" >
+              <br>
+                <br>
+                </div>
+                
+
+
+                   <div class="&nbsp col-sm-5">
+              <p><strong>  Ansvarig mäklare: </strong>${this.firstName} ${this.lastName} </p>
+              <p><strong>  Mejl: </strong>${this.email} </p>
+              <p><strong>  Telefon: </strong>${this.phoneNr} </p>
+           
+              </div>
+
             </div>
+                 </div>
+
           `}
 
-   
 
-          ${this.activeTab !== 'Kontakt' ? '' : `
-            <div>
-              <p><strong> &nbsp Ansvarig mäklare: </strong>${this.firstName} ${this.lastName} </p>
-              <p><strong> &nbsp Mejl: </strong>${this.email} </p>
-              <p><strong> &nbsp Telefon: </strong>${this.phoneNr} </p>
-              <img src ="/${this.realtorPic}" style="width: 18rem;">
-            </div>
-          `}
+
+     
+ 
 
 
 
-         ${!this.activeTab.includes('Bilder') ? '' : `
+         ${!this.activeTab.includes('Bilder') ? '' : /*html*/`
             <div>
               ${this.pics.split(',').map(pic => `
                 <img class="w-100 mt-4" src="${pic}">
@@ -76,21 +110,17 @@ class Objekt extends Base {
           `}
 
 
-        </div>
-
-
-        <div class="col-sm-4">
-        
-        <img class=" w-100" src="${this.pics.split(',')[0]}">
      
 
-      </div>
+
+
 
 
 
    
 
       </div>
+      
 
     </div>
     `
