@@ -133,8 +133,8 @@ class Tillsalu extends Base {
       ${this.districtButtons.map(label => /*html*/`
       <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ?
         'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
-      `)}
-  
+      `)} 
+
       <div class="row my-3">
         <div class="col-6">
         <br>
@@ -170,7 +170,7 @@ class Tillsalu extends Base {
     <p>
       <label>Sortera efter pris:</label>
       <br>
-      <select class="sortingbar" id="myList">
+      <select change="resort" class="sortingbar" id="myList">
         <option value="lowestPrice">Lägsta Pris</option>
         <option value="highestPrice">Högsta Pris</option>
       </select>

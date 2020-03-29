@@ -19,7 +19,7 @@ class StartPage extends Base {
     <div class="carousel-item active">
 
     <div style= "height: 400px"> 
-      <img class="d-block w-100 h-120" src="/images/Carousel/soder3.jpg" alt="First slide">
+      <img class="d-block w-100 h-120" src="/images/Carousel/soder.jpg" alt="First slide">
 </div>
 
 
@@ -88,7 +88,11 @@ class StartPage extends Base {
       </button>
 </a>
       
+<<<<<<< HEAD
         <h1 class="text-center"><strong>Våra hem</strong></h1>
+=======
+        <h1 class= "display-4 text-center"><strong>Våra hem</strong></h1>
+>>>>>>> 6b341e7626b759e351a6a3456b99383cd2c138e7
         <p class="lead text-center">Här listar vi våra bostäder som vi har till salu.
         <br>
         </p>
@@ -105,7 +109,11 @@ class StartPage extends Base {
      <img class="img-fluid" src="/images/move4.jpg"style="width: 800px; height: 300px">
       </button>
       </a>
+<<<<<<< HEAD
         <h1 class="text-center"><strong>Boka värdering</strong></h1>
+=======
+        <h1 class="display-4 text-center"><strong>Boka värdering</strong></h1>
+>>>>>>> 6b341e7626b759e351a6a3456b99383cd2c138e7
         <p class="lead text-center">För en professionell utvärdering från våra mäklare.</p>
         
       </div>
