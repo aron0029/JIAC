@@ -73,12 +73,19 @@ class Objekt extends Base {
    
 
           ${this.activeTab !== 'Kontakt' ? '' : `
-            <div>
-              <p><strong>  Ansvarig mäklare: </strong>${this.firstName} ${this.lastName} </p>
+           
+            <div class="col-sm-10">
+            <div class="col-sm-7">
+             <img src ="/${this.realtorPic}" class="w-50;">
+            </div>
+          <div class="col-sm-3">
+            <p><strong>  Ansvarig mäklare: </strong>${this.firstName} ${this.lastName} </p>
               <p><strong>  Mejl: </strong>${this.email} </p>
               <p><strong>  Telefon: </strong>${this.phoneNr} </p>
-              <img src ="/${this.realtorPic}" style="width: 18rem;">
+            </div> 
             </div>
+          
+                         
           `}
 
 
