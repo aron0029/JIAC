@@ -132,8 +132,8 @@ class Tillsalu extends Base {
     <h2>Välj eller filtrera din sökning:</h2>
     </div>
     <div class="text-center container">
-    <div class="row text-center">
-    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
     ${this.districtButtons.map(label => /*html*/`
       <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ?
         'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
