@@ -8,8 +8,8 @@ class StartPage extends Base {
   <!--div class="card-body;card bg-light text-black; col-12; card mb-3"-->
 
 <h1 class="display-sm-3 text-center">DHYR & RUMSON</h1>
-<div class="card; col-12">
-<div class="card-body">
+<!--div class="card; col-12">
+<div class="card-body"-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -75,15 +75,15 @@ class StartPage extends Base {
  <br>
 
    <h1 class="display-3 text-center"> </h1>
-  </!--div>
+  </div>
 
-</div>
-</div>
+</!--div>
+</!--div>
 <div class="card-group text-center">
  <br>
   
 <div class="row">
-  <div class="col-sm-6">
+  <div class= "col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
   
     <div class="card">
       <div class="card-body-sm p-5">
@@ -103,8 +103,7 @@ class StartPage extends Base {
   </div>
 
 
-  <!--div class="col-sm-10 col-lg 6"-->
-   <div class="col-sm-6">
+   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
     <div class="card">
       <div class="card-body-sm p-5">
         <a href="/salj">
@@ -118,7 +117,7 @@ class StartPage extends Base {
       </div>
     </div>
     </div>
-  </!--div>
+
 
 
       </div>
