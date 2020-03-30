@@ -3,10 +3,11 @@ class StartPage extends Base {
   render() {
     return /*html*/`
       <div class="row"  route="/" page-title="Start">
-     <div class= "col-12">
+     <div class= "col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
   <!--div class="card-body;card bg-light text-black; col-12; card mb-3"-->
-<h1 class="display-3 text-center">DHYR & RUMSON</h1>
+
+<h1 class="display-sm-3 text-center">DHYR & RUMSON</h1>
 <div class="card; col-12">
 <div class="card-body">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -21,6 +22,7 @@ class StartPage extends Base {
     <div> 
       <img class="d-block w-100 h-120" src="/images/Carousel/soder.jpg" alt="First slide">
 </div>
+
 
 
 
