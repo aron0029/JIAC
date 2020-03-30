@@ -88,11 +88,7 @@ class StartPage extends Base {
       </button>
 </a>
       
-<<<<<<< HEAD
-        <h1 class= "display-4 text-center"><strong>Våra hem</strong></h1>
-=======
         <h1 class="text-center"><strong>Våra hem</strong></h1>
->>>>>>> 7e28c86e55433d4042aee5de87289e16c4739fa1
         <p class="lead text-center">Här listar vi våra bostäder som vi har till salu.
         <br>
         </p>
@@ -109,11 +105,7 @@ class StartPage extends Base {
      <img class="img-fluid" src="/images/move4.jpg"style="width: 800px; height: 300px">
       </button>
       </a>
-<<<<<<< HEAD
-        <h1 class="display-4 text-center"><strong>Boka värdering</strong></h1>
-=======
         <h1 class="text-center"><strong>Boka värdering</strong></h1>
->>>>>>> 7e28c86e55433d4042aee5de87289e16c4739fa1
         <p class="lead text-center">För en professionell utvärdering från våra mäklare.</p>
         
       </div>

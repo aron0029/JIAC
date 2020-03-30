@@ -126,17 +126,19 @@ class Tillsalu extends Base {
     <br>
     <h1 class="mb-3"> Köpa bostad på Södermalm, på Östermalm eller i Vasastan?</h1><br>
     <h2>Här hittar du vårt utbud av bostäder och information om hur du bäst går tillväga för att köpa din nya bostad.</h2>
-    <form>
     <br>
     <br>
+    <div class= "text-center">
     <h2>Välj eller filtrera din sökning:</h2>
-    <div class="container">
-  <div class="row">
-    <div class="col-sm">
+    </div>
+    <div class="text-center container">
+    <div class="row text-center">
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
     ${this.districtButtons.map(label => /*html*/`
       <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ?
         'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
       `)} 
+      </div>
 </div>
       <div class="row my-3">
         <div class="col-6">
