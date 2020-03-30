@@ -202,6 +202,7 @@ input[type=range]:focus::-ms-fill-upper {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
+    
 } //centering navbar
 */
 
@@ -234,5 +235,12 @@ input[type=range]:focus::-ms-fill-upper {
   background: linear-gradient(90deg, #00ff00, #bdffe3);
   color: black;
 } //kod för knappar i tillsalu , alla, söder, öster och vasa.
+
+ /*.carousel-item{
+    height: 300;
+}*/
+.carousel-item img-fluid{
+    height: 400px;
+}
 
 
