@@ -21,7 +21,7 @@ class StartPage extends Base {
   <div class="carousel-item active">
 
     <div> 
-      <img class="d-block w-100 h-100" src="/images/Carousel/sodermalm-CROPPED.jpg" alt="First slide">
+      <img class="d-block w-100 h-120" src="/images/Carousel/sodermalm-CROPPED.jpg" alt="First slide">
 </div>
 
 
