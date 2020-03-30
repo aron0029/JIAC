@@ -70,27 +70,38 @@ class Objekt extends Base {
 
 
       
-   
+          ${this.activeTab !== 'Kontakt' ? '' : /*html*/`
+            
+          <div class="&nbsp row mt-4">
+      
+            <div class="col-sm-5">
+              <img class="w-100"  src ="/${this.realtorPic}" >
+              <br>
+                <br>
+                </div>
+                
 
-          ${this.activeTab !== 'Kontakt' ? '' : `
-           
-            <div class="col-sm-10">
-            <div class="col-sm-7">
-             <img src ="/${this.realtorPic}" class="w-50;">
-            </div>
-          <div class="col-sm-3">
-            <p><strong>  Ansvarig mäklare: </strong>${this.firstName} ${this.lastName} </p>
+
+                   <div class="&nbsp col-sm-5">
+              <p><strong>  Ansvarig mäklare: </strong>${this.firstName} ${this.lastName} </p>
               <p><strong>  Mejl: </strong>${this.email} </p>
               <p><strong>  Telefon: </strong>${this.phoneNr} </p>
-            </div> 
+           
+              </div>
+
             </div>
-          
-                         
+                 </div>
+
           `}
 
 
 
-         ${!this.activeTab.includes('Bilder') ? '' : `
+     
+ 
+
+
+
+         ${!this.activeTab.includes('Bilder') ? '' : /*html*/`
             <div>
               ${this.pics.split(',').map(pic => `
                 <img class="w-100 mt-4" src="${pic}">
@@ -99,7 +110,7 @@ class Objekt extends Base {
           `}
 
 
-        </div>
+     
 
 
 

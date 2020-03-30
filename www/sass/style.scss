@@ -198,17 +198,20 @@ input[type=range]:focus::-ms-fill-upper {
   display:none;
 } //sorting price on tillsalu
 
-.navbar-nav.navbar-center {
+/*.navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
     
 } //centering navbar
-.display-4 {
-  display: inline;
-  max-width: 135px;
-  text-align: left !important;
-} //fixed text for mobile version
+*/
+
+/*.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+} //centering navbar*/
+
 
 .navbar{
   font-size: large;
@@ -232,41 +235,5 @@ input[type=range]:focus::-ms-fill-upper {
   background: linear-gradient(90deg, #00ff00, #bdffe3);
   color: black;
 } //kod för knappar i tillsalu , alla, söder, öster och vasa.
-
-h2, .h2 {
-    font-size: 150%;
-    font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 1rem;
-} //text i tillsalu
-
-label {
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-weight: normal;
-}
-
-.col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    font-size: 1,35rem;
-    padding-bottom: 7px;
-    font-weight: 500;
-    font-weight: bold;
-} //filtrerings text
-
-p {
-    font-size: 100%;
-    font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-.col-6 {
-    font-size: 115%;
-    font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 1rem;
-} //text
 
 
