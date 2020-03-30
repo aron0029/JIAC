@@ -18,8 +18,8 @@ class StartPage extends Base {
   <div class="carousel-inner">
     <div class="carousel-item active">
 
-    <div style= "height: 400px"> 
-      <img class="d-block w-100 h-120" src="/images/Carousel/soder3.jpg" alt="First slide">
+    <div> 
+      <img class="d-block w-100 h-120" src="/images/Carousel/soder.jpg" alt="First slide">
 </div>
 
 
@@ -34,7 +34,7 @@ class StartPage extends Base {
 
     <div class="carousel-item">
 
-<div style= "height: 400px">
+<div>
       <img class="d-block w-100 h-120"  src="/images/Carousel/vasa2.jpg" alt="Second slide">
 </div>
 
@@ -49,8 +49,8 @@ class StartPage extends Base {
     <div class="carousel-item">
 
 
-    <div style= "height: 400px">
-      <img class="d-block w-100 h-180"  style="height: 400px;" src="/images/Carousel/oster5.jpg" alt="Third slide">
+    <div>
+      <img class="d-block w-100 h-180" src="/images/Carousel/oster6.jpg" alt="Third slide">
 </div>
          <div class="carousel-caption d-none d-md-block">
     <h5 class="display-4"><strong>Östermalm</strong></h5>
@@ -88,7 +88,7 @@ class StartPage extends Base {
       </button>
 </a>
       
-        <h1 class= "display-3 text-center"><strong>Våra hem</strong></h1>
+        <h1 class="text-center"><strong>Våra hem</strong></h1>
         <p class="lead text-center">Här listar vi våra bostäder som vi har till salu.
         <br>
         </p>
@@ -105,7 +105,7 @@ class StartPage extends Base {
      <img class="img-fluid" src="/images/move4.jpg"style="width: 800px; height: 300px">
       </button>
       </a>
-        <h1 class="display-3 text-center"><strong>Boka värdering</strong></h1>
+        <h1 class="text-center"><strong>Boka värdering</strong></h1>
         <p class="lead text-center">För en professionell utvärdering från våra mäklare.</p>
         
       </div>

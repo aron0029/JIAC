@@ -133,8 +133,8 @@ class Tillsalu extends Base {
       ${this.districtButtons.map(label => /*html*/`
       <button click="chooseDistrict" type="button" class="btn ${this.anvandarensVal.chosenDistrict === label ?
         'btn-primary' : 'btn-secondary'} btn-lg">${label}</button>
-      `)}
-  
+      `)} 
+
       <div class="row my-3">
         <div class="col-6">
         <br>
