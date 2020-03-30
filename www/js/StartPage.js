@@ -6,7 +6,7 @@ class StartPage extends Base {
      <div class= "col-12">
 
   <!--div class="card-body;card bg-light text-black; col-12; card mb-3"-->
-<h1 class="display-3 text-center">DHYR & RUMSON</h1>
+<div class="display-sm lg 7 text-center">DHYR & RUMSON</h1>
 <div class="card; col-12">
 <div class="card-body">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -97,7 +97,7 @@ class StartPage extends Base {
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-10 col-lg 6">
     <div class="card">
       <div class="card-body">
         <a href="/salj">
